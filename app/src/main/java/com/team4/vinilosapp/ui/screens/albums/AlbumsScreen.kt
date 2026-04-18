@@ -6,6 +6,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import com.team4.vinilosapp.navigation.Screen
 import com.team4.vinilosapp.ui.components.BottomNav
 
 @Composable
@@ -21,6 +22,19 @@ fun AlbumsScreen(navController: NavController) {
                 }
             ) {
                 Text("Volver a Home")
+            }
+
+            Button(
+                onClick = {
+                    navController.navigate(
+                        Screen.AlbumDetail.createRoute(
+                            albumId = 100,
+                            sectionTitle = "Álbumes"
+                        )
+                    )
+                }
+            ) {
+                Text("Ver detalle álbum")
             }
         }
     }

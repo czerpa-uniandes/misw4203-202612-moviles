@@ -1,0 +1,51 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local SDK config (machine-specific)
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Kotlin
+.kotlin/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated captures
+captures/
+
+# Navigation editor temp files
+.navigation/
+
+# Android Studio cache
+.cxx/
+
+# External native build
+.externalNativeBuild/
+
+# Firebase / Google services (if added later)
+google-services.json
+
+# Keystore files (important security)
+*.jks
+*.keystore
+
+# APK / AAB outputs
+*.apk
+*.aab
+
+# IntelliJ workspace files
+workspace.xml
+tasks.xml
+
+# Gradle wrapper cache (keep wrapper jar!)
+!gradle/wrapper/gradle-wrapper.jar
