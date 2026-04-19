@@ -1,6 +1,7 @@
-package com.team4.vinilosapp.ui.screens.albums.detail
+package com.team4.vinilosapp.ui.screens.albums
 
-import android.R
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -22,15 +23,12 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Divider
-import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -53,10 +51,12 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
-import com.team4.vinilosapp.data.model.AlbumDetailDto
-import com.team4.vinilosapp.data.model.CommentDto
-import com.team4.vinilosapp.data.model.TrackDto
+import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.Comment
+import com.team4.vinilosapp.data.models.Track
 import com.team4.vinilosapp.ui.components.BottomNav
+import com.team4.vinilosapp.ui.viewmodels.AlbumDetailUiState
+import com.team4.vinilosapp.ui.viewmodels.AlbumViewModel
 import java.time.OffsetDateTime
 
 private val VinilosPrimary = Color(0xFFB44A1F)
@@ -64,12 +64,13 @@ private val VinilosTeal = Color(0xFF0C9A9A)
 private val ChipBg = Color(0xFFF1ECE8)
 private val ScreenBg = Color(0xFFF7F4F2)
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun AlbumDetailScreen(
     navController: NavController,
     albumId: Int,
     sectionTitle: String,
-    viewModel: AlbumDetailViewModel = viewModel()
+    viewModel: AlbumViewModel = viewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
@@ -116,11 +117,12 @@ fun AlbumDetailScreen(
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun AlbumDetailContent(
     navController: NavController,
-    album: AlbumDetailDto,
+    album: Album,
     sectionTitle: String,
     paddingValues: PaddingValues
 ) {
@@ -361,7 +363,7 @@ private fun SectionTitle(text: String) {
 }
 
 @Composable
-private fun TrackRow(index: Int, track: TrackDto) {
+private fun TrackRow(index: Int, track: Track) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -399,7 +401,7 @@ private fun TrackRow(index: Int, track: TrackDto) {
 }
 
 @Composable
-private fun CommentCard(comment: CommentDto, index: Int) {
+private fun CommentCard(comment: Comment, index: Int) {
     val names = listOf("Mateo Valencia", "Elena Restrepo", "Laura Pineda", "Camilo Vélez")
     val avatars = listOf("🧑🏻", "👩🏻", "👩🏽", "🧔🏻")
 
@@ -456,6 +458,7 @@ private fun CommentCard(comment: CommentDto, index: Int) {
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 private fun formatYear(date: String): String {
     return try {
         OffsetDateTime.parse(date).year.toString()
