@@ -13,10 +13,11 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.navigation.NavController
 import com.team4.vinilosapp.ui.viewmodels.AlbumViewModel
 
 @Composable
-fun AlbumsList(){
+fun AlbumsList(navController: NavController){
 
     val viewModel: AlbumViewModel = viewModel()
     val albums by viewModel.albums.collectAsState()
@@ -69,9 +70,11 @@ fun AlbumsList(){
             else -> {
                 albums.forEach { album ->
                     AlbumCard(
+                        id = album.id,
                         title = album.name,
-                        artist = album.performers.firstOrNull()?.name ?: "--",
-                        imageUrl = album.cover
+                        artist = album.performers.firstOrNull()?.name ?: "Artista desconocido",
+                        imageUrl = album.cover,
+                        navController = navController
                     )
                     Spacer(modifier = Modifier.height(12.dp))
                 }

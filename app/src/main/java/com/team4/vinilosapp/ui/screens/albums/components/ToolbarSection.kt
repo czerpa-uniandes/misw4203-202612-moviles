@@ -28,11 +28,9 @@ fun ToolbarSection(modifier: Modifier = Modifier) {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {
-
             Icon(
                 imageVector = Icons.Default.Search,
                 contentDescription = "Buscar",
@@ -54,7 +52,13 @@ fun ToolbarSection(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .size(36.dp)
                 .clip(CircleShape)
-                .background(Color.Gray)
-        )
+                .background(Color(0xFF111111)),
+            contentAlignment = Alignment.Center
+        ){
+            Text(
+                text = "👤",
+                color = Color.White
+            )
+        }
     }
 }

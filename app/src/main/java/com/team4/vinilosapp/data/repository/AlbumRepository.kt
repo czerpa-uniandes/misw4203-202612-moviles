@@ -1,26 +1,43 @@
 package com.team4.vinilosapp.data.repository
 
-import android.content.Context
 import com.team4.vinilosapp.data.models.Album
-import com.team4.vinilosapp.data.network.AlbumService
 import com.team4.vinilosapp.ui.models.NewAlbum
+import com.team4.vinilosapp.data.network.RetrofitProvider
 
-class AlbumRepository(private val service: AlbumService) {
-
-    fun getAlbums(
-        context: Context,
-        onResult: (List<Album>) -> Unit,
-        onError: (String) -> Unit
-    ) {
-        service.getAlbums(context, onResult, onError)
+class AlbumRepository() {
+    suspend fun getAlbums(): Result<List<Album>> {
+        return try {
+            val albums = RetrofitProvider.api.getAlbums()
+            Result.success(albums)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 
-    fun createAlbum(
-        context: Context,
-        album: NewAlbum,
-        onSuccess: () -> Unit,
-        onError: (String) -> Unit
-    ) {
-        service.createAlbum(context, album, onSuccess, onError)
+    suspend fun createAlbum(album: NewAlbum): Result<Unit> {
+        return try {
+            val body = NewAlbum(
+                title = album.title,
+                genre = album.genre,
+                cover = album.cover,
+                description = album.description,
+                releaseDate = album.releaseDate,
+                recordLabel = album.recordLabel
+            )
+
+            val response = RetrofitProvider.api.createAlbum(body)
+
+            if (response.isSuccessful) {
+                Result.success(Unit)
+            } else {
+                Result.failure(Exception("Error ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun getAlbumDetail(albumId: Int): Album {
+        return RetrofitProvider.api.getAlbumDetail(albumId)
     }
 }

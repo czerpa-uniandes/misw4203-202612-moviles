@@ -13,15 +13,18 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import com.team4.vinilosapp.navigation.Screen
 
 @Composable
 fun AlbumCard(
+    id: String,
     title: String,
     artist: String,
-    imageUrl: String
+    imageUrl: String,
+    navController: NavController
 ) {
-
     Box(
         modifier = Modifier
             .padding(16.dp)
@@ -64,7 +67,14 @@ fun AlbumCard(
         }
 
         Button(
-            onClick = { },
+            onClick = {
+                navController.navigate(
+                    Screen.AlbumDetail.createRoute(
+                        albumId = id.toInt(),
+                        sectionTitle = "Álbumes"
+                    )
+                )
+            },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFFF2F2F2),
                 contentColor = Color(0xFFB4532A)
