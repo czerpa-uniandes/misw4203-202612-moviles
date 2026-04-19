@@ -64,6 +64,7 @@ private val VinilosTeal = Color(0xFF0C9A9A)
 private val ChipBg = Color(0xFFF1ECE8)
 private val ScreenBg = Color(0xFFF7F4F2)
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun AlbumDetailScreen(
     navController: NavController,
@@ -116,6 +117,7 @@ fun AlbumDetailScreen(
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun AlbumDetailContent(
