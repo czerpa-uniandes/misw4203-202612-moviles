@@ -3,6 +3,7 @@ package com.team4.vinilosapp.navigation
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.*
 import com.team4.vinilosapp.ui.screens.albums.AlbumsScreen
+import com.team4.vinilosapp.ui.screens.albums.CreateAlbumScreen
 import com.team4.vinilosapp.ui.screens.home.HomeScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorsScreen
 
@@ -10,6 +11,7 @@ sealed class Screen(val route: String) {
     object Home : Screen("home")
     object Collectors : Screen("collectors")
     object Albums : Screen("albums")
+    object CreateAlbum : Screen("create_album")
 }
 
 @Composable
@@ -30,6 +32,10 @@ fun NavGraph() {
 
         composable(Screen.Albums.route) {
             AlbumsScreen(navController)
+        }
+
+        composable(Screen.CreateAlbum.route) {
+            CreateAlbumScreen(navController)
         }
     }
 }
