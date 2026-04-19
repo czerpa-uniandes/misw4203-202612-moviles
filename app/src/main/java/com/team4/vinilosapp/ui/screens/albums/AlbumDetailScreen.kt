@@ -54,6 +54,7 @@ import coil.compose.AsyncImage
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Track
+import com.team4.vinilosapp.navigation.Screen
 import com.team4.vinilosapp.ui.components.BottomNav
 import com.team4.vinilosapp.ui.viewmodels.AlbumDetailUiState
 import com.team4.vinilosapp.ui.viewmodels.AlbumViewModel
@@ -222,7 +223,7 @@ private fun AlbumDetailContent(
 
         item {
             OutlinedButton(
-                onClick = { },
+                onClick = { navController.navigate(Screen.AddTrackAlbum.createRoute(albumId = album.id)) },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(56.dp),
