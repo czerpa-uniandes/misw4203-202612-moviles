@@ -6,6 +6,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.repository.AlbumRepository
+import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.AlbumFilter
 import com.team4.vinilosapp.ui.models.NewAlbum
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -141,5 +142,33 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
             .replace("\\p{InCombiningDiacriticalMarks}+".toRegex(), "")
             .lowercase()
             .trim()
+    }
+
+     fun addTrack(
+        albumId: Int,
+        name: String,
+        duration: String,
+        side: String,
+        position: Int
+    ){
+        viewModelScope.launch {
+            val newAddTrack = AddTrack(
+                name = name,
+                duration = duration,
+            )
+
+            Log.d("MY MESSAGE", newAddTrack.toString())
+
+            repository.addTrack(albumId, newAddTrack)
+                .onSuccess {
+                    _createSuccess.value = true
+                    loadAlbum(albumId)
+                }
+                .onFailure { error ->
+                    _createError.value = error.message ?: "Error al crear álbum"
+                }
+
+            _createLoading.value = false
+        }
     }
 }
