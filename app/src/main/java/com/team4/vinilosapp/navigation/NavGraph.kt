@@ -6,11 +6,13 @@ import com.team4.vinilosapp.ui.screens.albums.AddTrackAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumsScreen
 import com.team4.vinilosapp.ui.screens.albums.CreateAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumDetailScreen
+import com.team4.vinilosapp.ui.screens.artists.ArtistsScreen
 import com.team4.vinilosapp.ui.screens.home.HomeScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorsScreen
 
 sealed class Screen(val route: String) {
     object Home : Screen("home")
+    object Artists : Screen("artists")
     object Collectors : Screen("collectors")
     object Albums : Screen("albums")
     object CreateAlbum : Screen("create_album")
@@ -29,10 +31,14 @@ fun NavGraph() {
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route
+        startDestination = Screen.Artists.route
     ) {
         composable(Screen.Home.route) {
             HomeScreen(navController)
+        }
+
+        composable(Screen.Artists.route) {
+            ArtistsScreen(navController)
         }
 
         composable(Screen.Collectors.route) {
