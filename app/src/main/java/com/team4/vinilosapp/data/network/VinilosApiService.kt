@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.data.network
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import retrofit2.Response
@@ -28,4 +29,10 @@ interface VinilosApiService {
         @Path("id") albumId: Int,
         @Body track: AddTrack
     ): Response<Unit>
+
+    @GET("musicians")
+    suspend fun getMusicians(): List<Performer>
+
+    @GET("bands")
+    suspend fun getBands(): List<Performer>
 }

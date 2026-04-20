@@ -4,7 +4,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.List
+import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.ui.graphics.Color
@@ -17,9 +17,9 @@ fun BottomNav(navController: NavController) {
 
         NavigationBarItem(
             selected = false,
-            onClick = { navController.navigate("home") },
+            onClick = { navController.navigate("artists") },
             label = { Text("Artistas") },
-            icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = null) }
+            icon = { Icon(Icons.Default.MusicNote, contentDescription = null) }
         )
 
         NavigationBarItem(
