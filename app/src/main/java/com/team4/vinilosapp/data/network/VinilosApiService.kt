@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.data.network
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import retrofit2.Response
 import retrofit2.http.Body
@@ -20,5 +21,11 @@ interface VinilosApiService {
     @POST("albums")
     suspend fun createAlbum(
         @Body album: NewAlbum
+    ): Response<Unit>
+
+    @POST("albums/{id}/tracks")
+    suspend fun addTrack(
+        @Path("id") albumId: Int,
+        @Body track: AddTrack
     ): Response<Unit>
 }

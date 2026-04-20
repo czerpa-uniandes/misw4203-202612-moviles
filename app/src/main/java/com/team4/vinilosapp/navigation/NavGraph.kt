@@ -2,6 +2,7 @@ package com.team4.vinilosapp.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.*
+import com.team4.vinilosapp.ui.screens.albums.AddTrackAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumsScreen
 import com.team4.vinilosapp.ui.screens.albums.CreateAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumDetailScreen
@@ -16,6 +17,9 @@ sealed class Screen(val route: String) {
     object AlbumDetail : Screen("albumDetail/{albumId}/{sectionTitle}") {
         fun createRoute(albumId: Int, sectionTitle: String) =
             "albumDetail/$albumId/$sectionTitle"
+    }
+    object AddTrackAlbum : Screen("add_track_album/{albumId}") {
+        fun createRoute(albumId: String) = "add_track_album/$albumId"
     }
 }
 
@@ -55,6 +59,17 @@ fun NavGraph() {
                 navController = navController,
                 albumId = albumId,
                 sectionTitle = sectionTitle
+            )
+        }
+
+        composable(Screen.AddTrackAlbum.route) { backStackEntry ->
+
+            val albumId =
+                backStackEntry.arguments?.getString("albumId")?.toIntOrNull() ?: 0
+
+            AddTrackAlbumScreen(
+                navController = navController,
+                albumId = albumId
             )
         }
     }
