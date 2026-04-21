@@ -1,14 +1,16 @@
 package com.team4.vinilosapp.data.repository
 
+import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.Album
-import com.team4.vinilosapp.ui.models.NewAlbum
-import com.team4.vinilosapp.data.network.RetrofitProvider
 import com.team4.vinilosapp.ui.models.AddTrack
+import com.team4.vinilosapp.ui.models.NewAlbum
 
-class AlbumRepository() {
+class AlbumRepository(
+    private val serviceAdapter: VinilosServiceAdapter
+) {
     suspend fun getAlbums(): Result<List<Album>> {
         return try {
-            val albums = RetrofitProvider.api.getAlbums()
+            val albums = serviceAdapter.getAlbums()
             Result.success(albums)
         } catch (e: Exception) {
             Result.failure(e)
@@ -26,36 +28,31 @@ class AlbumRepository() {
                 recordLabel = album.recordLabel
             )
 
-            val response = RetrofitProvider.api.createAlbum(body)
-
-            if (response.isSuccessful) {
-                Result.success(Unit)
-            } else {
-                Result.failure(Exception("Error ${response.code()}"))
-            }
+            serviceAdapter.createAlbum(body)
+            Result.success(Unit)
         } catch (e: Exception) {
             Result.failure(e)
         }
     }
 
-    suspend fun getAlbumDetail(albumId: Int): Album {
-        return RetrofitProvider.api.getAlbumDetail(albumId)
+    suspend fun getAlbumDetail(albumId: Int): Result<Album> {
+        return try {
+            val album = serviceAdapter.getAlbumDetail(albumId)
+            Result.success(album)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 
     suspend fun addTrack(albumId: Int, track: AddTrack): Result<Unit> {
         return try {
             val body = AddTrack(
                 name = track.name,
-                duration = track.duration,
+                duration = track.duration
             )
 
-            val response = RetrofitProvider.api.addTrack(albumId, body)
-
-            if (response.isSuccessful) {
-                Result.success(Unit)
-            } else {
-                Result.failure(Exception("Error ${response.code()}"))
-            }
+            serviceAdapter.addTrack(albumId, body)
+            Result.success(Unit)
         } catch (e: Exception) {
             Result.failure(e)
         }
