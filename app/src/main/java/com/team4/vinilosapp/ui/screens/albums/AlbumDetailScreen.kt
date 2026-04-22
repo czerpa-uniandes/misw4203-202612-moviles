@@ -46,6 +46,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -152,7 +153,8 @@ private fun AlbumDetailContent(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(360.dp)
-                    .clip(RoundedCornerShape(28.dp)),
+                    .clip(RoundedCornerShape(28.dp))
+                    .testTag("album_detail_cover"),
                 contentScale = ContentScale.Crop
             )
         }
@@ -163,7 +165,8 @@ private fun AlbumDetailContent(
                     text = album.name,
                     style = MaterialTheme.typography.headlineLarge,
                     fontWeight = FontWeight.ExtraBold,
-                    color = Color(0xFF1C1C1C)
+                    color = Color(0xFF1C1C1C),
+                    modifier = Modifier.testTag("album_detail_title")
                 )
 
                 Text(
@@ -177,9 +180,18 @@ private fun AlbumDetailContent(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    InfoChip(year)
-                    InfoChip(album.genre.uppercase())
-                    InfoChip(album.recordLabel.uppercase())
+                    InfoChip(
+                        text = year,
+                        modifier = Modifier.testTag("album_detail_release_date")
+                    )
+                    InfoChip(
+                        text = album.genre.uppercase(),
+                        modifier = Modifier.testTag("album_detail_genre")
+                    )
+                    InfoChip(
+                        text = album.recordLabel.uppercase(),
+                        modifier = Modifier.testTag("album_detail_label")
+                    )
                     BadgeChip("CURADOR PRO", VinilosTeal)
                 }
             }
@@ -189,7 +201,8 @@ private fun AlbumDetailContent(
             Text(
                 text = album.description,
                 style = MaterialTheme.typography.bodyLarge,
-                color = Color(0xFF6D625C)
+                color = Color(0xFF6D625C),
+                modifier = Modifier.testTag("album_detail_description")
             )
         }
 
@@ -316,8 +329,12 @@ private fun AlbumTopBar(
 }
 
 @Composable
-private fun InfoChip(text: String) {
+private fun InfoChip(
+    text: String,
+    modifier: Modifier = Modifier
+) {
     Surface(
+        modifier = modifier,
         color = ChipBg,
         shape = RoundedCornerShape(24.dp)
     ) {

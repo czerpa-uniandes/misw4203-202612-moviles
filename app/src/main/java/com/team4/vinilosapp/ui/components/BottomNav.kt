@@ -7,7 +7,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 
 
 @Composable
@@ -34,7 +36,8 @@ fun BottomNav(navController: NavController) {
             onClick = { navController.navigate("albums") },
             label = { Text("Albumes") },
             icon = { Icon(imageVector = Icons.Filled.PlayArrow, contentDescription = null, tint = Color.Black)
-            }
+            },
+            modifier = Modifier.testTag("bottom_nav_albums")
         )
     }
 }

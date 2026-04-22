@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.testTag
 import androidx.navigation.NavController
 import com.team4.vinilosapp.ui.viewmodels.AlbumViewModel
 
@@ -27,7 +28,7 @@ fun AlbumsList(navController: NavController){
         viewModel.fetchAlbums()
     }
 
-    Column {
+    Column(modifier = Modifier.testTag("albums_list_container")) {
         Spacer(modifier = Modifier.height(12.dp))
         Row(
             modifier = Modifier
