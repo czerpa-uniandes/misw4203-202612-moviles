@@ -1,7 +1,9 @@
 package com.team4.vinilosapp.ui
 
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -18,33 +20,39 @@ class AlbumDetailScreenTest {
 
     @Test
     fun navigateToAlbumDetail_and_validateDetailScreenContent() {
-        composeTestRule.waitForIdle()
+        composeTestRule.waitUntil(timeoutMillis = 15_000) {
+            composeTestRule.onNodeWithTag("bottom_nav_albums").performClick()
+            composeTestRule.onAllNodesWithText("Ver más").fetchSemanticsNodes().isNotEmpty()
+        }
 
         composeTestRule
-            .onNodeWithTag("album_list_item_1")
-            .assertIsDisplayed()
+            .onAllNodesWithText("Ver más")[0]
             .performClick()
 
-        composeTestRule.waitForIdle()
+        composeTestRule.waitUntil(timeoutMillis = 15_000) {
+            composeTestRule
+                .onAllNodes(hasTestTag("album_detail_title"), useUnmergedTree = true)
+                .fetchSemanticsNodes().isNotEmpty()
+        }
 
         composeTestRule
-            .onNodeWithTag("album_detail_title")
+            .onNodeWithTag("album_detail_title", useUnmergedTree = true)
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithTag("album_detail_genre")
+            .onNodeWithTag("album_detail_genre", useUnmergedTree = true)
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithTag("album_detail_label")
+            .onNodeWithTag("album_detail_label", useUnmergedTree = true)
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithTag("album_detail_release_date")
+            .onNodeWithTag("album_detail_release_date", useUnmergedTree = true)
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithTag("album_detail_cover")
+            .onNodeWithTag("album_detail_cover", useUnmergedTree = true)
             .assertIsDisplayed()
     }
 }

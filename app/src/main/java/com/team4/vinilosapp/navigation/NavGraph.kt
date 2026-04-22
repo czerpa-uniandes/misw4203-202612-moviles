@@ -1,5 +1,7 @@
 package com.team4.vinilosapp.navigation
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.*
 import com.team4.vinilosapp.ui.screens.albums.AddTrackAlbumScreen
@@ -25,6 +27,7 @@ sealed class Screen(val route: String) {
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun NavGraph() {
     val navController = rememberNavController()
