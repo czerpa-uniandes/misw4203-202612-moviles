@@ -69,4 +69,12 @@ dependencies {
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.volley)
     implementation(libs.converter.gson)
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
+    testImplementation("app.cash.turbine:turbine:1.1.0")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:2.2.10")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
+    testImplementation("org.mockito:mockito-core:5.12.0")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("com.squareup.moshi:moshi:1.15.1")
+    testImplementation("com.squareup.moshi:moshi-kotlin:1.15.1")
 }

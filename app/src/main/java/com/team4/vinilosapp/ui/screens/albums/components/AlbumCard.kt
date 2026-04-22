@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -84,6 +85,7 @@ fun AlbumCard(
                 .align(Alignment.BottomEnd)
                 .padding(16.dp)
                 .offset(y = 8.dp)
+                .testTag("album_list_item_$id")
         ) {
             Text(
                 text = "Ver más",

@@ -16,6 +16,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
@@ -52,7 +53,8 @@ fun AlbumsScreen(navController: NavController) {
         ) {
 
             LazyColumn(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.fillMaxSize()
+                    .testTag("albums_lazy_column"),
                 contentPadding = PaddingValues(
                     top = 100.dp,
                     bottom = 80.dp
