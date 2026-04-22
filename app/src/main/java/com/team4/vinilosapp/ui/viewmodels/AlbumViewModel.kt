@@ -24,12 +24,19 @@ sealed interface AlbumDetailUiState {
     data class Error(val message: String) : AlbumDetailUiState
 }
 
-class AlbumViewModel(
-    application: Application,
-    private val repository: AlbumRepository = AlbumRepository(
+class AlbumViewModel(application: Application) : AndroidViewModel(application) {
+
+    private var repository: AlbumRepository = AlbumRepository(
         VinilosServiceAdapterImpl(RetrofitProvider.api)
     )
-) : AndroidViewModel(application) {
+
+    // Constructor secundario solo para tests
+    internal constructor(
+        application: Application,
+        repository: AlbumRepository
+    ) : this(application) {
+        this.repository = repository
+    }
 
     private val _originalAlbums = MutableStateFlow<List<Album>>(emptyList())
     private val _albums = MutableStateFlow<List<Album>>(emptyList())
