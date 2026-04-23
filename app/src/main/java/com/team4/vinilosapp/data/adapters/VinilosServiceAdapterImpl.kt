@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.data.adapters
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.network.VinilosApiService
 import com.team4.vinilosapp.ui.models.AddTrack
@@ -40,5 +41,9 @@ class VinilosServiceAdapterImpl(
 
     override suspend fun getBands(): List<Performer> {
         return api.getBands()
+    }
+
+    override suspend fun getCollectors(): List<Collector> {
+        return api.getCollectors()
     }
 }

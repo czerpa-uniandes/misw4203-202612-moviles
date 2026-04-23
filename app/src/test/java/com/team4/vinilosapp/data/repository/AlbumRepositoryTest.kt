@@ -3,6 +3,7 @@ package com.team4.vinilosapp.data.repository
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -31,6 +32,7 @@ private class RepositoryFakeAdapter : VinilosServiceAdapter {
     override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
     override suspend fun getMusicians(): List<Performer> = emptyList()
     override suspend fun getBands(): List<Performer> = emptyList()
+    override suspend fun getCollectors(): List<Collector> = emptyList()
 }
 
 class AlbumRepositoryTest {
