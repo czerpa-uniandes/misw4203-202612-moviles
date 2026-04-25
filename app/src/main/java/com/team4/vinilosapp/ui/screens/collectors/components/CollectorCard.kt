@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.ui.screens.collectors.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -19,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import coil.compose.SubcomposeAsyncImage
 import coil.request.ImageRequest
 import com.team4.vinilosapp.data.models.Collector
@@ -29,7 +31,7 @@ private val SecondaryText = Color(0xFF5F5E5C)
 private val SurfaceContainerLow = Color(0xFFF4F3F2)
 
 @Composable
-fun CollectorCard(collector: Collector) {
+fun CollectorCard(collector: Collector, navController: NavController) {
     Card(
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = CardBackground),
@@ -118,9 +120,12 @@ fun CollectorCard(collector: Collector) {
             HorizontalDivider(color = SurfaceContainerLow)
             Spacer(modifier = Modifier.height(8.dp))
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth().clickable {
+                    navController.navigate("collector_detail/${collector.id}")
+                },
                 horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically,
+
             ) {
                 Text(
                     text = "Ver colección",
