@@ -5,46 +5,46 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImpl
-import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.network.RetrofitProvider
-import com.team4.vinilosapp.data.repository.ArtistRepository
+import com.team4.vinilosapp.data.repository.CollectorRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import java.text.Normalizer
 
-class ArtistViewModel(application: Application) : AndroidViewModel(application) {
+class CollectorViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var repository: ArtistRepository = ArtistRepository(
+    private var repository: CollectorRepository = CollectorRepository(
         VinilosServiceAdapterImpl(RetrofitProvider.api)
     )
 
     internal constructor(
         application: Application,
-        repository: ArtistRepository
+        repository: CollectorRepository
     ) : this(application) {
         this.repository = repository
     }
 
-    private val _originalArtists = MutableStateFlow<List<Performer>>(emptyList())
-    private val _artists = MutableStateFlow<List<Performer>>(emptyList())
-    val artists: StateFlow<List<Performer>> = _artists
+    private val _originalCollectors = MutableStateFlow<List<Collector>>(emptyList())
+    private val _collectors = MutableStateFlow<List<Collector>>(emptyList())
+    val collectors: StateFlow<List<Collector>> = _collectors
 
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading
 
-    fun fetchArtists() {
+    fun fetchCollectors() {
         viewModelScope.launch {
             _isLoading.value = true
 
-            repository.getArtists()
+            repository.getCollectors()
                 .onSuccess { list ->
-                    _originalArtists.value = list
-                    _artists.value = list
+                    _originalCollectors.value = list
+                    _collectors.value = list
                 }
                 .onFailure { error ->
                     runCatching {
-                        Log.e("ArtistViewModel", error.message ?: "Error al obtener artistas")
+                        Log.e("CollectorViewModel", error.message ?: "Error al obtener coleccionistas")
                     }
                 }
 
@@ -54,10 +54,10 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
 
     fun search(query: String) {
         val normalized = normalize(query)
-        _artists.value = if (normalized.isBlank()) {
-            _originalArtists.value
+        _collectors.value = if (normalized.isBlank()) {
+            _originalCollectors.value
         } else {
-            _originalArtists.value.filter { normalize(it.name).contains(normalized) }
+            _originalCollectors.value.filter { normalize(it.name).contains(normalized) }
         }
     }
 

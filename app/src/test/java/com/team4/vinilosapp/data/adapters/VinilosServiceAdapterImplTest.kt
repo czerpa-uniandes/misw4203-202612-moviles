@@ -119,4 +119,151 @@ class VinilosServiceAdapterImplTest {
             adapter.getAlbumDetail(999)
         }
     }
+
+    @Test
+    fun getMusicians_parsesResponseCorrectly() = runBlocking {
+        val body = """
+            [
+              {
+                "id": 1,
+                "name": "Joe Arroyo",
+                "image": "https://example.com/joe.jpg",
+                "description": "Leyenda de la salsa",
+                "birthDate": "1955-11-01T00:00:00Z"
+              }
+            ]
+        """.trimIndent()
+
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(body)
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getMusicians()
+
+        assertEquals(1, result.size)
+        assertEquals("Joe Arroyo", result.first().name)
+        assertEquals(1, result.first().id)
+    }
+
+    @Test
+    fun getMusicians_returnsEmptyListWhenResponseIsEmpty() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("[]")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getMusicians()
+
+        assertEquals(0, result.size)
+    }
+
+    @Test
+    fun getBands_parsesResponseCorrectly() = runBlocking {
+        val body = """
+            [
+              {
+                "id": 2,
+                "name": "Los Tupamaros",
+                "image": "https://example.com/banda.jpg",
+                "description": "Banda colombiana",
+                "creationDate": "1980-01-01T00:00:00Z"
+              }
+            ]
+        """.trimIndent()
+
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(body)
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getBands()
+
+        assertEquals(1, result.size)
+        assertEquals("Los Tupamaros", result.first().name)
+        assertEquals(2, result.first().id)
+    }
+
+    @Test
+    fun getBands_returnsEmptyListWhenResponseIsEmpty() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("[]")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getBands()
+
+        assertEquals(0, result.size)
+    }
+
+    @Test
+    fun getCollectors_parsesResponseCorrectly() = runBlocking {
+        val body = """
+            [
+              {
+                "id": 1,
+                "name": "Elena Restrepo",
+                "telephone": "3001234567",
+                "email": "elena@example.com",
+                "image": "https://example.com/elena.jpg"
+              },
+              {
+                "id": 2,
+                "name": "Carlos Mario",
+                "telephone": "3109876543",
+                "email": "carlos@example.com",
+                "image": "https://example.com/carlos.jpg"
+              }
+            ]
+        """.trimIndent()
+
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(body)
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getCollectors()
+
+        assertEquals(2, result.size)
+        assertEquals("Elena Restrepo", result.first().name)
+        assertEquals("carlos@example.com", result.last().email)
+    }
+
+    @Test
+    fun getCollectors_returnsEmptyListWhenResponseIsEmpty() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("[]")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getCollectors()
+
+        assertEquals(0, result.size)
+    }
+
+    @Test
+    fun getCollectors_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(500)
+                .setBody("""{"message":"Internal Server Error"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.getCollectors()
+        }
+    }
 }

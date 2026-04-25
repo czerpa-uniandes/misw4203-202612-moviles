@@ -1,11 +1,28 @@
 package com.team4.vinilosapp
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.models.Track
 
 object TestData {
+    fun performer(
+        id: Int = 1,
+        name: String = "Artista de prueba",
+        image: String = "https://example.com/image.jpg",
+        description: String = "Descripción del artista",
+        birthDate: String? = "1970-01-01T00:00:00Z"
+    ) = Performer(id = id, name = name, image = image, description = description, birthDate = birthDate)
+
+    fun collector(
+        id: Int = 1,
+        name: String = "Coleccionista de prueba",
+        telephone: String = "3001234567",
+        email: String = "coleccionista@example.com",
+        image: String? = "https://example.com/collector.jpg"
+    ) = Collector(id = id, name = name, telephone = telephone, email = email, image = image)
+
     fun album(
         id: String = "1",
         name: String = "Poeta del pueblo"
