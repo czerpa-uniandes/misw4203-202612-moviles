@@ -65,10 +65,12 @@ class ArtistViewModelTest {
     }
 
     @Test
-    fun fetchArtists_updatesCombinedListOnSuccess() = runTest {
+    fun fetchArtists_updatesListOnSuccess() = runTest {
         val fakeAdapter = ArtistFakeAdapter().apply {
-            musiciansResponse = listOf(TestData.performer(id = 1, name = "Músico A"))
-            bandsResponse = listOf(TestData.performer(id = 2, name = "Banda B"))
+            musiciansResponse = listOf(
+                TestData.performer(id = 1, name = "Músico A"),
+                TestData.performer(id = 2, name = "Músico B")
+            )
         }
         val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
 
