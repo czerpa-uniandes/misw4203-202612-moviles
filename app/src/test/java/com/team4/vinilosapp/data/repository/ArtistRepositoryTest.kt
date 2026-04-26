@@ -38,10 +38,12 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
 class ArtistRepositoryTest {
 
     @Test
-    fun getArtists_combinesMusiciansAndBands() = runBlocking {
+    fun getArtists_returnsMusicians() = runBlocking {
         val adapter = ArtistFakeAdapter().apply {
-            musiciansResponse = listOf(TestData.performer(id = 1, name = "Músico A"))
-            bandsResponse = listOf(TestData.performer(id = 2, name = "Banda B"))
+            musiciansResponse = listOf(
+                TestData.performer(id = 1, name = "Músico A"),
+                TestData.performer(id = 2, name = "Músico B")
+            )
         }
         val repository = ArtistRepository(adapter)
 
@@ -50,7 +52,7 @@ class ArtistRepositoryTest {
         assertTrue(result.isSuccess)
         assertEquals(2, result.getOrNull()?.size)
         assertEquals("Músico A", result.getOrNull()?.get(0)?.name)
-        assertEquals("Banda B", result.getOrNull()?.get(1)?.name)
+        assertEquals("Músico B", result.getOrNull()?.get(1)?.name)
     }
 
     @Test
@@ -67,19 +69,6 @@ class ArtistRepositoryTest {
 
         assertTrue(result.isSuccess)
         assertEquals(2, result.getOrNull()?.size)
-    }
-
-    @Test
-    fun getArtists_returnsOnlyBandsWhenMusiciansAreEmpty() = runBlocking {
-        val adapter = ArtistFakeAdapter().apply {
-            bandsResponse = listOf(TestData.performer(id = 1, name = "Banda 1"))
-        }
-        val repository = ArtistRepository(adapter)
-
-        val result = repository.getArtists()
-
-        assertTrue(result.isSuccess)
-        assertEquals(1, result.getOrNull()?.size)
     }
 
     @Test
@@ -103,14 +92,4 @@ class ArtistRepositoryTest {
         assertEquals("musicians fail", result.exceptionOrNull()?.message)
     }
 
-    @Test
-    fun getArtists_returnsFailureWhenBandsCallFails() = runBlocking {
-        val adapter = ArtistFakeAdapter().apply { failBands = true }
-        val repository = ArtistRepository(adapter)
-
-        val result = repository.getArtists()
-
-        assertTrue(result.isFailure)
-        assertEquals("bands fail", result.exceptionOrNull()?.message)
-    }
 }

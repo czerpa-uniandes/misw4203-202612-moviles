@@ -8,8 +8,7 @@ class ArtistRepository(private val serviceAdapter: VinilosServiceAdapter) {
     suspend fun getArtists(): Result<List<Performer>> {
         return try {
             val musicians = serviceAdapter.getMusicians()
-            val bands = serviceAdapter.getBands()
-            Result.success(musicians + bands)
+            Result.success(musicians)
         } catch (e: Exception) {
             Result.failure(e)
         }
