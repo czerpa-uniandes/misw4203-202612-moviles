@@ -6,6 +6,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performTextInput
@@ -114,6 +115,29 @@ class AddTrackAlbumScreenTest {
         composeTestRule
             .onNodeWithTag("add_track_button", useUnmergedTree = true)
             .performClick()
+
+        composeTestRule.waitUntil(timeoutMillis = 15_000) {
+            composeTestRule
+                .onAllNodesWithTag("album_detail_scroll", useUnmergedTree = true)
+                .fetchSemanticsNodes()
+                .isNotEmpty()
+        }
+
+        composeTestRule
+            .onNodeWithTag("album_detail_scroll", useUnmergedTree = true)
+            .performScrollToNode(hasTestTag("add_track_nav_button"))
+
+
+        composeTestRule.waitUntil(timeoutMillis = 15_000) {
+            composeTestRule
+                .onAllNodesWithText("Pedro Navaja", useUnmergedTree = true)
+                .fetchSemanticsNodes()
+                .isNotEmpty()
+        }
+
+        composeTestRule
+            .onAllNodesWithText("Pedro Navaja", useUnmergedTree = true)[0]
+            .assertIsDisplayed()
 
         composeTestRule.waitForIdle()
     }
