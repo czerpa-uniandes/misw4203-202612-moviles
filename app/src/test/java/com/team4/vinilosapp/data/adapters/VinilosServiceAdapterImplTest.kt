@@ -14,6 +14,8 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import com.team4.vinilosapp.ui.models.AddTrack
+import kotlin.test.assertTrue
 
 class VinilosServiceAdapterImplTest {
 
@@ -265,5 +267,29 @@ class VinilosServiceAdapterImplTest {
         assertFailsWith<Exception> {
             adapter.getCollectors()
         }
+    }
+
+    @Test
+    fun addTrack_sendsRequestCorrectly() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("{}")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        adapter.addTrack(
+            albumId = 100,
+            track = AddTrack(
+                name = "Pedro Navaja",
+                duration = "5:20",
+            )
+        )
+
+        val request = server.takeRequest()
+
+        assertEquals("/albums/100/tracks", request.path)
+        assertEquals("POST", request.method)
+        assertTrue(request.body.readUtf8().contains("Pedro Navaja"))
     }
 }

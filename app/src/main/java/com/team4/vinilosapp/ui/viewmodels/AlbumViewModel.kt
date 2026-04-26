@@ -166,8 +166,6 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
         albumId: Int,
         name: String,
         duration: String,
-        side: String,
-        position: Int
     ) {
         viewModelScope.launch {
             _createLoading.value = true
@@ -179,7 +177,7 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
                 duration = duration
             )
 
-            Log.d("MY MESSAGE", newAddTrack.toString())
+            println("MY MESSAGE ${newAddTrack.toString()}")
 
             repository.addTrack(albumId, newAddTrack)
                 .onSuccess {

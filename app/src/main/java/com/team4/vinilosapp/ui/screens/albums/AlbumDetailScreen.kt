@@ -135,7 +135,8 @@ private fun AlbumDetailContent(
         modifier = Modifier
             .fillMaxSize()
             .background(ScreenBg)
-            .padding(paddingValues),
+            .padding(paddingValues)
+            .testTag("album_detail_scroll"),
         contentPadding = PaddingValues(20.dp),
         verticalArrangement = Arrangement.spacedBy(18.dp)
     ) {
@@ -239,7 +240,8 @@ private fun AlbumDetailContent(
                 onClick = { navController.navigate(Screen.AddTrackAlbum.createRoute(albumId = album.id)) },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(56.dp),
+                    .height(56.dp)
+                    .testTag("add_track_nav_button"),
                 shape = RoundedCornerShape(28.dp)
             ) {
                 Icon(

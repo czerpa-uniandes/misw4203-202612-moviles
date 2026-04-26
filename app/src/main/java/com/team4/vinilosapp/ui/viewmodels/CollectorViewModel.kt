@@ -73,7 +73,7 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
                 }
                 .onFailure { error ->
                     _detailError.value = error.message ?: "Error al obtener el coleccionista"
-                    Log.e("CollectorViewModel", error.message ?: "Error al obtener el coleccionista")
+                    println("Error al obtener el coleccionista ${error.message}")
                 }
 
             _detailLoading.value = false

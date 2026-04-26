@@ -22,6 +22,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -101,7 +102,8 @@ private fun CollectorDetailContent(
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .padding(padding),
+            .padding(padding)
+            .testTag("collector_detail_content"),
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
@@ -135,6 +137,7 @@ private fun CollectorDetailContent(
 
                     Text(
                         text = collector.name,
+                        modifier = Modifier.testTag("collector_detail_name"),
                         fontSize = 24.sp,
                         fontWeight = FontWeight.ExtraBold,
                         color = Primary

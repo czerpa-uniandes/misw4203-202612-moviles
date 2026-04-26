@@ -5,6 +5,7 @@ import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.repository.CollectorRepository
 import com.team4.vinilosapp.ui.models.AddTrack
@@ -27,6 +28,8 @@ import kotlin.test.assertTrue
 private class CollectorFakeAdapter : VinilosServiceAdapter {
     var collectorsResponse: List<Collector> = emptyList()
     var failCollectors = false
+    var collectorDetailResponse: CollectorDetail? = null;
+    var failCollectorDetail = false;
 
     override suspend fun getCollectors(): List<Collector> {
         if (failCollectors) throw Exception("collectors error")
@@ -39,6 +42,10 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
     override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
     override suspend fun getMusicians(): List<Performer> = emptyList()
     override suspend fun getBands(): List<Performer> = emptyList()
+    override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail {
+        if (failCollectorDetail) throw Exception("detail error")
+        return collectorDetailResponse ?: throw Exception("not found")
+    }
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -178,5 +185,47 @@ class CollectorViewModelTest {
         viewModel.search("xyz")
 
         assertTrue(viewModel.collectors.value.isEmpty())
+    }
+
+    @Test
+    fun fetchCollectorById_setsSelectedCollectorOnSuccess() = runTest {
+        val fakeAdapter = CollectorFakeAdapter().apply {
+            collectorDetailResponse = TestData.collectorDetail(
+                id = 100,
+                name = "Manolo Bellon"
+            )
+        }
+
+        val viewModel = CollectorViewModel(
+            application,
+            CollectorRepository(fakeAdapter)
+        )
+
+        viewModel.fetchCollectorById(100)
+        advanceUntilIdle()
+
+        assertFalse(viewModel.detailLoading.value)
+        assertEquals(null, viewModel.detailError.value)
+        assertEquals(100, viewModel.selectedCollector.value?.id)
+        assertEquals("Manolo Bellon", viewModel.selectedCollector.value?.name)
+    }
+
+    @Test
+    fun fetchCollectorById_setsErrorWhenAdapterFails() = runTest {
+        val fakeAdapter = CollectorFakeAdapter().apply {
+            failCollectorDetail = true
+        }
+
+        val viewModel = CollectorViewModel(
+            application,
+            CollectorRepository(fakeAdapter)
+        )
+
+        viewModel.fetchCollectorById(100)
+        advanceUntilIdle()
+
+        assertFalse(viewModel.detailLoading.value)
+        assertEquals("detail error", viewModel.detailError.value)
+        assertEquals(null, viewModel.selectedCollector.value)
     }
 }

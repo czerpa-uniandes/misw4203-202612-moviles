@@ -4,6 +4,7 @@ import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -15,6 +16,8 @@ import kotlin.test.assertTrue
 private class CollectorFakeAdapter : VinilosServiceAdapter {
     var collectorsResponse: List<Collector> = emptyList()
     var failCollectors = false
+    var collectorDetailResponse: CollectorDetail? = null;
+    var failCollectorDetail = false;
 
     override suspend fun getCollectors(): List<Collector> {
         if (failCollectors) throw Exception("collectors fail")
@@ -27,6 +30,10 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
     override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
     override suspend fun getMusicians(): List<Performer> = emptyList()
     override suspend fun getBands(): List<Performer> = emptyList()
+    override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail {
+        if (failCollectorDetail) throw Exception("detail error")
+        return collectorDetailResponse ?: throw Exception("not found")
+    }
 }
 
 class CollectorRepositoryTest {
@@ -92,5 +99,37 @@ class CollectorRepositoryTest {
         assertEquals("3101234567", collector?.telephone)
         assertEquals("sofia@example.com", collector?.email)
         assertEquals("https://example.com/sofia.jpg", collector?.image)
+    }
+
+    @Test
+    fun getCollectorDetail_returnsSuccessWhenAdapterSucceeds() = runBlocking {
+        val adapter = CollectorFakeAdapter().apply {
+            collectorDetailResponse = TestData.collectorDetail(
+                id = 100,
+                name = "Manolo Bellon"
+            )
+        }
+
+        val repository = CollectorRepository(adapter)
+
+        val result = repository.getCollectorById(100)
+
+        assertTrue(result.isSuccess)
+        assertEquals(100, result.getOrNull()?.id)
+        assertEquals("Manolo Bellon", result.getOrNull()?.name)
+    }
+
+    @Test
+    fun getCollectorDetail_returnsFailureWhenAdapterFails() = runBlocking {
+        val adapter = CollectorFakeAdapter().apply {
+            failCollectorDetail = true
+        }
+
+        val repository = CollectorRepository(adapter)
+
+        val result = repository.getCollectorById(100)
+
+        assertTrue(result.isFailure)
+        assertEquals("detail error", result.exceptionOrNull()?.message)
     }
 }
