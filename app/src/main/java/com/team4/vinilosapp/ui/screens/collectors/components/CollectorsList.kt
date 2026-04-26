@@ -11,10 +11,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
 import com.team4.vinilosapp.ui.viewmodels.CollectorViewModel
 
 @Composable
-fun CollectorsList() {
+fun CollectorsList(navController: NavController) {
     val viewModel: CollectorViewModel = viewModel()
     val collectors by viewModel.collectors.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
@@ -55,7 +56,7 @@ fun CollectorsList() {
             }
             else -> {
                 collectors.forEach { collector ->
-                    CollectorCard(collector = collector)
+                    CollectorCard(collector = collector, navController = navController)
                 }
             }
         }

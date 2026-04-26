@@ -37,9 +37,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.team4.vinilosapp.ui.components.BottomNav
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
@@ -61,8 +64,6 @@ fun AddTrackAlbumScreen(
     var name by remember { mutableStateOf("") }
     var minutes by remember { mutableStateOf("") }
     var seconds by remember { mutableStateOf("") }
-    var selectedSide by remember { mutableStateOf("A") }
-    var position by remember { mutableStateOf("") }
 
     val createLoading by viewModel.createLoading.collectAsState()
     val createSuccess by viewModel.createSuccess.collectAsState()
@@ -122,7 +123,12 @@ fun AddTrackAlbumScreen(
                     }
 
                     item {
-                        AlbumTextField("Nombre de la canción", "Ej. El cantante", name, ) { name = it }
+                        TrackTextField(
+                            "Nombre de la canción",
+                            "Ej. El cantante",
+                            name,
+                            modifier = Modifier.testTag("track_name_input").fillMaxWidth()
+                            ) { name = it }
                     }
 
                     item {
@@ -148,7 +154,7 @@ fun AddTrackAlbumScreen(
 
                                     TrackNumberField(
                                         value = minutes,
-                                        modifier = Modifier.width(80.dp),
+                                        modifier = Modifier.width(80.dp).testTag("track_minutes_input"),
                                         placeholder = "Min",
                                         onChange = { minutes = it }
                                     )
@@ -161,42 +167,12 @@ fun AddTrackAlbumScreen(
 
                                     TrackNumberField(
                                         value = seconds,
-                                        modifier = Modifier.width(80.dp),
+                                        modifier = Modifier.width(80.dp).testTag("track_seconds_input"),
                                         placeholder = "Seg",
                                         onChange = { seconds = it }
                                     )
                                 }
                             }
-                        }
-                    }
-
-                    item {
-                        SideSelector(
-                            selected = selectedSide,
-                            onSelect = { selectedSide = it }
-                        )
-                    }
-
-                    item {
-                        Column(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
-
-                            Text(
-                                text = "Posición del track",
-                                style = MaterialTheme.typography.labelMedium,
-                                color = VinilosPrimary,
-                            )
-
-                            Spacer(modifier = Modifier.height(8.dp))
-
-                            TrackNumberField(
-                                value = position,
-                                placeholder = "Ej. 1",
-                                modifier = Modifier.fillMaxWidth(),
-                                onChange = { position = it }
-                            )
                         }
                     }
 
@@ -209,13 +185,12 @@ fun AddTrackAlbumScreen(
                                     albumId = albumId,
                                     name = name,
                                     duration = duration,
-                                    side = selectedSide,
-                                    position = position.toIntOrNull() ?: 0
                                 )
                             },
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(top = 8.dp, bottom = 24.dp),
+                                .padding(top = 8.dp, bottom = 24.dp)
+                                .testTag("add_track_button"),
                             shape = RoundedCornerShape(24.dp),
                             colors = ButtonDefaults.outlinedButtonColors(
                                 containerColor = VinilosPrimary,
@@ -266,6 +241,7 @@ fun AddTrackHeader(album: Album) {
 
             Text(
                 text = album.name,
+                modifier = Modifier.testTag("add_track_album_title"),
                 style = MaterialTheme.typography.headlineSmall
             )
 
@@ -312,48 +288,35 @@ fun TrackNumberField(
 }
 
 @Composable
-fun SideSelector(
-    selected: String,
-    onSelect: (String) -> Unit
+fun TrackTextField(
+    label: String,
+    placeholder: String,
+    value: String,
+    modifier: Modifier = Modifier,
+    onChange: (String) -> Unit
 ) {
-    Column(
-        modifier = Modifier.fillMaxWidth()
-    ) {
+
+    Column(modifier = Modifier.padding(vertical = 8.dp)) {
 
         Text(
-            text = "Lado del disco",
-            style = MaterialTheme.typography.labelMedium,
-            color = VinilosPrimary,
-            modifier = Modifier.fillMaxWidth(),
-            textAlign = TextAlign.Center
+            text = label,
+            fontSize = 12.sp,
+            color = Color(0xFFB4532A),
+            fontWeight = FontWeight.Bold
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(6.dp))
 
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.Center
-        ) {
-
-            listOf("A", "B").forEach { side ->
-
-                val isSelected = side == selected
-
-                OutlinedButton(
-                    onClick = { onSelect(side) },
-                    shape = RoundedCornerShape(20.dp),
-                    colors = ButtonDefaults.outlinedButtonColors(
-                        containerColor = if (isSelected) VinilosPrimary else Color.Transparent,
-                        contentColor = if (isSelected) Color.White else Color.Gray
-                    ),
-                    border = if (isSelected) null else BorderStroke(1.dp, Color.Gray),
-                    modifier = Modifier
-                        .padding(horizontal = 6.dp)
-                        .width(120.dp)
-                ) {
-                    Text("Lado $side")
-                }
-            }
-        }
+        OutlinedTextField(
+            value = value,
+            onValueChange = onChange,
+            placeholder = { Text(placeholder) },
+            modifier = modifier,
+            shape = RoundedCornerShape(50),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = Color(0xFFB4532A),
+                cursorColor = Color(0xFFB4532A)
+            )
+        )
     }
 }

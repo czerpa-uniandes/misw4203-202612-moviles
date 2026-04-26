@@ -2,6 +2,7 @@ package com.team4.vinilosapp.data.network
 
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -39,4 +40,9 @@ interface VinilosApiService {
 
     @GET("collectors")
     suspend fun getCollectors(): List<Collector>
+
+    @GET("collectors/{id}/")
+    suspend fun getCollectorDetail(
+        @Path("id") collectorId: Int
+    ): CollectorDetail
 }

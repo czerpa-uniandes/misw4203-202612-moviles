@@ -6,6 +6,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImpl
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.network.RetrofitProvider
 import com.team4.vinilosapp.data.repository.CollectorRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -33,6 +34,15 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading
 
+    private val _selectedCollector = MutableStateFlow<CollectorDetail?>(null)
+    val selectedCollector: StateFlow<CollectorDetail?> = _selectedCollector
+
+    private val _detailLoading = MutableStateFlow(false)
+    val detailLoading: StateFlow<Boolean> = _detailLoading
+
+    private val _detailError = MutableStateFlow<String?>(null)
+    val detailError: StateFlow<String?> = _detailError
+
     fun fetchCollectors() {
         viewModelScope.launch {
             _isLoading.value = true
@@ -49,6 +59,24 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
                 }
 
             _isLoading.value = false
+        }
+    }
+
+    fun fetchCollectorById(collectorId: Int) {
+        viewModelScope.launch {
+            _detailLoading.value = true
+            _detailError.value = null
+
+            repository.getCollectorById(collectorId)
+                .onSuccess { collector ->
+                    _selectedCollector.value = collector
+                }
+                .onFailure { error ->
+                    _detailError.value = error.message ?: "Error al obtener el coleccionista"
+                    println("Error al obtener el coleccionista ${error.message}")
+                }
+
+            _detailLoading.value = false
         }
     }
 

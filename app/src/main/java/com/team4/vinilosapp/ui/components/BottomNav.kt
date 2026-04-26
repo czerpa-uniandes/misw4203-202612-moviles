@@ -28,7 +28,8 @@ fun BottomNav(navController: NavController) {
             selected = false,
             onClick = { navController.navigate("collectors") },
             label = { Text("Coleccionistas") },
-            icon = { Icon(Icons.Default.Person, contentDescription = null) }
+            icon = { Icon(Icons.Default.Person, contentDescription = null) },
+            modifier = Modifier.testTag("bottom_nav_collectors")
         )
 
         NavigationBarItem(

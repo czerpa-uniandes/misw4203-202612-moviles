@@ -71,7 +71,7 @@ fun CollectorsScreen(navController: NavController) {
                 }
             }
             item {
-                CollectorsList()
+                CollectorsList(navController = navController)
             }
         }
     }

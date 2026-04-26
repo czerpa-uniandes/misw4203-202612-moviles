@@ -5,6 +5,7 @@ import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.repository.AlbumRepository
 import com.team4.vinilosapp.ui.models.AddTrack
@@ -29,6 +30,9 @@ private class FakeVinilosServiceAdapter : VinilosServiceAdapter {
     var detailResponse: Album? = null
     var failAlbums = false
     var failDetail = false
+    var failAddTrack = false
+    var receivedAlbumId: Int? = null
+    var receivedTrack: AddTrack? = null
 
     override suspend fun getAlbums(): List<Album> {
         if (failAlbums) throw Exception("albums error")
@@ -41,10 +45,16 @@ private class FakeVinilosServiceAdapter : VinilosServiceAdapter {
     }
 
     override suspend fun createAlbum(album: NewAlbum) = Unit
-    override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
+    override suspend fun addTrack(albumId: Int, track: AddTrack) {
+        if (failAddTrack) throw Exception("add track error")
+
+        receivedAlbumId = albumId
+        receivedTrack = track
+    }
     override suspend fun getMusicians(): List<Performer> = emptyList()
     override suspend fun getBands(): List<Performer> = emptyList()
     override suspend fun getCollectors(): List<Collector> = emptyList()
+    override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail = throw NotImplementedError()
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -125,5 +135,46 @@ class AlbumViewModelTest {
         val state = viewModel.uiState.value
         assertTrue(state is AlbumDetailUiState.Error)
         assertEquals("detail error", (state as AlbumDetailUiState.Error).message)
+    }
+
+    @Test
+    fun addTrack_setsSuccessWhenAdapterSucceeds() = runTest {
+        val fakeAdapter = FakeVinilosServiceAdapter()
+        val repository = AlbumRepository(fakeAdapter)
+        val viewModel = AlbumViewModel(application, repository)
+
+        viewModel.addTrack(
+            albumId = 1,
+            name = "Pedro Navaja",
+            duration = "5:20",
+        )
+
+        advanceUntilIdle()
+
+        assertFalse(viewModel.createLoading.value)
+        assertTrue(viewModel.createSuccess.value)
+        assertEquals(1, fakeAdapter.receivedAlbumId)
+        assertEquals("Pedro Navaja", fakeAdapter.receivedTrack?.name)
+        assertEquals("5:20", fakeAdapter.receivedTrack?.duration)
+    }
+
+    @Test
+    fun addTrack_doesNotSetSuccessWhenAdapterFails() = runTest {
+        val fakeAdapter = FakeVinilosServiceAdapter().apply {
+            failAddTrack = true
+        }
+        val repository = AlbumRepository(fakeAdapter)
+        val viewModel = AlbumViewModel(application, repository)
+
+        viewModel.addTrack(
+            albumId = 1,
+            name = "Pedro Navaja",
+            duration = "5:20",
+        )
+
+        advanceUntilIdle()
+
+        assertFalse(viewModel.createLoading.value)
+        assertFalse(viewModel.createSuccess.value)
     }
 }

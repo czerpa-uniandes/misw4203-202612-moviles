@@ -2,6 +2,7 @@ package com.team4.vinilosapp
 
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.models.Track
@@ -13,7 +14,13 @@ object TestData {
         image: String = "https://example.com/image.jpg",
         description: String = "Descripción del artista",
         birthDate: String? = "1970-01-01T00:00:00Z"
-    ) = Performer(id = id, name = name, image = image, description = description, birthDate = birthDate)
+    ) = Performer(
+        id = id,
+        name = name,
+        image = image,
+        description = description,
+        birthDate = birthDate
+    )
 
     fun collector(
         id: Int = 1,
@@ -57,5 +64,21 @@ object TestData {
                 rating = 5
             )
         )
+    )
+
+    fun collectorDetail(
+        id: Int = 100,
+        name: String = "Manolo Bellon",
+        telephone: String = "3502457896",
+        email: String = "manollo@caracol.com.co"
+    ) = CollectorDetail(
+        id = id,
+        name = name,
+        telephone = telephone,
+        email = email,
+        comments = emptyList(),
+        favoritePerformers = emptyList(),
+        collectorAlbums = emptyList()
+
     )
 }
