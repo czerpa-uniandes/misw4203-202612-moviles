@@ -49,6 +49,13 @@ class VinilosServiceAdapterImpl(
         return api.getBandDetail(bandId)
     }
 
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) {
+        val response = api.addMusicianToBand(bandId, musicianId)
+        if (!response.isSuccessful) {
+            throw Exception("Error ${response.code()}")
+        }
+    }
+
     override suspend fun getCollectors(): List<Collector> {
         return api.getCollectors()
     }

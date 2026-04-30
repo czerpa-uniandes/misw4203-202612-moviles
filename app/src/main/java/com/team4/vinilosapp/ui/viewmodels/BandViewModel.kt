@@ -43,6 +43,45 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
     private val _detailError = MutableStateFlow<String?>(null)
     val detailError: StateFlow<String?> = _detailError
 
+    private val _allMusicians = MutableStateFlow<List<Performer>>(emptyList())
+    val allMusicians: StateFlow<List<Performer>> = _allMusicians
+
+    private val _musiciansLoading = MutableStateFlow(false)
+    val musiciansLoading: StateFlow<Boolean> = _musiciansLoading
+
+    private val _addMusicianLoading = MutableStateFlow(false)
+    val addMusicianLoading: StateFlow<Boolean> = _addMusicianLoading
+
+    private val _addMusicianError = MutableStateFlow<String?>(null)
+    val addMusicianError: StateFlow<String?> = _addMusicianError
+
+    fun fetchAllMusicians() {
+        viewModelScope.launch {
+            _musiciansLoading.value = true
+            repository.getMusicians()
+                .onSuccess { list -> _allMusicians.value = list }
+                .onFailure { Log.e("BandViewModel", it.message ?: "Error cargando músicos") }
+            _musiciansLoading.value = false
+        }
+    }
+
+    fun addMusicianToBand(bandId: Int, musicianId: Int, onSuccess: () -> Unit) {
+        viewModelScope.launch {
+            _addMusicianLoading.value = true
+            _addMusicianError.value = null
+            repository.addMusicianToBand(bandId, musicianId)
+                .onSuccess {
+                    fetchBandDetail(bandId)
+                    onSuccess()
+                }
+                .onFailure { error ->
+                    _addMusicianError.value = error.message ?: "Error al asociar el músico"
+                    Log.e("BandViewModel", _addMusicianError.value!!)
+                }
+            _addMusicianLoading.value = false
+        }
+    }
+
     fun fetchBandDetail(bandId: Int) {
         viewModelScope.launch {
             _detailLoading.value = true

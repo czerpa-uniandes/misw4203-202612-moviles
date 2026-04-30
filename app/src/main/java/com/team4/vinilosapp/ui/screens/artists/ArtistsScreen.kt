@@ -7,6 +7,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -24,8 +25,8 @@ import com.team4.vinilosapp.ui.viewmodels.BandViewModel
 fun ArtistsScreen(navController: NavController) {
     val artistViewModel: ArtistViewModel = viewModel()
     val bandViewModel: BandViewModel = viewModel()
-    var selectedTab by remember { mutableIntStateOf(0) }
-    var query by remember { mutableStateOf("") }
+    var selectedTab by rememberSaveable { mutableIntStateOf(0) }
+    var query by rememberSaveable { mutableStateOf("") }
 
     LaunchedEffect(selectedTab) {
         query = ""
