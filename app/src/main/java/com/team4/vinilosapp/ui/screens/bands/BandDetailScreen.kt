@@ -9,6 +9,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Group
 import androidx.compose.material.icons.filled.Person
@@ -74,16 +75,17 @@ fun BandDetailScreen(
         },
         floatingActionButton = {
             if (band != null) {
-                FloatingActionButton(
+                ExtendedFloatingActionButton(
                     onClick = {
                         viewModel.fetchAllMusicians()
                         showSheet = true
                     },
                     containerColor = Primary,
-                    contentColor = Color.White
-                ) {
-                    Icon(imageVector = Icons.Default.Add, contentDescription = "Asociar músico")
-                }
+                    contentColor = Color.White,
+                    icon = { Icon(imageVector = Icons.Default.Add, contentDescription = null) },
+                    text = { Text("Asociar músico") },
+                    modifier = Modifier.navigationBarsPadding()
+                )
             }
         }
     ) { padding ->
@@ -387,7 +389,7 @@ private fun MusicianPickerRow(
             if (isLoading) {
                 CircularProgressIndicator(modifier = Modifier.size(16.dp), color = Color.White, strokeWidth = 2.dp)
             } else {
-                Text("Agregar", fontSize = 13.sp)
+                Text("Asociar", fontSize = 13.sp)
             }
         }
     }
