@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.data.adapters
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -42,6 +43,10 @@ class VinilosServiceAdapterImpl(
 
     override suspend fun getBands(): List<Performer> {
         return api.getBands()
+    }
+
+    override suspend fun getBandDetail(bandId: Int): BandDetail {
+        return api.getBandDetail(bandId)
     }
 
     override suspend fun getCollectors(): List<Collector> {

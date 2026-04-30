@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.data.adapters
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -14,6 +15,7 @@ interface VinilosServiceAdapter {
     suspend fun addTrack(albumId: Int, track: AddTrack)
     suspend fun getMusicians(): List<Performer>
     suspend fun getBands(): List<Performer>
+    suspend fun getBandDetail(bandId: Int): BandDetail
     suspend fun getCollectors(): List<Collector>
     suspend fun getCollectorDetail(collectorId: Int): CollectorDetail
 }
