@@ -34,6 +34,9 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading
 
+    private val _error = MutableStateFlow<String?>(null)
+    val error: StateFlow<String?> = _error
+
     private val _selectedBand = MutableStateFlow<BandDetail?>(null)
     val selectedBand: StateFlow<BandDetail?> = _selectedBand
 
@@ -98,17 +101,17 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
 
     fun fetchBands() {
         viewModelScope.launch {
+            Log.d("BandPerf", "fetchBands() iniciado")
             _isLoading.value = true
 
             repository.getBands()
                 .onSuccess { list ->
+                    _error.value = null
                     _originalBands.value = list
                     _bands.value = list
                 }
-                .onFailure { error ->
-                    runCatching {
-                        Log.e("BandViewModel", error.message ?: "Error al obtener bandas")
-                    }
+                .onFailure { e ->
+                    _error.value = "Sin conexión. Verifica tu red e intenta de nuevo."
                 }
 
             _isLoading.value = false

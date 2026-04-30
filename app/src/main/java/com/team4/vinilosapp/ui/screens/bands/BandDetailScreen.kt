@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -258,6 +259,7 @@ private fun AddMusicianSheet(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
+                .fillMaxHeight(0.85f)
                 .padding(horizontal = 16.dp)
                 .padding(bottom = 32.dp)
         ) {
@@ -299,16 +301,21 @@ private fun AddMusicianSheet(
                 }
 
                 else -> {
-                    available.forEach { musician ->
-                        MusicianPickerRow(
-                            musician = musician,
-                            isLoading = addLoading,
-                            onClick = {
-                                viewModel.addMusicianToBand(bandId, musician.id) {
-                                    onDismiss()
+                    LazyColumn(
+                        modifier = Modifier.weight(1f),
+                        state = rememberLazyListState()
+                    ) {
+                        items(available, key = { it.id }) { musician ->
+                            MusicianPickerRow(
+                                musician = musician,
+                                isLoading = addLoading,
+                                onClick = {
+                                    viewModel.addMusicianToBand(bandId, musician.id) {
+                                        onDismiss()
+                                    }
                                 }
-                            }
-                        )
+                            )
+                        }
                     }
                 }
             }
