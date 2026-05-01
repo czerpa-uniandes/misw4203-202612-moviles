@@ -210,7 +210,11 @@ private fun AlbumDetailContent(
         item {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Button(
-                    onClick = { },
+                    onClick = {
+                        navController.navigate(
+                            Screen.AddAlbumToCollector.createRoute(album.id)
+                        )
+                    },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(56.dp),
@@ -223,6 +227,27 @@ private fun AlbumDetailContent(
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text("Añadir a mi colección")
+                }
+
+                OutlinedButton(
+                    onClick = {
+                        navController.navigate(Screen.CommentAlbum.createRoute(album.id))
+                    },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(56.dp),
+                    shape = RoundedCornerShape(28.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Star,
+                        contentDescription = null,
+                        tint = VinilosPrimary
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text(
+                        text = "Comentar álbum",
+                        color = VinilosPrimary
+                    )
                 }
             }
         }

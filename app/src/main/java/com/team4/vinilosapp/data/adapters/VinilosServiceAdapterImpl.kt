@@ -1,9 +1,14 @@
 package com.team4.vinilosapp.data.adapters
 
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
 import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
+import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.network.VinilosApiService
 import com.team4.vinilosapp.ui.models.AddTrack
@@ -63,4 +68,13 @@ class VinilosServiceAdapterImpl(
     override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail {
         return api.getCollectorDetail(collectorId);
     }
+
+    override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse {
+        return api.addComment(albumId, comment);
+    }
+
+    override suspend fun addAlbumToCollector(collectorId: String, albumId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse {
+        return api.addAlbumToCollector(collectorId, albumId, albumToCollector);
+    }
+
 }
