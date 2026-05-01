@@ -79,6 +79,12 @@ fun CommentAlbumScreen(
                 value = comment,
                 onValueChange = { comment = it },
                 label = { Text("Comentario") },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = VinilosPrimary,
+                    unfocusedBorderColor = Color.Gray,
+                    focusedLabelColor = VinilosPrimary,
+                    cursorColor = VinilosPrimary
+                ),
                 modifier = Modifier.fillMaxWidth()
                     .testTag("comment_input"),
                 minLines = 4
@@ -91,6 +97,12 @@ fun CommentAlbumScreen(
                         rating = value
                     }
                 },
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = VinilosPrimary,
+                    unfocusedBorderColor = Color.Gray,
+                    focusedLabelColor = VinilosPrimary,
+                    cursorColor = VinilosPrimary
+                ),
                 label = { Text("Calificación de 1 a 5") },
                 modifier = Modifier.fillMaxWidth()
                     .testTag("rating_input"),
