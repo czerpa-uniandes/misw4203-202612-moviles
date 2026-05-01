@@ -33,8 +33,13 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
     private val _isLoading = MutableStateFlow(false)
     val isLoading: StateFlow<Boolean> = _isLoading
 
+    private val _error = MutableStateFlow<String?>(null)
+    val error: StateFlow<String?> = _error
+
     fun fetchArtists() {
         viewModelScope.launch {
+            val t0 = System.currentTimeMillis()
+            Log.d("ArtistPerf", "fetchArtists() iniciado")
             _isLoading.value = true
 
             repository.getArtists()
@@ -42,10 +47,8 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
                     _originalArtists.value = list
                     _artists.value = list
                 }
-                .onFailure { error ->
-                    runCatching {
-                        Log.e("ArtistViewModel", error.message ?: "Error al obtener artistas")
-                    }
+                .onFailure { e ->
+                    _error.value = "Sin conexión. Verifica tu red e intenta de nuevo."
                 }
 
             _isLoading.value = false

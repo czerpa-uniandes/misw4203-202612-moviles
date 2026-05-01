@@ -5,6 +5,7 @@ import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -41,6 +42,17 @@ interface VinilosApiService {
 
     @GET("bands")
     suspend fun getBands(): List<Performer>
+
+    @GET("bands/{id}")
+    suspend fun getBandDetail(
+        @Path("id") bandId: Int
+    ): BandDetail
+
+    @POST("bands/{bandId}/musicians/{musicianId}")
+    suspend fun addMusicianToBand(
+        @Path("bandId") bandId: Int,
+        @Path("musicianId") musicianId: Int
+    ): Response<Unit>
 
     @GET("collectors")
     suspend fun getCollectors(): List<Collector>

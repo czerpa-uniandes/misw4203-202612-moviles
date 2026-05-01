@@ -5,6 +5,7 @@ import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
@@ -47,6 +48,17 @@ class VinilosServiceAdapterImpl(
 
     override suspend fun getBands(): List<Performer> {
         return api.getBands()
+    }
+
+    override suspend fun getBandDetail(bandId: Int): BandDetail {
+        return api.getBandDetail(bandId)
+    }
+
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) {
+        val response = api.addMusicianToBand(bandId, musicianId)
+        if (!response.isSuccessful) {
+            throw Exception("Error ${response.code()}")
+        }
     }
 
     override suspend fun getCollectors(): List<Collector> {

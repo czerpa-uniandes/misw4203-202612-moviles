@@ -5,6 +5,7 @@ import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
@@ -19,6 +20,8 @@ interface VinilosServiceAdapter {
     suspend fun addTrack(albumId: Int, track: AddTrack)
     suspend fun getMusicians(): List<Performer>
     suspend fun getBands(): List<Performer>
+    suspend fun getBandDetail(bandId: Int): BandDetail
+    suspend fun addMusicianToBand(bandId: Int, musicianId: Int)
     suspend fun getCollectors(): List<Collector>
     suspend fun getCollectorDetail(collectorId: Int): CollectorDetail
     suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse
