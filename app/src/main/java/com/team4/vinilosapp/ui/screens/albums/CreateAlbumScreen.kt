@@ -54,12 +54,18 @@ fun CreateAlbumScreen(navController: NavController) {
     Scaffold(
         containerColor = Color.White,
         topBar = { CreateAlbumTopBar(navController) },
-        bottomBar = { CreateAlbumButton(
+        bottomBar = { Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .navigationBarsPadding()
+                .padding(horizontal = 16.dp, vertical = 12.dp)
+        ) {
+            CreateAlbumButton(
                 isLoading = createLoading,
                 onClick = {
                     viewModel.createAlbum(
                         name = title,
-                        cover = cover ?: "",
+                        cover = cover,
                         releaseDate = releaseDate,
                         description = description,
                         genre = genre,
@@ -67,6 +73,7 @@ fun CreateAlbumScreen(navController: NavController) {
                     )
                 }
             )
+        }
         }
     ) { padding ->
 
