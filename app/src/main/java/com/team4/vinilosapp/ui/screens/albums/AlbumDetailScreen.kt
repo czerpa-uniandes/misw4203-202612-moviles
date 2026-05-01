@@ -210,7 +210,11 @@ private fun AlbumDetailContent(
         item {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 Button(
-                    onClick = { },
+                    onClick = {
+                        navController.navigate(
+                            Screen.AddAlbumToCollector.createRoute(album.id)
+                        )
+                    },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(56.dp),

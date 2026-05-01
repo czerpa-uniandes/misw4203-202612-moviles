@@ -154,6 +154,32 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    fun addAlbumToCollector(
+        collectorId: String,
+        albumId: String,
+        price: Int,
+        status: String,
+        onSuccess: () -> Unit,
+        onError: () -> Unit
+    ) {
+        viewModelScope.launch {
+            val result = repository.addAlbumToCollector(
+                collectorId,
+                albumId,
+                price,
+                status
+            )
+
+            result
+                .onSuccess {
+                    onSuccess()
+                }
+                .onFailure {
+                    onError()
+                }
+        }
+    }
+
     fun resetCreateState() {
         _createSuccess.value = false
         _createError.value = null

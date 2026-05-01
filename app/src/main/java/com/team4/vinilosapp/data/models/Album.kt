@@ -40,3 +40,16 @@ data class AlbumCommentResponse(
 data class CollectorIdRequest(
     val id: Int
 )
+
+data class AddAlbumToCollectorRequest(
+    val price: Int,
+    val status: String
+)
+
+data class AddAlbumToCollectorResponse(
+    val id: Int,
+    val price: Int,
+    val status: String,
+    val album: AlbumReference,
+    val collector: Collector,
+)

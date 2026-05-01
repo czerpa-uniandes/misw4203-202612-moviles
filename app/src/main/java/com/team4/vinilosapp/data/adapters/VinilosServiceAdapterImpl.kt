@@ -1,5 +1,7 @@
 package com.team4.vinilosapp.data.adapters
 
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
@@ -58,4 +60,9 @@ class VinilosServiceAdapterImpl(
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse {
         return api.addComment(albumId, comment);
     }
+
+    override suspend fun addAlbumToCollector(collectorId: String, albumId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse {
+        return api.addAlbumToCollector(collectorId, albumId, albumToCollector);
+    }
+
 }

@@ -2,6 +2,8 @@ package com.team4.vinilosapp.data.repository
 
 import android.util.Log
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
@@ -79,7 +81,30 @@ class AlbumRepository(
 
             Result.success(response)
         } catch (e: Exception) {
-            Log.e("MY LOG", e.toString())
+            Result.failure(e)
+        }
+    }
+
+    suspend fun addAlbumToCollector(
+        collectorId: String,
+        albumId: String,
+        price: Int,
+        status: String
+    ): Result<AddAlbumToCollectorResponse> {
+        return try {
+            val request = AddAlbumToCollectorRequest(
+                price = price,
+                status = status
+            )
+
+            val response = serviceAdapter.addAlbumToCollector(
+                albumId,
+                collectorId,
+                request
+            )
+
+            Result.success(response)
+        } catch (e: Exception) {
             Result.failure(e)
         }
     }

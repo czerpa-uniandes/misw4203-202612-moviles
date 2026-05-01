@@ -1,5 +1,7 @@
 package com.team4.vinilosapp.data.adapters
 
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
@@ -20,4 +22,5 @@ interface VinilosServiceAdapter {
     suspend fun getCollectors(): List<Collector>
     suspend fun getCollectorDetail(collectorId: Int): CollectorDetail
     suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse
+    suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse
 }

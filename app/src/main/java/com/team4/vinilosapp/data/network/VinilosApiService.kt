@@ -1,11 +1,12 @@
 package com.team4.vinilosapp.data.network
 
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.AlbumCommentRequest
 import com.team4.vinilosapp.data.models.AlbumCommentResponse
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
-import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -54,4 +55,11 @@ interface VinilosApiService {
         @Path("albumId") albumId: String,
         @Body comment: AlbumCommentRequest
     ): AlbumCommentResponse
+
+    @POST("collectors/{collectorId}/albums/{albumId}")
+    suspend fun addAlbumToCollector(
+        @Path("collectorId") collectorId: String,
+        @Path("albumId") albumId: String,
+        @Body request: AddAlbumToCollectorRequest
+    ): AddAlbumToCollectorResponse
 }

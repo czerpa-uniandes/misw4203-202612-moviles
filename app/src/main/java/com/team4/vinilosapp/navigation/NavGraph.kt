@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
+import com.team4.vinilosapp.ui.screens.albums.AddAlbumToCollectorScreen
 import com.team4.vinilosapp.ui.screens.albums.AddTrackAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumsScreen
 import com.team4.vinilosapp.ui.screens.albums.CreateAlbumScreen
@@ -33,6 +34,11 @@ sealed class Screen(val route: String) {
     object CommentAlbum : Screen("comment_album/{albumId}") {
         fun createRoute(albumId: String): String {
             return "comment_album/$albumId"
+        }
+    }
+    object AddAlbumToCollector : Screen("add_album_collector/{albumId}") {
+        fun createRoute(albumId: String): String {
+            return "add_album_collector/$albumId"
         }
     }
     object AddTrackAlbum : Screen("add_track_album/{albumId}") {
@@ -95,6 +101,22 @@ fun NavGraph() {
             val albumId = backStackEntry.arguments?.getString("albumId") ?: ""
 
             CommentAlbumScreen(
+                navController = navController,
+                albumId = albumId
+            )
+        }
+
+        composable(
+            route = Screen.AddAlbumToCollector.route,
+            arguments = listOf(
+                navArgument("albumId") {
+                    type = NavType.StringType
+                }
+            )
+        ) { backStackEntry ->
+            val albumId = backStackEntry.arguments?.getString("albumId") ?: "0"
+
+            AddAlbumToCollectorScreen(
                 navController = navController,
                 albumId = albumId
             )
