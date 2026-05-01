@@ -1,4 +1,4 @@
-package com.team4.vinilosapp.ui.screens.artists.components
+package com.team4.vinilosapp.ui.screens.bands.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -14,23 +14,23 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.team4.vinilosapp.ui.viewmodels.ArtistViewModel
+import com.team4.vinilosapp.ui.viewmodels.BandViewModel
 
 @Composable
-fun ArtistsList() {
-    val viewModel: ArtistViewModel = viewModel()
-    val artists by viewModel.artists.collectAsState()
+fun BandsList(onBandClick: (Int) -> Unit = {}) {
+    val viewModel: BandViewModel = viewModel()
+    val bands by viewModel.bands.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
     val error by viewModel.error.collectAsState()
 
     LaunchedEffect(Unit) {
-        viewModel.fetchArtists()
+        viewModel.fetchBands()
     }
 
     Column {
         Spacer(modifier = Modifier.height(12.dp))
         Text(
-            text = "Lista de Artistas",
+            text = "Lista de Bandas",
             fontWeight = FontWeight.Bold,
             fontSize = 24.sp,
             modifier = Modifier.padding(horizontal = 16.dp)
@@ -44,7 +44,7 @@ fun ArtistsList() {
                         .padding(24.dp),
                     contentAlignment = Alignment.Center
                 ) {
-                    CircularProgressIndicator(color = Color(0xFFB4532A))
+                    CircularProgressIndicator(color = Color(0xFF2A6DB4))
                 }
             }
             error != null -> {
@@ -58,27 +58,27 @@ fun ArtistsList() {
                         Text(text = error!!, color = Color.Gray, textAlign = TextAlign.Center)
                         Spacer(modifier = Modifier.height(12.dp))
                         Button(
-                            onClick = { viewModel.fetchArtists() },
-                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFB4532A))
+                            onClick = { viewModel.fetchBands() },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2A6DB4))
                         ) {
                             Text("Reintentar")
                         }
                     }
                 }
             }
-            artists.isEmpty() -> {
+            bands.isEmpty() -> {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(24.dp),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "No hay artistas disponibles", color = Color.Gray)
+                    Text(text = "No hay bandas disponibles", color = Color.Gray)
                 }
             }
             else -> {
-                artists.forEach { artist ->
-                    ArtistCard(artist = artist)
+                bands.forEach { band ->
+                    BandCard(band = band, onClick = { onBandClick(band.id) })
                 }
             }
         }

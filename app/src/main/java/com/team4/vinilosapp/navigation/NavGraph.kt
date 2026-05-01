@@ -9,6 +9,7 @@ import com.team4.vinilosapp.ui.screens.albums.AlbumsScreen
 import com.team4.vinilosapp.ui.screens.albums.CreateAlbumScreen
 import com.team4.vinilosapp.ui.screens.albums.AlbumDetailScreen
 import com.team4.vinilosapp.ui.screens.artists.ArtistsScreen
+import com.team4.vinilosapp.ui.screens.bands.BandDetailScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorDetailScreen
 import com.team4.vinilosapp.ui.screens.home.HomeScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorsScreen
@@ -20,6 +21,9 @@ sealed class Screen(val route: String) {
 
     object CollectorDetail : Screen("collector_detail/{collectorId}") {
         fun createRoute(albumId: Int) = "collector_detail/$albumId"
+    }
+    object BandDetail : Screen("band_detail/{bandId}") {
+        fun createRoute(bandId: Int) = "band_detail/$bandId"
     }
     object Albums : Screen("albums")
     object CreateAlbum : Screen("create_album")
@@ -47,6 +51,11 @@ fun NavGraph() {
 
         composable(Screen.Artists.route) {
             ArtistsScreen(navController)
+        }
+
+        composable(Screen.BandDetail.route) { backStackEntry ->
+            val bandId = backStackEntry.arguments?.getString("bandId")?.toIntOrNull() ?: 0
+            BandDetailScreen(navController = navController, bandId = bandId)
         }
 
         composable(Screen.Collectors.route) {
