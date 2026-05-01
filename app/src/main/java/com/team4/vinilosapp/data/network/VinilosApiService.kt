@@ -1,8 +1,11 @@
 package com.team4.vinilosapp.data.network
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
+import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -45,4 +48,10 @@ interface VinilosApiService {
     suspend fun getCollectorDetail(
         @Path("id") collectorId: Int
     ): CollectorDetail
+
+    @POST("albums/{albumId}/comments")
+    suspend fun addComment(
+        @Path("albumId") albumId: String,
+        @Body comment: AlbumCommentRequest
+    ): AlbumCommentResponse
 }

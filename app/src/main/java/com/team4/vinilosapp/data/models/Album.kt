@@ -12,3 +12,31 @@ data class Album(
     val performers: List<Performer>,
     val comments: List<Comment>,
 )
+
+data class AlbumReference(
+    val id: String,
+    val name: String,
+    val cover: String,
+    val releaseDate: String,
+    val description: String,
+    val genre: String,
+    val recordLabel: String
+)
+
+data class AlbumCommentRequest(
+    val description: String,
+    val rating: Int,
+    val collector: CollectorIdRequest
+)
+
+data class AlbumCommentResponse(
+    val description: String,
+    val rating: Int,
+    val collector: Collector,
+    val album: AlbumReference,
+    val id: Int
+)
+
+data class CollectorIdRequest(
+    val id: Int
+)
