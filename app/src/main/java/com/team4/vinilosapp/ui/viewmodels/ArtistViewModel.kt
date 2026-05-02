@@ -39,7 +39,6 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
     fun fetchArtists() {
         viewModelScope.launch {
             val t0 = System.currentTimeMillis()
-            Log.d("ArtistPerf", "fetchArtists() iniciado")
             _isLoading.value = true
 
             repository.getArtists()

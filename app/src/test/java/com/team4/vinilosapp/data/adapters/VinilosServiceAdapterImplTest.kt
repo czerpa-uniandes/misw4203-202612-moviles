@@ -270,6 +270,87 @@ class VinilosServiceAdapterImplTest {
     }
 
     @Test
+    fun getBandDetail_parsesResponseCorrectly() = runBlocking {
+        val body = """
+            {
+              "id": 5,
+              "name": "Los Tupamaros",
+              "image": "https://example.com/banda.jpg",
+              "description": "Banda colombiana de los 80s",
+              "creationDate": "1980-01-01T00:00:00Z",
+              "musicians": [
+                {
+                  "id": 1,
+                  "name": "Joe Arroyo",
+                  "image": "https://example.com/joe.jpg",
+                  "description": "Leyenda",
+                  "birthDate": "1955-11-01T00:00:00Z"
+                }
+              ]
+            }
+        """.trimIndent()
+
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(body)
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getBandDetail(5)
+
+        assertEquals(5, result.id)
+        assertEquals("Los Tupamaros", result.name)
+        assertEquals(1, result.musicians.size)
+        assertEquals("Joe Arroyo", result.musicians.first().name)
+    }
+
+    @Test
+    fun getBandDetail_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(404)
+                .setBody("""{"message":"Not found"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.getBandDetail(999)
+        }
+    }
+
+    @Test
+    fun addMusicianToBand_sendsRequestCorrectly() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("{}")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        adapter.addMusicianToBand(bandId = 3, musicianId = 7)
+
+        val request = server.takeRequest()
+
+        assertEquals("/bands/3/musicians/7", request.path)
+        assertEquals("POST", request.method)
+    }
+
+    @Test
+    fun addMusicianToBand_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(400)
+                .setBody("""{"message":"Bad request"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.addMusicianToBand(bandId = 3, musicianId = 99)
+        }
+    }
+
+    @Test
     fun addTrack_sendsRequestCorrectly() = runBlocking {
         server.enqueue(
             MockResponse()
