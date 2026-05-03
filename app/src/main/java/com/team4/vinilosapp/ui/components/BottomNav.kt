@@ -4,6 +4,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PlayArrow
@@ -39,6 +40,16 @@ fun BottomNav(navController: NavController) {
             icon = { Icon(imageVector = Icons.Filled.PlayArrow, contentDescription = null, tint = Color.Black)
             },
             modifier = Modifier.testTag("bottom_nav_albums")
+        )
+
+
+        NavigationBarItem(
+            selected = false,
+            onClick = { navController.navigate("prizes") },
+            label = { Text("Premios") },
+            icon = { Icon(imageVector = Icons.Filled.EmojiEvents, contentDescription = null, tint = Color.Black)
+            },
+            modifier = Modifier.testTag("bottom_nav_awards")
         )
     }
 }
