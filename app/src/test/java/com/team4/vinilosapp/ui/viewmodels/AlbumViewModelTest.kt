@@ -29,6 +29,7 @@ import org.mockito.Mockito
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import com.team4.vinilosapp.data.models.ArtistDetail
 
 private class FakeVinilosServiceAdapter : VinilosServiceAdapter {
     var albumsResponse: List<Album> = emptyList()
@@ -64,6 +65,7 @@ private class FakeVinilosServiceAdapter : VinilosServiceAdapter {
     override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
+    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
