@@ -17,7 +17,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.team4.vinilosapp.ui.viewmodels.ArtistViewModel
 
 @Composable
-fun ArtistsList() {
+fun ArtistsList(onArtistClick: (Int) -> Unit) {
     val viewModel: ArtistViewModel = viewModel()
     val artists by viewModel.artists.collectAsState()
     val isLoading by viewModel.isLoading.collectAsState()
@@ -78,7 +78,7 @@ fun ArtistsList() {
             }
             else -> {
                 artists.forEach { artist ->
-                    ArtistCard(artist = artist)
+                    ArtistCard(artist = artist, onClick = onArtistClick)
                 }
             }
         }

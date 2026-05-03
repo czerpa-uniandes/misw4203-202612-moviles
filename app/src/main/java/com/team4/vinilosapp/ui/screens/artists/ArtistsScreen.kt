@@ -99,7 +99,9 @@ fun ArtistsScreen(navController: NavController) {
             }
             item {
                 if (selectedTab == 0) {
-                    ArtistsList()
+                    ArtistsList(onArtistClick = { artistId ->
+                        navController.navigate("artist_detail/$artistId")
+                    })
                 } else {
                     BandsList(onBandClick = { bandId ->
                         navController.navigate("band_detail/$bandId")
