@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImpl
+import com.team4.vinilosapp.data.models.ArtistDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.network.RetrofitProvider
 import com.team4.vinilosapp.data.repository.ArtistRepository
@@ -36,6 +37,15 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
     private val _error = MutableStateFlow<String?>(null)
     val error: StateFlow<String?> = _error
 
+    private val _selectedArtist = MutableStateFlow<ArtistDetail?>(null)
+    val selectedArtist: StateFlow<ArtistDetail?> = _selectedArtist
+
+    private val _detailLoading = MutableStateFlow(false)
+    val detailLoading: StateFlow<Boolean> = _detailLoading
+
+    private val _detailError = MutableStateFlow<String?>(null)
+    val detailError: StateFlow<String?> = _detailError
+
     fun fetchArtists() {
         viewModelScope.launch {
             val t0 = System.currentTimeMillis()
@@ -52,6 +62,23 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
                 }
 
             _isLoading.value = false
+        }
+    }
+
+    fun fetchArtistDetail(artistId: Int) {
+        viewModelScope.launch {
+            _detailLoading.value = true
+            _detailError.value = null
+
+            repository.getArtistDetail(artistId)
+                .onSuccess { artist ->
+                    _selectedArtist.value = artist
+                }
+                .onFailure {
+                    _detailError.value = "No fue posible cargar el detalle del artista."
+                }
+
+            _detailLoading.value = false
         }
     }
 
