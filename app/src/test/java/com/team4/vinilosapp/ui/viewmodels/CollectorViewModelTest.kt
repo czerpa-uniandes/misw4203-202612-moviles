@@ -3,7 +3,15 @@ package com.team4.vinilosapp.ui.viewmodels
 import android.app.Application
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
-import com.team4.vinilosapp.data.models.*
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
+import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
+import com.team4.vinilosapp.data.models.Collector
+import com.team4.vinilosapp.data.models.CollectorDetail
+import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.repository.CollectorRepository
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
@@ -43,12 +51,11 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
         if (failCollectorDetail) throw Exception("detail error")
         return collectorDetailResponse ?: throw Exception("not found")
     }
-    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+
     override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
     override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
-
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)

@@ -1,7 +1,6 @@
 package com.team4.vinilosapp.ui.viewmodels
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImpl
@@ -63,7 +62,7 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
             _musiciansLoading.value = true
             repository.getMusicians()
                 .onSuccess { list -> _allMusicians.value = list }
-                .onFailure { Log.e("BandViewModel", it.message ?: "Error cargando músicos") }
+                .onFailure { }
             _musiciansLoading.value = false
         }
     }
@@ -79,7 +78,6 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
                 }
                 .onFailure { error ->
                     _addMusicianError.value = error.message ?: "Error al asociar el músico"
-                    Log.e("BandViewModel", _addMusicianError.value!!)
                 }
             _addMusicianLoading.value = false
         }
@@ -93,7 +91,6 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
                 .onSuccess { band -> _selectedBand.value = band }
                 .onFailure { error ->
                     _detailError.value = error.message ?: "Error al obtener la banda"
-                    Log.e("BandViewModel", _detailError.value!!)
                 }
             _detailLoading.value = false
         }
@@ -101,7 +98,6 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
 
     fun fetchBands() {
         viewModelScope.launch {
-            Log.d("BandPerf", "fetchBands() iniciado")
             _isLoading.value = true
 
             repository.getBands()
