@@ -12,6 +12,7 @@ import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.network.VinilosApiService
+import com.team4.vinilosapp.ui.models.AddPrize
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 
@@ -80,6 +81,14 @@ class VinilosServiceAdapterImpl(
 
     override suspend fun addAlbumToCollector(collectorId: String, albumId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse {
         return api.addAlbumToCollector(collectorId, albumId, albumToCollector);
+    }
+
+    override suspend fun addPrize(prize: AddPrize) {
+        val response = api.addPrize(prize);
+
+        if (!response.isSuccessful) {
+            throw Exception("Error ${response.code()}")
+        }
     }
 
 }

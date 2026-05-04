@@ -11,6 +11,7 @@ import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.ui.models.AddPrize
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 
@@ -28,4 +29,5 @@ interface VinilosServiceAdapter {
     suspend fun getCollectorDetail(collectorId: Int): CollectorDetail
     suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse
     suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse
+    suspend fun addPrize(prize: AddPrize)
 }

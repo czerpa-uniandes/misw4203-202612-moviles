@@ -10,6 +10,7 @@ import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.ui.models.AddPrize
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import retrofit2.Response
@@ -80,4 +81,9 @@ interface VinilosApiService {
         @Path("albumId") albumId: String,
         @Body request: AddAlbumToCollectorRequest
     ): AddAlbumToCollectorResponse
+
+    @POST("prizes")
+    suspend fun addPrize(
+        @Body prize: AddPrize
+    ): Response<Unit>
 }

@@ -18,6 +18,8 @@ import com.team4.vinilosapp.ui.screens.bands.BandDetailScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorDetailScreen
 import com.team4.vinilosapp.ui.screens.home.HomeScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorsScreen
+import com.team4.vinilosapp.ui.screens.prizes.AddPrizeScreen
+import com.team4.vinilosapp.ui.screens.prizes.PrizesScreen
 
 sealed class Screen(val route: String) {
     object Home : Screen("home")
@@ -52,6 +54,9 @@ sealed class Screen(val route: String) {
     object AddTrackAlbum : Screen("add_track_album/{albumId}") {
         fun createRoute(albumId: String) = "add_track_album/$albumId"
     }
+
+    object Prizes : Screen("prizes")
+    object AddPrize : Screen("create_prize")
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -160,6 +165,15 @@ fun NavGraph() {
                 navController = navController,
                 collectorId = collectorId
             )
+        }
+
+        composable(Screen.Prizes.route) {
+            PrizesScreen(navController)
+        }
+
+
+        composable(Screen.AddPrize.route) {
+            AddPrizeScreen(navController)
         }
     }
 }
