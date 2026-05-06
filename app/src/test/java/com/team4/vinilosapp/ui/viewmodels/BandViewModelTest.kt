@@ -32,6 +32,7 @@ import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
 import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.ui.models.AddPrize
 
 private class BandFakeAdapter : VinilosServiceAdapter {
     var bandsResponse: List<Performer> = emptyList()
@@ -70,6 +71,7 @@ private class BandFakeAdapter : VinilosServiceAdapter {
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -99,7 +101,7 @@ class BandViewModelTest {
                 TestData.performer(id = 2, name = "Carlos Vives y La Provincia")
             )
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchBands()
         advanceUntilIdle()
@@ -111,7 +113,7 @@ class BandViewModelTest {
     @Test
     fun fetchBands_setsErrorMessageWhenAdapterFails() = runTest {
         val fakeAdapter = BandFakeAdapter().apply { failBands = true }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchBands()
         advanceUntilIdle()
@@ -126,7 +128,7 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandsResponse = listOf(TestData.performer())
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchBands()
         advanceUntilIdle()
@@ -141,7 +143,7 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandDetailResponse = TestData.bandDetail(id = 5, name = "Los Tupamaros")
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchBandDetail(5)
         advanceUntilIdle()
@@ -155,7 +157,7 @@ class BandViewModelTest {
     @Test
     fun fetchBandDetail_setsDetailErrorWhenAdapterFails() = runTest {
         val fakeAdapter = BandFakeAdapter().apply { failBandDetail = true }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchBandDetail(5)
         advanceUntilIdle()
@@ -175,7 +177,7 @@ class BandViewModelTest {
                 TestData.performer(id = 2, name = "Carlos Vives")
             )
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchAllMusicians()
         advanceUntilIdle()
@@ -187,7 +189,7 @@ class BandViewModelTest {
     @Test
     fun fetchAllMusicians_keepsListEmptyWhenAdapterFails() = runTest {
         val fakeAdapter = BandFakeAdapter().apply { failMusicians = true }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchAllMusicians()
         advanceUntilIdle()
@@ -203,7 +205,7 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandDetailResponse = TestData.bandDetail(id = 3, name = "Los Tupamaros")
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         var onSuccessCalled = false
 
         viewModel.addMusicianToBand(bandId = 3, musicianId = 7) { onSuccessCalled = true }
@@ -218,7 +220,7 @@ class BandViewModelTest {
     @Test
     fun addMusicianToBand_setsErrorWhenAdapterFails() = runTest {
         val fakeAdapter = BandFakeAdapter().apply { failAddMusician = true }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         var onSuccessCalled = false
 
         viewModel.addMusicianToBand(bandId = 3, musicianId = 7) { onSuccessCalled = true }
@@ -239,11 +241,12 @@ class BandViewModelTest {
                 TestData.performer(id = 2, name = "Carlos Vives y La Provincia")
             )
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         viewModel.fetchBands()
         advanceUntilIdle()
 
         viewModel.search("carlos")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.bands.value.size)
         assertEquals("Carlos Vives y La Provincia", viewModel.bands.value.first().name)
@@ -257,14 +260,16 @@ class BandViewModelTest {
                 TestData.performer(id = 2, name = "Banda 2")
             )
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         viewModel.fetchBands()
         advanceUntilIdle()
 
         viewModel.search("banda 1")
+        advanceUntilIdle()
         assertEquals(1, viewModel.bands.value.size)
 
         viewModel.search("")
+        advanceUntilIdle()
         assertEquals(2, viewModel.bands.value.size)
     }
 
@@ -273,11 +278,12 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandsResponse = listOf(TestData.performer(id = 1, name = "Héroe Sinfonía"))
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         viewModel.fetchBands()
         advanceUntilIdle()
 
         viewModel.search("heroe sinfonia")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.bands.value.size)
         assertEquals("Héroe Sinfonía", viewModel.bands.value.first().name)
@@ -288,11 +294,12 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandsResponse = listOf(TestData.performer(id = 1, name = "Los Tupamaros"))
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         viewModel.fetchBands()
         advanceUntilIdle()
 
         viewModel.search("TUPAMAROS")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.bands.value.size)
     }
@@ -302,11 +309,12 @@ class BandViewModelTest {
         val fakeAdapter = BandFakeAdapter().apply {
             bandsResponse = listOf(TestData.performer(id = 1, name = "Los Tupamaros"))
         }
-        val viewModel = BandViewModel(application, BandRepository(fakeAdapter))
+        val viewModel = BandViewModel(application, BandRepository(fakeAdapter), dispatcher)
         viewModel.fetchBands()
         advanceUntilIdle()
 
         viewModel.search("beatles")
+        advanceUntilIdle()
 
         assertTrue(viewModel.bands.value.isEmpty())
     }

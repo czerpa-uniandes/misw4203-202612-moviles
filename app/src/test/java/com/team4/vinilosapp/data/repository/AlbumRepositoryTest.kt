@@ -18,6 +18,8 @@ import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.Prize
+import com.team4.vinilosapp.ui.models.AddPrize
 
 private class RepositoryFakeAdapter : VinilosServiceAdapter {
     var albumsResponse: List<Album> = emptyList()
@@ -54,6 +56,7 @@ private class RepositoryFakeAdapter : VinilosServiceAdapter {
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
 }
 
 class AlbumRepositoryTest {

@@ -1,6 +1,8 @@
 package com.team4.vinilosapp.ui.screens.bands.components
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -13,21 +15,22 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.team4.vinilosapp.ui.viewmodels.BandViewModel
 
 @Composable
-fun BandsList(onBandClick: (Int) -> Unit = {}) {
+fun BandsList(onBandClick: (Int) -> Unit = {}, modifier: Modifier = Modifier) {
     val viewModel: BandViewModel = viewModel()
-    val bands by viewModel.bands.collectAsState()
-    val isLoading by viewModel.isLoading.collectAsState()
-    val error by viewModel.error.collectAsState()
+    val bands by viewModel.bands.collectAsStateWithLifecycle()
+    val isLoading by viewModel.isLoading.collectAsStateWithLifecycle()
+    val error by viewModel.error.collectAsStateWithLifecycle()
 
     LaunchedEffect(Unit) {
         viewModel.fetchBands()
     }
 
-    Column {
+    Column(modifier = modifier) {
         Spacer(modifier = Modifier.height(12.dp))
         Text(
             text = "Lista de Bandas",
@@ -77,8 +80,16 @@ fun BandsList(onBandClick: (Int) -> Unit = {}) {
                 }
             }
             else -> {
-                bands.forEach { band ->
-                    BandCard(band = band, onClick = { onBandClick(band.id) })
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(bottom = 24.dp)
+                ) {
+                    items(
+                        items = bands,
+                        key = { it.id }
+                    ) { band ->
+                        BandCard(band = band, onClick = { onBandClick(band.id) })
+                    }
                 }
             }
         }

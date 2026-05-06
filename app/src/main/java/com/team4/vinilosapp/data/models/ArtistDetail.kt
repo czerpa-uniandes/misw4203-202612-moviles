@@ -19,10 +19,3 @@ data class PerformerPrize(
     val premiationDate: String? = null,
     val prize: Prize? = null
 )
-
-data class Prize(
-    val id: Int? = null,
-    val name: String? = null,
-    val description: String? = null,
-    val organization: String? = null
-)

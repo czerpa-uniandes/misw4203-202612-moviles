@@ -9,10 +9,13 @@ import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.network.RetrofitProvider
 import com.team4.vinilosapp.data.repository.CollectorRepository
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import java.text.Normalizer
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class CollectorViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -20,11 +23,19 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
         VinilosServiceAdapterImpl(RetrofitProvider.api)
     )
 
+    private var defaultDispatcher: CoroutineDispatcher = Dispatchers.Default
+
     internal constructor(
         application: Application,
-        repository: CollectorRepository
+        repository: CollectorRepository,
+        defaultDispatcher: CoroutineDispatcher = try {
+            Dispatchers.Default
+        } catch (e: Exception) {
+            TODO("Not yet implemented")
+        }
     ) : this(application) {
         this.repository = repository
+        this.defaultDispatcher = defaultDispatcher
     }
 
     private val _originalCollectors = MutableStateFlow<List<Collector>>(emptyList())
@@ -73,7 +84,6 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
                 }
                 .onFailure { error ->
                     _detailError.value = error.message ?: "Error al obtener el coleccionista"
-                    println("Error al obtener el coleccionista ${error.message}")
                 }
 
             _detailLoading.value = false
@@ -81,11 +91,20 @@ class CollectorViewModel(application: Application) : AndroidViewModel(applicatio
     }
 
     fun search(query: String) {
-        val normalized = normalize(query)
-        _collectors.value = if (normalized.isBlank()) {
-            _originalCollectors.value
-        } else {
-            _originalCollectors.value.filter { normalize(it.name).contains(normalized) }
+        viewModelScope.launch {
+            val filtered = withContext(defaultDispatcher) {
+                val normalized = normalize(query)
+
+                if (normalized.isBlank()) {
+                    _originalCollectors.value
+                } else {
+                    _originalCollectors.value.filter {
+                        normalize(it.name).contains(normalized)
+                    }
+                }
+            }
+
+            _collectors.value = filtered
         }
     }
 

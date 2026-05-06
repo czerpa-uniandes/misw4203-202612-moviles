@@ -21,7 +21,7 @@ class AlbumsScreenTest {
         }
 
         composeTestRule
-            .onNodeWithTag("albums_lazy_column")
+            .onNodeWithTag("albums_list_container", useUnmergedTree = true)
             .assertExists()
             .assertIsDisplayed()
     }

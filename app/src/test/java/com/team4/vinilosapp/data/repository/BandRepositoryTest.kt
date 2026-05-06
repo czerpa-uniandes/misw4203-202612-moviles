@@ -18,6 +18,7 @@ import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.ui.models.AddPrize
 
 private class BandFakeAdapter : VinilosServiceAdapter {
     var bandsResponse: List<Performer> = emptyList()
@@ -60,6 +61,7 @@ private class BandFakeAdapter : VinilosServiceAdapter {
     override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
 }
 
 class BandRepositoryTest {

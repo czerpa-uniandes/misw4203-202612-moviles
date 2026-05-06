@@ -1,6 +1,8 @@
 package com.team4.vinilosapp.ui.screens.collectors.components
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
@@ -10,21 +12,22 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.team4.vinilosapp.ui.viewmodels.CollectorViewModel
 
 @Composable
-fun CollectorsList(navController: NavController) {
+fun CollectorsList(navController: NavController, modifier: Modifier = Modifier) {
     val viewModel: CollectorViewModel = viewModel()
-    val collectors by viewModel.collectors.collectAsState()
-    val isLoading by viewModel.isLoading.collectAsState()
+    val collectors by viewModel.collectors.collectAsStateWithLifecycle()
+    val isLoading by viewModel.isLoading.collectAsStateWithLifecycle()
 
     LaunchedEffect(Unit) {
         viewModel.fetchCollectors()
     }
 
-    Column {
+    Column(modifier = modifier) {
         Spacer(modifier = Modifier.height(12.dp))
         Text(
             text = "Directorio",
@@ -55,8 +58,16 @@ fun CollectorsList(navController: NavController) {
                 }
             }
             else -> {
-                collectors.forEach { collector ->
-                    CollectorCard(collector = collector, navController = navController)
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(bottom = 24.dp)
+                ) {
+                    items(
+                        items = collectors,
+                        key = { it.id }
+                    ) { collector ->
+                        CollectorCard(collector = collector, navController = navController)
+                    }
                 }
             }
         }
