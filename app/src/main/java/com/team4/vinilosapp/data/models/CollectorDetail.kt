@@ -10,7 +10,7 @@ data class CollectorDetail (
     val collectorAlbums: List<CollectorAlbum> = emptyList()
 )
 
-data class CollectorAlbum(
+data class CollectorAlbum (
     val id: Int,
     val price: Int,
     val status: String

@@ -7,6 +7,7 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import com.team4.vinilosapp.MainActivity
 import org.junit.Rule
 import org.junit.Test
@@ -63,7 +64,13 @@ class CollectorDetailScreenTest {
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithText("Álbumes del coleccionista")
+            .onNodeWithText("Comentarios", useUnmergedTree = true)
+            .assertExists()
+            .assertIsDisplayed()
+
+        composeTestRule
+            .onNodeWithText("Artistas favoritos", useUnmergedTree = true)
+            .assertExists()
             .assertIsDisplayed()
     }
 }

@@ -1,7 +1,6 @@
 package com.team4.vinilosapp.ui.screens.collectors
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
@@ -30,49 +29,48 @@ fun CollectorsScreen(navController: NavController) {
         containerColor = Color.White,
         bottomBar = { BottomNav(navController) }
     ) { padding ->
-        LazyColumn(
+        Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(padding),
-            contentPadding = PaddingValues(bottom = 24.dp)
+                .padding(padding)
         ) {
-            item {
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 16.dp, vertical = 20.dp)
-                ) {
-                    Text(
-                        text = "Coleccionistas",
-                        fontWeight = FontWeight.ExtraBold,
-                        fontSize = 32.sp,
-                        lineHeight = 36.sp,
-                        color = Primary
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 20.dp)
+            ) {
+                Text(
+                    text = "Coleccionistas",
+                    fontWeight = FontWeight.ExtraBold,
+                    fontSize = 32.sp,
+                    lineHeight = 36.sp,
+                    color = Primary
+                )
+                Spacer(modifier = Modifier.height(16.dp))
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = {
+                        query = it
+                        viewModel.search(it)
+                    },
+                    placeholder = { Text("Buscar coleccionista...") },
+                    leadingIcon = {
+                        Icon(Icons.Default.Search, contentDescription = null)
+                    },
+                    singleLine = true,
+                    shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Primary,
+                        unfocusedBorderColor = Color.LightGray
                     )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    OutlinedTextField(
-                        value = query,
-                        onValueChange = {
-                            query = it
-                            viewModel.search(it)
-                        },
-                        placeholder = { Text("Buscar coleccionista...") },
-                        leadingIcon = {
-                            Icon(Icons.Default.Search, contentDescription = null)
-                        },
-                        singleLine = true,
-                        shape = RoundedCornerShape(12.dp),
-                        modifier = Modifier.fillMaxWidth(),
-                        colors = OutlinedTextFieldDefaults.colors(
-                            focusedBorderColor = Primary,
-                            unfocusedBorderColor = Color.LightGray
-                        )
-                    )
-                }
+                )
             }
-            item {
-                CollectorsList(navController = navController)
-            }
+
+            CollectorsList(
+                navController = navController,
+                modifier = Modifier.weight(1f)
+            )
         }
     }
 }

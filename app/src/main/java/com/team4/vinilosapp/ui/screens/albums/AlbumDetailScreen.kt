@@ -39,7 +39,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -49,9 +48,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import coil.request.CachePolicy
+import coil.request.ImageRequest
+import androidx.compose.ui.platform.LocalContext
 import com.team4.vinilosapp.data.models.Album
 import com.team4.vinilosapp.data.models.Comment
 import com.team4.vinilosapp.data.models.Track
@@ -74,7 +77,7 @@ fun AlbumDetailScreen(
     sectionTitle: String,
     viewModel: AlbumViewModel = viewModel()
 ) {
-    val uiState by viewModel.uiState.collectAsState()
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     LaunchedEffect(albumId) {
         viewModel.loadAlbum(albumId)
@@ -149,7 +152,13 @@ private fun AlbumDetailContent(
 
         item {
             AsyncImage(
-                model = album.cover,
+                model = ImageRequest.Builder(LocalContext.current)
+                    .data(album.cover)
+                    .crossfade(true)
+                    .size(900, 900)
+                    .memoryCachePolicy(CachePolicy.ENABLED)
+                    .diskCachePolicy(CachePolicy.ENABLED)
+                    .build(),
                 contentDescription = album.name,
                 modifier = Modifier
                     .fillMaxWidth()

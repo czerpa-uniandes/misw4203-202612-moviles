@@ -19,6 +19,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import com.team4.vinilosapp.data.models.Performer
 
@@ -40,6 +41,9 @@ fun BandCard(band: Performer, onClick: () -> Unit = {}) {
                 model = ImageRequest.Builder(LocalContext.current)
                     .data(band.image)
                     .crossfade(true)
+                    .size(128, 128)
+                    .memoryCachePolicy(CachePolicy.ENABLED)
+                    .diskCachePolicy(CachePolicy.ENABLED)
                     .build(),
                 contentDescription = band.name,
                 contentScale = ContentScale.Crop,

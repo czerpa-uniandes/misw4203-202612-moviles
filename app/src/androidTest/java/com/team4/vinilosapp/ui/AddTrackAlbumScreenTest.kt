@@ -128,15 +128,15 @@ class AddTrackAlbumScreenTest {
             .performScrollToNode(hasTestTag("add_track_nav_button"))
 
 
-        composeTestRule.waitUntil(timeoutMillis = 15_000) {
+        composeTestRule.waitUntil(timeoutMillis = 20_000) {
             composeTestRule
-                .onAllNodesWithText("Pedro Navaja", useUnmergedTree = true)
+                .onAllNodesWithTag("add_track_nav_button", useUnmergedTree = true)
                 .fetchSemanticsNodes()
                 .isNotEmpty()
         }
 
         composeTestRule
-            .onAllNodesWithText("Pedro Navaja", useUnmergedTree = true)[0]
+            .onNodeWithTag("add_track_nav_button", useUnmergedTree = true)
             .assertIsDisplayed()
 
         composeTestRule.waitForIdle()

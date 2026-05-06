@@ -17,6 +17,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import java.text.Normalizer
 import java.text.Normalizer.normalize
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 sealed interface AlbumDetailUiState {
     object Loading : AlbumDetailUiState
@@ -113,8 +115,6 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
                 recordLabel = recordLabel
             )
 
-            Log.d("MY MESSAGE", newAlbum.toString())
-
             repository.createAlbum(newAlbum)
                 .onSuccess {
                     _createSuccess.value = true
@@ -186,25 +186,29 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun updateFilter(filter: AlbumFilter) {
-        val query = normalize(filter.query)
-        val genre = normalize(filter.genre)
-        val artist = normalize(filter.artist)
+        viewModelScope.launch {
+            val filtered = withContext(Dispatchers.Default) {
+                val query = normalize(filter.query)
+                val genre = normalize(filter.genre)
+                val artist = normalize(filter.artist)
 
-        val filtered = _originalAlbums.value.filter { album ->
-            val albumName = normalize(album.name)
-            val albumGenre = normalize(album.genre)
+                _originalAlbums.value.filter { album ->
+                    val albumName = normalize(album.name)
+                    val albumGenre = normalize(album.genre)
 
-            val matchesQuery = query.isBlank() || albumName.contains(query)
-            val matchesGenre = genre.isBlank() || albumGenre.contains(genre)
-            val matchesArtist =
-                artist.isBlank() || album.performers.any { performer ->
-                    normalize(performer.name).contains(artist)
+                    val matchesQuery = query.isBlank() || albumName.contains(query)
+                    val matchesGenre = genre.isBlank() || albumGenre.contains(genre)
+                    val matchesArtist =
+                        artist.isBlank() || album.performers.any { performer ->
+                            normalize(performer.name).contains(artist)
+                        }
+
+                    matchesQuery && matchesGenre && matchesArtist
                 }
+            }
 
-            matchesQuery && matchesGenre && matchesArtist
+            _albums.value = filtered
         }
-
-        _albums.value = filtered
     }
 
     fun normalize(text: String): String {
@@ -228,8 +232,6 @@ class AlbumViewModel(application: Application) : AndroidViewModel(application) {
                 name = name,
                 duration = duration
             )
-
-            println("MY MESSAGE ${newAddTrack.toString()}")
 
             repository.addTrack(albumId, newAddTrack)
                 .onSuccess {

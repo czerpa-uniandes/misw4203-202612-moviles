@@ -8,10 +8,13 @@ import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Performer
 import com.team4.vinilosapp.data.network.RetrofitProvider
 import com.team4.vinilosapp.data.repository.BandRepository
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import java.text.Normalizer
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class BandViewModel(application: Application) : AndroidViewModel(application) {
 
@@ -19,11 +22,15 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
         VinilosServiceAdapterImpl(RetrofitProvider.api)
     )
 
+    private var defaultDispatcher: CoroutineDispatcher = Dispatchers.Default
+
     internal constructor(
         application: Application,
-        repository: BandRepository
+        repository: BandRepository,
+        defaultDispatcher: CoroutineDispatcher = Dispatchers.Default
     ) : this(application) {
         this.repository = repository
+        this.defaultDispatcher = defaultDispatcher
     }
 
     private val _originalBands = MutableStateFlow<List<Performer>>(emptyList())
@@ -115,11 +122,20 @@ class BandViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun search(query: String) {
-        val normalized = normalize(query)
-        _bands.value = if (normalized.isBlank()) {
-            _originalBands.value
-        } else {
-            _originalBands.value.filter { normalize(it.name).contains(normalized) }
+        viewModelScope.launch {
+            val filtered = withContext(defaultDispatcher) {
+                val normalized = normalize(query)
+
+                if (normalized.isBlank()) {
+                    _originalBands.value
+                } else {
+                    _originalBands.value.filter {
+                        normalize(it.name).contains(normalized)
+                    }
+                }
+            }
+
+            _bands.value = filtered
         }
     }
 

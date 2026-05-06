@@ -1,6 +1,5 @@
 package com.team4.vinilosapp.data.repository
 
-import android.util.Log
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
 import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
 import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse

@@ -8,6 +8,7 @@ import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollToNode
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.team4.vinilosapp.MainActivity
 import org.junit.Rule
@@ -57,8 +58,16 @@ class ArtistDetailScreenTest {
             .assertIsDisplayed()
 
         composeTestRule
+            .onNodeWithTag("artist_detail_scroll", useUnmergedTree = true)
+            .performScrollToNode(hasTestTag("artist_detail_albums_section"))
+
+        composeTestRule
             .onNodeWithTag("artist_detail_albums_section", useUnmergedTree = true)
             .assertIsDisplayed()
+
+        composeTestRule
+            .onNodeWithTag("artist_detail_scroll", useUnmergedTree = true)
+            .performScrollToNode(hasTestTag("artist_detail_prizes_section"))
 
         composeTestRule
             .onNodeWithTag("artist_detail_prizes_section", useUnmergedTree = true)
