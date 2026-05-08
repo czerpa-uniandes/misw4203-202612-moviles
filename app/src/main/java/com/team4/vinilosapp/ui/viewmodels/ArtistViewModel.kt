@@ -69,6 +69,19 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
+    fun addAlbumToArtist(
+        artistId: Int,
+        albumId: Int,
+        onSuccess: () -> Unit,
+        onError: () -> Unit
+    ) {
+        viewModelScope.launch {
+            repository.addAlbumToArtist(artistId, albumId)
+                .onSuccess { onSuccess() }
+                .onFailure { onError() }
+        }
+    }
+
     fun fetchArtistDetail(artistId: Int) {
         viewModelScope.launch {
             _detailLoading.value = true

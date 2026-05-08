@@ -48,6 +48,15 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+
+    var failAddAlbum = false
+    var receivedMusicianId: Int? = null
+    var receivedAlbumId: Int? = null
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) {
+        if (failAddAlbum) throw Exception("add album fail")
+        receivedMusicianId = musicianId
+        receivedAlbumId = albumId
+    }
 }
 
 class ArtistRepositoryTest {
@@ -105,6 +114,29 @@ class ArtistRepositoryTest {
 
         assertTrue(result.isFailure)
         assertEquals("musicians fail", result.exceptionOrNull()?.message)
+    }
+
+    @Test
+    fun addAlbumToArtist_returnsSuccessAndForwardsIds() = runBlocking {
+        val adapter = ArtistFakeAdapter()
+        val repository = ArtistRepository(adapter)
+
+        val result = repository.addAlbumToArtist(artistId = 5, albumId = 12)
+
+        assertTrue(result.isSuccess)
+        assertEquals(5, adapter.receivedMusicianId)
+        assertEquals(12, adapter.receivedAlbumId)
+    }
+
+    @Test
+    fun addAlbumToArtist_returnsFailureWhenAdapterFails() = runBlocking {
+        val adapter = ArtistFakeAdapter().apply { failAddAlbum = true }
+        val repository = ArtistRepository(adapter)
+
+        val result = repository.addAlbumToArtist(artistId = 5, albumId = 12)
+
+        assertTrue(result.isFailure)
+        assertEquals("add album fail", result.exceptionOrNull()?.message)
     }
 
 }

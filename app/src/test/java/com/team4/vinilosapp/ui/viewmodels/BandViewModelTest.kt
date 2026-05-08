@@ -72,6 +72,7 @@ private class BandFakeAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = Unit
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
