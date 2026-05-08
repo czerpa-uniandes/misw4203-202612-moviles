@@ -10,7 +10,9 @@ import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.data.models.Prize
 import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import retrofit2.Response
@@ -85,5 +87,15 @@ interface VinilosApiService {
     @POST("prizes")
     suspend fun addPrize(
         @Body prize: AddPrize
+    ): Response<Unit>
+
+    @GET("prizes")
+    suspend fun getPrizes(): List<Prize>
+
+    @POST("prizes/{prizeId}/musicians/{artistId}")
+    suspend fun associtatePrizeArtist(
+        @Path("prizeId") prizeId: Int,
+        @Path("artistId") artistId: Int,
+        @Body prizeDate: AddPrizeArtist
     ): Response<Unit>
 }

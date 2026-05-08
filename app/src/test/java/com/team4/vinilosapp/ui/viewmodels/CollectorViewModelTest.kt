@@ -30,7 +30,9 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.Prize
 import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 
 private class CollectorFakeAdapter : VinilosServiceAdapter {
     var collectorsResponse: List<Collector> = emptyList()
@@ -60,6 +62,8 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)

@@ -168,6 +168,23 @@ private fun ArtistDetailContent(
         } else {
             items(artist.performerPrizes) { prize -> PrizeCard(prize) }
         }
+
+        item {
+            Button(
+                onClick = {
+                    navController.navigate("associate_prize_artist/${artist.id}")
+                },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = VinilosPrimary
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 24.dp, end = 24.dp, top = 28.dp, bottom = 8.dp)
+                    .testTag("assosiate_prize_artist_button"),
+            ) {
+                Text("Agregar Premio", color = Color.White)
+            }
+        }
     }
 }
 

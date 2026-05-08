@@ -14,6 +14,8 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 import com.team4.vinilosapp.ui.models.AddTrack
 import kotlin.test.assertTrue
 
@@ -372,5 +374,160 @@ class VinilosServiceAdapterImplTest {
         assertEquals("/albums/100/tracks", request.path)
         assertEquals("POST", request.method)
         assertTrue(request.body.readUtf8().contains("Pedro Navaja"))
+    }
+
+    @Test
+    fun getPrizes_parsesResponseCorrectly() = runBlocking {
+        val body = """
+        [
+          {
+            "id": 100,
+            "organization": "National Academy of Recording Arts & Sciences",
+            "name": "Grammy Award",
+            "description": "Grammy Award description",
+            "performerPrizes": [
+              {
+                "id": 100,
+                "premiationDate": "1978-12-10T00:00:00.000Z"
+              }
+            ]
+          }
+        ]
+    """.trimIndent()
+
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody(body)
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getPrizes()
+
+        assertEquals(1, result.size)
+        assertEquals(100, result.first().id)
+        assertEquals("Grammy Award", result.first().name)
+        assertEquals("National Academy of Recording Arts & Sciences", result.first().organization)
+        assertEquals(1, result.first().performerPrizes.size)
+    }
+
+    @Test
+    fun getPrizes_returnsEmptyListWhenResponseIsEmpty() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("[]")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        val result = adapter.getPrizes()
+
+        assertEquals(0, result.size)
+    }
+
+    @Test
+    fun getPrizes_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(500)
+                .setBody("""{"message":"Internal Server Error"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.getPrizes()
+        }
+    }
+
+    @Test
+    fun addPrize_sendsRequestCorrectly() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("{}")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        adapter.addPrize(
+            AddPrize(
+                name = "Grammy Latino",
+                description = "Premio al mejor",
+                organization = "Academia"
+            )
+        )
+
+        val request = server.takeRequest()
+
+        assertEquals("/prizes", request.path)
+        assertEquals("POST", request.method)
+
+        val body = request.body.readUtf8()
+        assertTrue(body.contains("Grammy Latino"))
+        assertTrue(body.contains("Premio al mejor"))
+        assertTrue(body.contains("Academia"))
+    }
+
+    @Test
+    fun addPrize_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(400)
+                .setBody("""{"message":"Bad request"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.addPrize(
+                AddPrize(
+                    name = "Grammy Latino",
+                    description = "Premio al mejor",
+                    organization = "Academia"
+                )
+            )
+        }
+    }
+
+    @Test
+    fun associatePrizeArtist_sendsRequestCorrectly() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("{}")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        adapter.associatePrizeArtist(
+            prizeId = 100,
+            artistId = 1,
+            premiationDate = AddPrizeArtist(
+                premiationDate = "1980-12-10T00:00:00.000Z"
+            )
+        )
+
+        val request = server.takeRequest()
+
+        assertEquals("/prizes/100/musicians/1", request.path)
+        assertEquals("POST", request.method)
+        assertTrue(request.body.readUtf8().contains("1980-12-10T00:00:00.000Z"))
+    }
+
+    @Test
+    fun associatePrizeArtist_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(400)
+                .setBody("""{"message":"Bad request"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.associatePrizeArtist(
+                prizeId = 100,
+                artistId = 1,
+                premiationDate = AddPrizeArtist(
+                    premiationDate = "1980-12-10T00:00:00.000Z"
+                )
+            )
+        }
     }
 }
