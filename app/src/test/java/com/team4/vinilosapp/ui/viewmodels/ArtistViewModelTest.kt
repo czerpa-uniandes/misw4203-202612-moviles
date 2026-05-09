@@ -13,8 +13,10 @@ import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.data.models.Prize
 import com.team4.vinilosapp.data.repository.ArtistRepository
 import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import kotlinx.coroutines.Dispatchers
@@ -60,6 +62,8 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit = throw NotImplementedError()
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
 
     var failAddAlbum = false
     var receivedMusicianId: Int? = null

@@ -20,6 +20,7 @@ import com.team4.vinilosapp.ui.screens.collectors.CollectorDetailScreen
 import com.team4.vinilosapp.ui.screens.home.HomeScreen
 import com.team4.vinilosapp.ui.screens.collectors.CollectorsScreen
 import com.team4.vinilosapp.ui.screens.prizes.AddPrizeScreen
+import com.team4.vinilosapp.ui.screens.prizes.AssociatePrizeArtistScreen
 import com.team4.vinilosapp.ui.screens.prizes.PrizesScreen
 
 sealed class Screen(val route: String) {
@@ -61,6 +62,9 @@ sealed class Screen(val route: String) {
     }
     object Prizes : Screen("prizes")
     object AddPrize : Screen("create_prize")
+    object AssociatePrizeArtist : Screen("associate_prize_artist/{artistId}") {
+        fun createRoute(artistId: String) = "associate_prize_artist/$artistId"
+    }
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -183,6 +187,17 @@ fun NavGraph() {
 
         composable(Screen.AddPrize.route) {
             AddPrizeScreen(navController)
+        }
+
+        composable(Screen.AssociatePrizeArtist.route) { backStackEntry ->
+
+            val artistId =
+                backStackEntry.arguments?.getString("artistId")?.toIntOrNull() ?: 0
+
+            AssociatePrizeArtistScreen(
+                navController = navController,
+                artistId = artistId
+            )
         }
     }
 }

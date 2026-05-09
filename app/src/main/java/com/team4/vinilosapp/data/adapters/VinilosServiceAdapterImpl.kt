@@ -10,8 +10,10 @@ import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.data.models.Prize
 import com.team4.vinilosapp.data.network.VinilosApiService
 import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import kotlinx.coroutines.Dispatchers
@@ -32,6 +34,7 @@ class VinilosServiceAdapterImpl(
 
     private var collectorsCache: List<Collector>? = null
     private val collectorDetailCache = mutableMapOf<Int, CollectorDetail>()
+    private var prizesCache: List<Prize>? = null
 
     override suspend fun getAlbums(): List<Album> = withContext(Dispatchers.IO) {
         albumsCache ?: api.getAlbums().also { albumsCache = it }
@@ -146,7 +149,28 @@ class VinilosServiceAdapterImpl(
             throw Exception("Error ${response.code()}")
         }
 
+        prizesCache = null
         artistDetailCache.clear()
         bandDetailCache.clear()
+    }
+
+    override suspend fun getPrizes(): List<Prize> = withContext(Dispatchers.IO) {
+        prizesCache ?: api.getPrizes().also { prizesCache = it }
+    }
+
+    override suspend fun associatePrizeArtist(
+        prizeId: Int,
+        artistId: Int,
+        premiationDate: AddPrizeArtist
+    ) = withContext(Dispatchers.IO) {
+        val response = api.associtatePrizeArtist(prizeId, artistId, premiationDate)
+
+        if (!response.isSuccessful) {
+            throw Exception("Error ${response.code()}")
+        }
+
+        artistDetailCache.remove(artistId)
+
+        Unit
     }
 }
