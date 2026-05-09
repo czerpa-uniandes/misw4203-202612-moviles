@@ -65,6 +65,7 @@ private class PrizeFakeAdapter : VinilosServiceAdapter {
     override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail = throw NotImplementedError()
     override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
     override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = Unit
     override suspend fun addComment(
         albumId: String,
         comment: AlbumCommentRequest

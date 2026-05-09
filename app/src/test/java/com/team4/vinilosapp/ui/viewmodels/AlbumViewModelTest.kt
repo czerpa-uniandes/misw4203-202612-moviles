@@ -70,6 +70,7 @@ private class FakeVinilosServiceAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = Unit
     override suspend fun getPrizes(): List<Prize> = emptyList()
     override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
 }
