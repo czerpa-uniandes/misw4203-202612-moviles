@@ -60,6 +60,15 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
     override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
     override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
     override suspend fun addPrize(prize: AddPrize): Unit = throw NotImplementedError()
+
+    var failAddAlbum = false
+    var receivedMusicianId: Int? = null
+    var receivedAlbumId: Int? = null
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) {
+        if (failAddAlbum) throw Exception("add album error")
+        receivedMusicianId = musicianId
+        receivedAlbumId = albumId
+    }
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -205,5 +214,41 @@ class ArtistViewModelTest {
         advanceUntilIdle()
 
         assertTrue(viewModel.artists.value.isEmpty())
+    }
+
+    @Test
+    fun addAlbumToArtist_invokesOnSuccessAndForwardsIds() = runTest {
+        val fakeAdapter = ArtistFakeAdapter()
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
+        var successCalled = false
+
+        viewModel.addAlbumToArtist(
+            artistId = 5,
+            albumId = 12,
+            onSuccess = { successCalled = true },
+            onError = { }
+        )
+        advanceUntilIdle()
+
+        assertTrue(successCalled)
+        assertEquals(5, fakeAdapter.receivedMusicianId)
+        assertEquals(12, fakeAdapter.receivedAlbumId)
+    }
+
+    @Test
+    fun addAlbumToArtist_invokesOnErrorWhenAdapterFails() = runTest {
+        val fakeAdapter = ArtistFakeAdapter().apply { failAddAlbum = true }
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
+        var errorCalled = false
+
+        viewModel.addAlbumToArtist(
+            artistId = 5,
+            albumId = 12,
+            onSuccess = { },
+            onError = { errorCalled = true }
+        )
+        advanceUntilIdle()
+
+        assertTrue(errorCalled)
     }
 }

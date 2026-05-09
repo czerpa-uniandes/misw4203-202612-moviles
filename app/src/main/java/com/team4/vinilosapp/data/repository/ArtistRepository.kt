@@ -21,4 +21,13 @@ class ArtistRepository(private val serviceAdapter: VinilosServiceAdapter) {
             Result.failure(e)
         }
     }
+
+    suspend fun addAlbumToArtist(artistId: Int, albumId: Int): Result<Unit> {
+        return try {
+            serviceAdapter.addAlbumToMusician(artistId, albumId)
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
 }

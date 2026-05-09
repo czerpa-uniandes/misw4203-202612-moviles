@@ -61,6 +61,12 @@ interface VinilosApiService {
         @Path("musicianId") musicianId: Int
     ): Response<Unit>
 
+    @POST("musicians/{musicianId}/albums/{albumId}")
+    suspend fun addAlbumToMusician(
+        @Path("musicianId") musicianId: Int,
+        @Path("albumId") albumId: Int
+    ): Response<Unit>
+
     @GET("collectors")
     suspend fun getCollectors(): List<Collector>
 

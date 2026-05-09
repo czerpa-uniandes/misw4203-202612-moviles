@@ -351,6 +351,37 @@ class VinilosServiceAdapterImplTest {
     }
 
     @Test
+    fun addAlbumToMusician_sendsRequestCorrectly() = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(200)
+                .setBody("{}")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        adapter.addAlbumToMusician(musicianId = 5, albumId = 12)
+
+        val request = server.takeRequest()
+
+        assertEquals("/musicians/5/albums/12", request.path)
+        assertEquals("POST", request.method)
+    }
+
+    @Test
+    fun addAlbumToMusician_throwsOnHttpError(): Unit = runBlocking {
+        server.enqueue(
+            MockResponse()
+                .setResponseCode(404)
+                .setBody("""{"message":"Not found"}""")
+                .addHeader("Content-Type", "application/json")
+        )
+
+        assertFailsWith<Exception> {
+            adapter.addAlbumToMusician(musicianId = 5, albumId = 999)
+        }
+    }
+
+    @Test
     fun addTrack_sendsRequestCorrectly() = runBlocking {
         server.enqueue(
             MockResponse()

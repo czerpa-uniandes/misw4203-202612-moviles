@@ -25,6 +25,7 @@ interface VinilosServiceAdapter {
     suspend fun getBands(): List<Performer>
     suspend fun getBandDetail(bandId: Int): BandDetail
     suspend fun addMusicianToBand(bandId: Int, musicianId: Int)
+    suspend fun addAlbumToMusician(musicianId: Int, albumId: Int)
     suspend fun getCollectors(): List<Collector>
     suspend fun getCollectorDetail(collectorId: Int): CollectorDetail
     suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse

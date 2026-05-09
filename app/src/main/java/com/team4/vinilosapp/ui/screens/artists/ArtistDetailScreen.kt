@@ -8,11 +8,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
+import com.team4.vinilosapp.navigation.Screen
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -118,11 +120,38 @@ private fun ArtistDetailContent(
         }
 
         item {
-            SectionHeader(
-                title = "Discografía en Catálogo",
-                subtitle = "Joyas prensadas disponibles para tu colección",
-                modifier = Modifier.testTag("artist_detail_albums_section")
-            )
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 24.dp, end = 16.dp, top = 28.dp, bottom = 8.dp)
+                    .testTag("artist_detail_albums_section"),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        "Discografía en Catálogo",
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.ExtraBold,
+                        color = Color(0xFF202020)
+                    )
+                    Text(
+                        "Joyas prensadas disponibles para tu colección",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = SecondaryText
+                    )
+                }
+                IconButton(
+                    onClick = { navController.navigate(Screen.AddAlbumToArtist.createRoute(artist.id)) },
+                    modifier = Modifier.testTag("add_album_to_artist_button")
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Add,
+                        contentDescription = "Asociar álbum",
+                        tint = VinilosPrimary
+                    )
+                }
+            }
         }
 
         if (artist.albums.isEmpty()) {

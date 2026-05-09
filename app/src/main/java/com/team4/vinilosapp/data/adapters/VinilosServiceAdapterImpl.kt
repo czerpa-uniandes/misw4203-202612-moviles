@@ -100,6 +100,19 @@ class VinilosServiceAdapterImpl(
         Unit
     }
 
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = withContext(Dispatchers.IO) {
+        val response = api.addAlbumToMusician(musicianId, albumId)
+
+        if (!response.isSuccessful) {
+            throw Exception("Error ${response.code()}")
+        }
+
+        artistDetailCache.remove(musicianId)
+        albumsCache = null
+
+        Unit
+    }
+
     override suspend fun getCollectors(): List<Collector> = withContext(Dispatchers.IO) {
         collectorsCache ?: api.getCollectors().also { collectorsCache = it }
     }
