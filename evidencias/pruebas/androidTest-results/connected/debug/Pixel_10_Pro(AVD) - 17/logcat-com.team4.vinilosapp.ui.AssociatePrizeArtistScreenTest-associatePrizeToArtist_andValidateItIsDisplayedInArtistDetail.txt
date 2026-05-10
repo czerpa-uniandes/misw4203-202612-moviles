@@ -1,0 +1,689 @@
+05-09 20:39:47.376  2573  2587 I TestRunner: started: associatePrizeToArtist_andValidateItIsDisplayedInArtistDetail(com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest)
+05-09 20:39:47.377  2573  2587 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@4cb0263]
+05-09 20:39:47.378  2573  2587 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-09 20:39:47.379   663  1548 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@5796ad7f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:39:47.393   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:39:47.490   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2294 CompositionType fallback from 2 to 1
+05-09 20:39:47.490   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2295 CompositionType fallback from 2 to 1
+05-09 20:39:47.490   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.491   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.517   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.517   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.517   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.517   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.518   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570  1076  1076 D RecentsView: onTaskRemoved: 697, not handling task stack changes
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570  1076  1076 D RecentsView: onTaskRemoved: 697, not handling task stack changes
+05-09 20:39:47.570  1076  1076 D RecentsView: onTaskDisplayChanged: 699, new displayId = 0
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.570  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] -[]
+05-09 20:39:47.570   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.571   499   637 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc046b80) with descriptor: '(not cached)'
+05-09 20:39:47.571  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused] -[state_user_active]
+05-09 20:39:47.571  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_window_focused] -[state_resumed|state_deferred_resumed]
+05-09 20:39:47.571  1076  1076 W SplitSelectStateCtor: Missing session instanceIds
+05-09 20:39:47.571  1076  1076 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+05-09 20:39:47.579   663   919 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:47.588  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.588  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.588  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.589  1076  1076 D WorkspaceRevealAnim: onAnimationEnd: workspace alpha = 1.0
+05-09 20:39:47.600  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: PRE_ON_CREATE
+05-09 20:39:47.600  2573  2573 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+05-09 20:39:47.601  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: CREATED
+05-09 20:39:47.601  2573  2573 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.team4.vinilosapp.MainActivity@ebfe88d
+05-09 20:39:47.603  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: STARTED
+05-09 20:39:47.603  2573  2573 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.team4.vinilosapp.MainActivity@ebfe88d
+05-09 20:39:47.603  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: RESUMED
+05-09 20:39:47.604  2573  2573 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.team4.vinilosapp.MainActivity@ebfe88d
+05-09 20:39:47.607  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:39:47.615   663   919 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:47.617  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@edaa7f2
+05-09 20:39:47.624   934  1126 I Surface : Creating surface for consumer unnamed-934-620 with slotExpansion=1 for 64 slots
+05-09 20:39:47.625   934  1126 I Surface : Creating surface for consumer VRI[vinilosapp]#620(BLAST Consumer)620 with slotExpansion=1 for 64 slots
+05-09 20:39:47.635  2573  2573 D VRI[MainActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:39:47.658  2573  2672 D NetworkPerf: [/musicians] --> INICIO
+05-09 20:39:47.658  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/musicians
+05-09 20:39:47.670  1076  1076 D BaseActivity: Launcher flags updated: [state_started] -[state_window_focused]
+05-09 20:39:47.690  2573  2573 I Surface : Creating surface for consumer unnamed-2573-18 with slotExpansion=1 for 64 slots
+05-09 20:39:47.690  2573  2573 I Surface : Creating surface for consumer VRI[MainActivity]#18(BLAST Consumer)18 with slotExpansion=1 for 64 slots
+05-09 20:39:47.690  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=698 windowingMode=1 user=0 lastActiveTime=17632378] null, [id=699 windowingMode=1 user=0 lastActiveTime=17632950] null]
+05-09 20:39:47.756   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.756   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.818  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/musicians (160ms, 12551-byte body)
+05-09 20:39:47.845   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.845   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.891  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:47.892  2605  2605 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:47.894   663   684 I ActivityTaskManager: Displayed com.team4.vinilosapp/.MainActivity for user 0: +515ms
+05-09 20:39:47.904  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.947   547 27315 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:39:47.967  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.968  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.968  1076  1076 D RecentsView: onTaskRemoved: 698, not handling task stack changes
+05-09 20:39:47.968  1076  1076 D RecentsView: onTaskRemoved: 698, not handling task stack changes
+05-09 20:39:47.971   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:47.973  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:47.974  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:47.974  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:47.974  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:47.974  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:48.021   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.021   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.210   663   905 I Surface : Creating surface for consumer unnamed-663-372 with slotExpansion=1 for 64 slots
+05-09 20:39:48.210   663   905 I Surface : Creating surface for consumer ImageReader-1024x2284f1m1-663-372 with slotExpansion=1 for 64 slots
+05-09 20:39:48.210   663   905 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+05-09 20:39:48.223   663   905 E ConsumerBase: [ImageReader-1024x2284f1m1-663-372] abandonLocked: ConsumerBase is abandoned!
+05-09 20:39:48.246  1076  1076 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:39:48.246   934  1546 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:39:48.251   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.251   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.263  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-09 20:39:48.265  1076  1076 D BaseActivity: Launcher flags updated: [] -[state_started]
+05-09 20:39:48.265  1076  1076 D BaseDepthController: setSurface:
+05-09 20:39:48.265  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:39:48.265  1076  1076 D BaseDepthController: 	mBaseSurface: null
+05-09 20:39:48.265  1076  1076 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+05-09 20:39:48.266  1076  1076 D LauncherStateManager: StateManager.goToState: fromState: Normal, toState: Normal, partial trace:
+05-09 20:39:48.266  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:26)
+05-09 20:39:48.266  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:35)
+05-09 20:39:48.266  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:31)
+05-09 20:39:48.266  1076  1076 D LauncherStateManager: StateManager.onRepeatStateSetAborted: state: Normal
+05-09 20:39:48.266  1076  1076 D KeyboardStateManager: hideKeyboard
+05-09 20:39:48.266  1076  1076 D KeyboardStateManager: isImeShown: false
+05-09 20:39:48.266  1076  1076 D StatsLog: LAUNCHER_ONSTOP
+05-09 20:39:48.267  1076  1076 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+05-09 20:39:48.269  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed App frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072573, totalDuration: 35200151, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed SF frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072573, totalDuration: 35200151, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed App frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072595, totalDuration: 251215860, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed SF frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072595, totalDuration: 251215860, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed App frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072617, totalDuration: 305501569, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed SF frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072617, totalDuration: 305501569, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed App frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: JANK_COMPOSER, vsyncId: 1072663, totalDuration: 259494031, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed SF frame:jankTypeLegacy: UNKNOWN: 3, jankTypeExperimental: JANK_COMPOSER, vsyncId: 1072663, totalDuration: 259494031, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.338   934  1126 W FrameTracker: Missed App frame:jankTypeLegacy: JANK_APPLICATION, jankTypeExperimental: UNKNOWN: 3, vsyncId: 1072737, totalDuration: 228709082, CUJ=J<SPLASHSCREEN_EXIT_ANIM>
+05-09 20:39:48.502   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.502   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.616   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.616   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.716   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.716   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.786  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdownVoiceInternal():148 shutdownVoiceInternal()
+05-09 20:39:48.786  8468  8468 W NotificationCenter: NotificationCenter.unregisterListener():480 Listener iyg@f6c0545 was not registered for notification class pcy
+05-09 20:39:48.817   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.817   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.886   663  1548 W libbinder.Binder: Binder transaction to android.view.IWindowManager, function: UNKNOWN_FUNCTION_NAME, code: 110, took 1025ms. Data bytes: 76 Reply bytes: 4 Flags: 18
+05-09 20:39:48.921   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:48.996  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@4167386
+05-09 20:39:49.022  2573  2672 D NetworkPerf: [/musicians/100] --> INICIO
+05-09 20:39:49.023  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/musicians/100
+05-09 20:39:49.023   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.124   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.154  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/musicians/100 (131ms, 3423-byte body)
+05-09 20:39:49.224   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.328   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.418   501   501 I adbd    : adbd service requested 'shell,v2,raw:dumpsys package com.google.android.gms'
+05-09 20:39:49.429   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.471  2573  2672 D NetworkPerf: [/prizes] --> INICIO
+05-09 20:39:49.471  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/prizes
+05-09 20:39:49.499  3713  3713 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+05-09 20:39:49.499  3713  4136 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_AdsDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.500  3713  3713 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_CronetDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.501  3713  4136 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_DynamiteLoader_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.501  3713  4136 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_DynamiteModulesA_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.503  3713  3713 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_DynamiteModulesC_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.512  3713  4136 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_GoogleCertificates_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.513  3713  3713 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_MapsDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.514  3713  4136 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_MeasurementDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.516  3713  3726 I artd    : GetBestInfo: dm (/data/app/~~mhgDiNMgaDWl5PolxioL9w==/com.google.android.gms-xnyh92E0gCB97NnydWtj9g==/split_all_locale_splits.dm) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.518  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+05-09 20:39:49.518  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+05-09 20:39:49.519  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+05-09 20:39:49.521  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000013/dl-MlkitBarcodeUi.optional_261332100400.apk has no usable artifacts
+05-09 20:39:49.523  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-MlkitOcrCommon.optional_261332100400.apk has no usable artifacts
+05-09 20:39:49.532  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_261136100400.apk has no usable artifacts
+05-09 20:39:49.532   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.539  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-PlayCloudSearch.optional_261332100000.apk has no usable artifacts
+05-09 20:39:49.540  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-MlkitOcrCommon.optional_261136100400.apk has no usable artifacts
+05-09 20:39:49.541  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+05-09 20:39:49.545  3713  3726 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/87E7746227FF4E457A2EB56043B95E41006DE49F/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.547  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-VisionOcr.optional_261136100000.apk has no usable artifacts
+05-09 20:39:49.549  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-VisionOcr.optional_261332100000.apk has no usable artifacts
+05-09 20:39:49.552  3713  3726 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/21A90BF1C1C388089206DCE215FB60D7882BFA18/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+05-09 20:39:49.554  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000001d/dl-IdentityCredentialsPlacebo.optional_261332100400.apk has no usable artifacts
+05-09 20:39:49.562  3713  4136 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_261136100400.apk has no usable artifacts
+05-09 20:39:49.563  3713  4136 I artd    : GetBestInfo: /data/user/0/com.google.android.gms/app_dg_cache/707FFD883BF2A7896692338F9625CA52336E933B/the.apk has no usable artifacts
+05-09 20:39:49.563  3713  4136 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000007/MeasurementDynamite.apk has no usable artifacts
+05-09 20:39:49.565  3713  4136 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_261136100000.apk has no usable artifacts
+05-09 20:39:49.578  3713  3726 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-Appsearch.optional_261332100400.apk has no usable artifacts
+05-09 20:39:49.610  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/prizes (138ms, 3268-byte body)
+05-09 20:39:49.633   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.695   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:49.695  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:49.695  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:49.696  2573  2573 I AssistStructure: Flattened final assist data: 680 bytes, containing 1 windows, 4 views
+05-09 20:39:49.696  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:49.696  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:49.696  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:49.706   663  1548 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:49.731  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.compose.ui.window.Api33Impl$$ExternalSyntheticLambda0@39de949
+05-09 20:39:49.734   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.755  2573  2573 I Surface : Creating surface for consumer unnamed-2573-19 with slotExpansion=1 for 64 slots
+05-09 20:39:49.756  2573  2573 I Surface : Creating surface for consumer VRI[Pop-Up Window]#19(BLAST Consumer)19 with slotExpansion=1 for 64 slots
+05-09 20:39:49.837   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.938   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:49.962  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:50.016  2573  2589 D HWUI    : endAllActiveAnimators on 0xb4007bca0402d660 (UnprojectedRipple) with handle 0xb4007bc934077b70
+05-09 20:39:50.047   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.054   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:50.055  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:50.056  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:50.060  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:50.060  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:50.069  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:50.140   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.219  2573  2573 I AssistStructure: Flattened final assist data: 692 bytes, containing 1 windows, 4 views
+05-09 20:39:50.253   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:50.255  8468  8468 I DeviceIntelligenceExtension: DeviceIntelligenceExtension.getInlineSuggestionsRequest():222 Inline suggestions disabled in stylus mode or vertical PK/Voice toolbar
+05-09 20:39:50.255  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=28001, inputTypeString=Normal[MultiLine|AutoCorrect], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000000, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[mParcelledData.dataSize=404], hintText=null, hintLocales=[]}}, true)
+05-09 20:39:50.255  8468  8468 W SessionManager: SessionManager.beginSession():72 Try to begin an already begun session [INPUT_SESSION], end it first
+05-09 20:39:50.255  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:50.255  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:50.258  8468  8468 I StylusModule: StylusModule.onUpdateToolType():774 Update tool type = 2
+05-09 20:39:50.262  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1532 onStartInputView(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=28001, inputTypeString=Normal[MultiLine|AutoCorrect], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000000, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], hintText=null, hintLocales=[]}}, false)
+05-09 20:39:50.262   663   826 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: ScribeHandwritingRecognizerWrapper.setupRecognizer():111 model paths
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: gesture recospec=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: gesture lstm=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: writing recospec=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: confidence model=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: writing segmentor=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: writinglstm=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper: writingfst=null
+05-09 20:39:50.263  8468  8493 I ScribeHandwritingRecognizerWrapper:
+05-09 20:39:50.264  8468  8468 I KeyboardHeightUtil: KeyboardHeightUtil.getOemKeyboardHeightRatio():81 systemKeyboardHeightRatio:1.000000.
+05-09 20:39:50.272  8468  8494 W ModuleManager: ModuleManager.loadModule():634 Module pyg is not available
+05-09 20:39:50.273  1283  3459 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-09 20:39:50.273  1283  3459 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+05-09 20:39:50.274  1016  1180 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+05-09 20:39:50.275  8468  8468 I AndroidIME: InputBundleManager.startInput():357 startInput2 restarting=false
+05-09 20:39:50.275  8468  8468 I AndroidIME: InputBundleManager.loadActiveInputBundleId():542 loadActiveInputBundleId: en-US, ime_english_united_states
+05-09 20:39:50.275  8468  8468 I InputBundle: InputBundle.activateIme():597 activateIme: INACTIVE, keyboardType=accessory
+05-09 20:39:50.275  8468  8468 I AndroidIME: AbstractIme.onActivate():95 LatinIme.onActivate() : EditorInfo = EditorInfo{packageName=com.team4.vinilosapp, inputType=28001, inputTypeString=Normal[MultiLine|AutoCorrect], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=42000000, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=0, initialSelEnd=0, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=11, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], hintText=null, hintLocales=[]}, IncognitoMode = false, DeviceLocked = false
+05-09 20:39:50.275  8468  8468 I InputBundle: InputBundle.consumeEvent():1051 Skip consuming an event as keyboard status is INACTIVE
+05-09 20:39:50.276  8468  8468 I Delight5Facilitator: Delight5Facilitator.initializeForIme():745 initializeForIme() : Locale = [en_US], layout = qwerty
+05-09 20:39:50.276 19992 19992 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+05-09 20:39:50.276 19992 19992 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+05-09 20:39:50.278  1098  1098 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:28917893
+05-09 20:39:50.281  1016  1180 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 16 up
+05-09 20:39:50.282  1283  1283 E EventHandlerImpl: Metrics context is missing from client state [CONTEXT service_id=177 ]
+05-09 20:39:50.284  8468  8468 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1277 inline flag updated to:false
+05-09 20:39:50.284  8468  8468 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1277 inline flag updated to:false
+05-09 20:39:50.285  8468  8494 I NebulaeTrainingCacheMetricsProcessor: NebulaeTrainingCacheMetricsProcessor.processBeginSession():252 Begin training cache session: com.team4.vinilosapp_-1/
+05-09 20:39:50.286  8468  8468 I InputBundle: InputBundle.consumeEvent():1051 Skip consuming an event as keyboard status is INACTIVE
+05-09 20:39:50.286  8468  8468 I LatinIme: LatinIme.resetInputContext():2284 resetInputContext(): reason=1, externalEditsInfo=ExternalEditsInfo{action=0, offset=-1, text=null, originalText=null, edits=null}
+05-09 20:39:50.286  8468  8468 I InputBundle: InputBundle.consumeEvent():1051 Skip consuming an event as keyboard status is INACTIVE
+05-09 20:39:50.287  8468  8468 I InputBundle: InputBundle.activateKeyboard():652 activateKeyboard: ACTIVE, type=ocu[keyboardType=accessory, payload=null]
+05-09 20:39:50.287  8468  8468 I KeyboardWrapper: KeyboardWrapper.activateKeyboard():592 activateKeyboard(): type=accessory, status=INACTIVE, imeDef=obp{stringId=ime_english_united_states, language=en-US, languageTag=en-US, processedConditions={writing_helper_enable_by_word_revert=false, true=true, enable_number_row=false, device=phone, enable_pk_simulator=false}, className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, label=0, keyEventInterpreter=null, inlineComposing=true, autoCapital=true, announceAutoSelectedCandidate=true, statusIcon=0, indicatorIcon=0, indicatorLabel=US, displayAppCompletions=true, extraValues=obi{#0x7f0b02e5=TypedValue{t=0x3/d=0x0 "com.google.android.apps.inputmethod.libs.latin5.LatinIme"}}, processors=odh@e67bcdb, unacceptableMetaKeys=4098, languageSpecificSettings=0, asciiCapable=true, alwaysShowSuggestions=false, useAsciiPasswordKeyboard=false, keyboardGroupDef=ocq@cb47bbd, phenotypeFlagId=0, localizationLanguageTag=null, supportsInlineSuggestion=true}
+05-09 20:39:50.287  8468  8468 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard accessory, imeId=ime_english_united_states, cacheKey=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup
+05-09 20:39:50.287  8468  8468 I KeyboardWrapper: KeyboardWrapper.onKeyboardReady():226 onKeyboardReady(): type=accessory(accessory), kb=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard@28401c2
+05-09 20:39:50.287  8468  8468 I KeyboardWrapper: KeyboardWrapper.doActivateKeyboard():624 doActivateKeyboard(): accessory
+05-09 20:39:50.287  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.287  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.287  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():186
+05-09 20:39:50.288  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.290  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.290  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=FLOATING_CANDIDATES, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.290  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=WIDGET, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.290  8468  8468 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard accessory_candidates_consumer, imeId=ime_english_united_states, cacheKey=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup
+05-09 20:39:50.290  8468  8468 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():181 requestKeyboardDef(): type=accessory_candidates_consumer, info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.290  8468  8468 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():243 requestKeyboardDef(): getOrCreate from cache, info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.290  8468  8468 I KeyboardDefManager: KeyboardDefManager$1.onSuccess():277 requestKeyboardDef onSuccess(): info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.290  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():186
+05-09 20:39:50.290  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={global_theme_key=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup, global_locale=en_US, global_density_dpi=480, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f17004d], initialStates=0, keyboardViewDefs=[ocy{direction=null, id=#0x7f0b0229, isScalable=false, layoutId=#0x7f0e0030, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0611, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={FLOATING_CANDIDATES=nnb@79f9b62}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.290  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={global_theme_key=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup, global_locale=en_US, global_density_dpi=480, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f17004d], initialStates=0, keyboardViewDefs=[ocy{direction=null, id=#0x7f0b0229, isScalable=false, layoutId=#0x7f0e0030, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0611, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={FLOATING_CANDIDATES=nnb@79f9b62}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.291  8468  8468 I AndroidIME: InputBundleManager.startInput():372 startInput() with ocu[keyboardType=accessory, payload=null]
+05-09 20:39:50.291  8468  8468 I PkModeUpdater: PkModeUpdater.onActivate():76 onActivate false true
+05-09 20:39:50.291  8468  8468 I AccessoryInputModeManager: AccessoryInputModeManager.onModeStarted():346 Accessory input mode started: STYLUS
+05-09 20:39:50.292  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.292  8468  8468 I WidgetViewShowingController: WidgetViewShowingController.showWidgetKeyboardInternal():532 Show companion widget
+05-09 20:39:50.292  8468  8468 W StatusViewController: StatusViewController.updateKeyboardView():46 Failed to inflate voice header view [UD]
+05-09 20:39:50.294  8468  8504 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():551 setKeyboardLayout()
+05-09 20:39:50.295  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.295   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.295  8468  8468 I WidgetViewShowingPositionHandler: WidgetViewShowingPositionHandler.updateAvailableArea():199 update available area Rect(24, 180 - 1256, 2778)
+05-09 20:39:50.295  8468  8468 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard composing_text_consumer is not activated before!
+05-09 20:39:50.296  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.onActivate():130
+05-09 20:39:50.296  8468  8468 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 321 height for app when ime window height:2628, header height:132 and isFullscreenMode:false, so the max keyboard body height is:2175
+05-09 20:39:50.296  8468  8468 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 321 height for app when ime window height:2628, header height:132 and isFullscreenMode:false, so the max keyboard body height is:2175
+05-09 20:39:50.296  8468  8468 W ExtensionWrapper: ExtensionWrapper.setExtensionViewVisibility():878 interface nqy is not activate
+05-09 20:39:50.296  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():109 cancelShutdown()
+05-09 20:39:50.296  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():121 syncLanguagePacks()
+05-09 20:39:50.296  8468  8468 I VoiceInputManager: VoiceInputManager.onKeyboardActivated():1204 onKeyboardActivated() [UD]
+05-09 20:39:50.296  8468  8468 I UniversalDictationUiProvider: UniversalDictationUiProvider.onActivate():63 onActivate() [UD]
+05-09 20:39:50.296  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@fa61af0, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.297  8468 10614 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():221 maybeScheduleAutoPackDownloadForFallback()
+05-09 20:39:50.299  8468 10614 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():213 maybeScheduleAutoPackDownload() for language tag en-US
+05-09 20:39:50.304  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@b8ec869, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.306  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@8ab16a7, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.307  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@de9b754, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.308  8468  8468 W AccessPointsManager: AccessPointsManager.addAccessPoint():1097 The holder controller #0x7f0b248b is not registered
+05-09 20:39:50.311  8468  8468 W AutoPasteSuggestionHelper: AutoPasteSuggestionHelper.setMaxWidthOfChipTextView():1079 Failed to get the width of the proactive suggestion view holder in HEADER.
+05-09 20:39:50.312  8468  8468 W AutoPasteSuggestionHelper: AutoPasteSuggestionHelper.setMaxWidthOfChipTextView():1079 Failed to get the width of the proactive suggestion view holder in HEADER.
+05-09 20:39:50.313  8468  8468 W AutoPasteSuggestionHelper: AutoPasteSuggestionHelper.setMaxWidthOfChipTextView():1079 Failed to get the width of the proactive suggestion view holder in WIDGET.
+05-09 20:39:50.313  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in HEADER
+05-09 20:39:50.313  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on HEADER
+05-09 20:39:50.313  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in FLOATING_CANDIDATES
+05-09 20:39:50.324  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in WIDGET
+05-09 20:39:50.324  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on WIDGET
+05-09 20:39:50.324  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in HEADER
+05-09 20:39:50.324  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on HEADER
+05-09 20:39:50.324  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in FLOATING_CANDIDATES
+05-09 20:39:50.326  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in WIDGET
+05-09 20:39:50.326  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on WIDGET
+05-09 20:39:50.327  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:50.328  8468  8468 I NoticeManager: NoticeManager.post():160 Posting notice [import_user_contacts] to default priority queue
+05-09 20:39:50.328  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@b57b9ab, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.328  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@42e5808, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.328  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@f28f487, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.328  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@65b6fb4, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.328  8468  8468 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomaticallyInCurrentInputBox():384 No private IME option set to start voice input.
+05-09 20:39:50.328  8468   992 I SystemHapticSettings: SystemHapticSettings.updateSystemVibrationState():63 update vibration state: true
+05-09 20:39:50.328  8468  8468 D ImeBackCallbackSender: Register OnBackInvokedCallback with priority=-1 at app window (packageName=com.team4.vinilosapp)
+05-09 20:39:50.334  8468  8468 I Surface : Creating surface for consumer unnamed-8468-77 with slotExpansion=1 for 64 slots
+05-09 20:39:50.335  8468  8468 I Surface : Creating surface for consumer VRI[InputMethod]#77(BLAST Consumer)77 with slotExpansion=1 for 64 slots
+05-09 20:39:50.339 19992 19992 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START xflg=0x4 pkg=com.google.android.gms }
+05-09 20:39:50.339 19992 19992 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START xflg=0x4 pkg=com.google.android.gms }
+05-09 20:39:50.342  8468  8476 W SP      : File ref is being finalized but wasn't closed, file: pack_mapping_v1_lstm_20260206[497]
+05-09 20:39:50.342  8468  8476 W SP      : File ref is being finalized but wasn't closed, file: pack_mapping_v1_lstm_20260206[497]
+05-09 20:39:50.342  8468  8476 W SP      : File ref is being finalized but wasn't closed, file: pack_mapping_v1_lstm_20260206[497]
+05-09 20:39:50.342  8468  8476 W SP      : File ref is being finalized but wasn't closed, file: pack_mapping_v1_lstm_20260206[497]
+05-09 20:39:50.343  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@c1b2c9c
+05-09 20:39:50.382  8468  8468 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():344 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=HEADER keyboardView=null
+05-09 20:39:50.382  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.382  8468  8468 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():344 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=BODY keyboardView=null
+05-09 20:39:50.382  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.395  2573  2672 D NetworkPerf: [/prizes/100/musicians/100] --> INICIO
+05-09 20:39:50.395  2573  2672 I okhttp.OkHttpClient: --> POST https://backvynils-543995823892.us-central1.run.app/prizes/100/musicians/100 (45-byte body)
+05-09 20:39:50.402  8468  8468 I LatinIme: LatinIme.resetInputContext():2284 resetInputContext(): reason=5, externalEditsInfo=ExternalEditsInfo{action=0, offset=-1, text=null, originalText=null, edits=null}
+05-09 20:39:50.403  8468  8468 I UndoStack: UndoStack.offer$mayClearStack():165 InputContext OTHER_TEXT_CHANGE with content updates to clear undo
+05-09 20:39:50.466   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.546  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/prizes/100/musicians/100 (151ms, 731-byte body)
+05-09 20:39:50.554  8468  8468 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+05-09 20:39:50.669   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.669  2573  2672 D NetworkPerf: [/musicians/100] --> INICIO
+05-09 20:39:50.669  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/musicians/100
+05-09 20:39:50.718  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@4167386
+05-09 20:39:50.757   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:50.769   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.824  8468  8468 I StylusModule: StylusModule.onUpdateToolType():774 Update tool type = 2
+05-09 20:39:50.825  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, true)
+05-09 20:39:50.825  8468  8468 W SessionManager: SessionManager.beginSession():72 Try to begin an already begun session [INPUT_SESSION], end it first
+05-09 20:39:50.825  8468  8468 W SessionManager: SessionManager.endSession():119 Child session [INPUT_VIEW_SESSION] is not ended while ending session [{INPUT_VIEW_SESSION=1778377190262, INPUT_SESSION=1778377190255, IME_SESSION=1778377190275, TRAINING_CACHE_SESSION=1778377190275}], ending it now.
+05-09 20:39:50.825  8468  8468 W SessionManager: SessionManager.endSession():119 Child session [IME_SESSION] is not ended while ending session [{INPUT_VIEW_SESSION=1778377190262, INPUT_SESSION=1778377190255, IME_SESSION=1778377190275, TRAINING_CACHE_SESSION=1778377190275}], ending it now.
+05-09 20:39:50.825  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:50.825  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:50.826  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1532 onStartInputView(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, true)
+05-09 20:39:50.826  8468  8468 I InputBundle: InputBundle.consumeEvent():1051 Skip consuming an event as keyboard status is INACTIVE
+05-09 20:39:50.826  8468  8468 I AndroidIME: AbstractIme.onDeactivate():213 LatinIme.onDeactivate()
+05-09 20:39:50.826  8468  8468 W SessionManager: SessionManager.endSession():111 Try to end a not begun session [IME_SESSION].
+05-09 20:39:50.826  8468  8468 I KeyboardHeightUtil: KeyboardHeightUtil.getOemKeyboardHeightRatio():81 systemKeyboardHeightRatio:1.000000.
+05-09 20:39:50.828  8468  8494 W ModuleManager: ModuleManager.loadModule():634 Module pyg is not available
+05-09 20:39:50.828  8468  8494 I NebulaeTrainingCacheMetricsProcessor: NebulaeTrainingCacheMetricsProcessor.processEndSession():616 End training cache session: com.team4.vinilosapp_-1/
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: ScribeHandwritingRecognizerWrapper.setupRecognizer():111 model paths
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: gesture recospec=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: gesture lstm=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: writing recospec=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: confidence model=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: writing segmentor=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: writinglstm=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper: writingfst=null
+05-09 20:39:50.834  8468  8493 I ScribeHandwritingRecognizerWrapper:
+05-09 20:39:50.836  1060  1215 D SatelliteController: isInCarrierRoamingNbIotNtn: satellite is disabled
+05-09 20:39:50.836  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+05-09 20:39:50.836  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.836  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.836  1060  1215 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+05-09 20:39:50.837  1060  1215 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+05-09 20:39:50.837  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.837  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-09 20:39:50.837  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.837  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.837  1060  1215 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: Checking connect type from PLMN config for subId: 1
+05-09 20:39:50.837  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.837  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.837  1060  1215 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+05-09 20:39:50.837  1060  1215 D SatelliteController: getSatellitePerPlmnConfiguration: invalid subId or not supported via carrier.
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: config: null
+05-09 20:39:50.837  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.837  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectTypeViaConfigUpdater: return null (satelliteConfig is null)
+05-09 20:39:50.837  1060  1215 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+05-09 20:39:50.837  1060  1215 D TelephonyConfigUpdateInstallReceiver: getConfigParser: domain=satellite
+05-09 20:39:50.837  1060  1215 V SatelliteController: satelliteConfigParser is not ready
+05-09 20:39:50.837  1060  1215 D SatelliteController: isSatelliteAttachSupportedViaConfigupdater: return null (satelliteConfig is null)
+05-09 20:39:50.838  8468  8494 W ModuleManager: ModuleManager.loadModule():634 Module pyg is not available
+05-09 20:39:50.838  8468  8494 I OnDeviceWmrCalculator: OnDeviceWmrCalculator.calculateWmr():94 WMR: -1.0000 (0 / 0)
+05-09 20:39:50.857  8468  8468 I InputContextChangeTracker: InputContextChangeTracker.fixLyingSelectionRangeFromSurroundingText():1678 fixLyingSelectionRangeFromSurroundingText(): [-1, -1]([-1, -1]) -> [0, 0]([0, 0])
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in HEADER
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on HEADER
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in FLOATING_CANDIDATES
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on FLOATING_CANDIDATES
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():238 Requesting to show proactive suggestions: CLIPBOARD PREEMPTIVE_WITH_SUPPRESSION in WIDGET
+05-09 20:39:50.858  8468  8468 I ProactiveSuggestionsHolderManager: ProactiveSuggestionsHolderManager$displaySuggestionsListener$1.display():259 suggestions CLIPBOARD are pending to show on WIDGET
+05-09 20:39:50.858  8468  8468 I AndroidIME: InputBundleManager.startInput():357 startInput2 restarting=true
+05-09 20:39:50.858  8468  8468 I AndroidIME: InputBundleManager.loadActiveInputBundleId():542 loadActiveInputBundleId: und-Latn-x-password, password
+05-09 20:39:50.858  8468  8468 I InputBundle: InputBundle.activateIme():597 activateIme: INACTIVE, keyboardType=accessory
+05-09 20:39:50.858  8468  8468 I AndroidIME: AbstractIme.onActivate():95 PasswordIme.onActivate() : EditorInfo = EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}, IncognitoMode = false, DeviceLocked = false
+05-09 20:39:50.858  8468  8468 I InputBundle: InputBundle.activateKeyboard():652 activateKeyboard: ACTIVE, type=ocu[keyboardType=accessory, payload=null]
+05-09 20:39:50.858  8468  8468 I KeyboardWrapper: KeyboardWrapper.activateKeyboard():592 activateKeyboard(): type=accessory, status=INACTIVE, imeDef=obp{stringId=password, language=und-Latn-x-password, languageTag=und-Latn-x-password, processedConditions={writing_helper_enable_by_word_revert=false, variant=qwerty, true=true, language=en-US, enable_number_row=true, device=phone, enable_number_row_in_password=true, enable_pk_simulator=false}, className=com.google.android.libraries.inputmethod.ime.password.PasswordIme, label=2132019351, keyEventInterpreter=null, inlineComposing=true, autoCapital=true, announceAutoSelectedCandidate=true, statusIcon=0, indicatorIcon=0, indicatorLabel=null, displayAppCompletions=false, extraValues=obi{}, processors=odh@e67bcdb, unacceptableMetaKeys=4098, languageSpecificSettings=0, asciiCapable=false, alwaysShowSuggestions=false, useAsciiPasswordKeyboard=false, keyboardGroupDef=ocq@a185378, phenotypeFlagId=0, localizationLanguageTag=null, supportsInlineSuggestion=false}
+05-09 20:39:50.858  8468  8468 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard accessory, imeId=password, cacheKey=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup
+05-09 20:39:50.859  8468  8468 I KeyboardWrapper: KeyboardWrapper.onKeyboardReady():226 onKeyboardReady(): type=accessory(accessory), kb=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard@fa384b0
+05-09 20:39:50.859  8468  8468 I KeyboardWrapper: KeyboardWrapper.doActivateKeyboard():624 doActivateKeyboard(): accessory
+05-09 20:39:50.860  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.861  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.863  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():186
+05-09 20:39:50.863  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.863  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.863  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=FLOATING_CANDIDATES, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.863  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=WIDGET, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.863  8468  8468 I KeyboardManager: KeyboardManager.requestKeyboard():249 Creating keyboard accessory_candidates_consumer, imeId=password, cacheKey=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup
+05-09 20:39:50.864  8468  8468 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():181 requestKeyboardDef(): type=accessory_candidates_consumer, info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.864  8468  8468 I KeyboardDefManager: KeyboardDefManager.requestKeyboardDef():243 requestKeyboardDef(): getOrCreate from cache, info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.864  8468  8468 I KeyboardDefManager: KeyboardDefManager$1.onSuccess():277 requestKeyboardDef onSuccess(): info=ocn{defIds=[#0x7f17004d], defIdsCacheKey=[2132213837]}
+05-09 20:39:50.864  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.getKeyboardInitialStates():186
+05-09 20:39:50.864  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={global_theme_key=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup, global_locale=en_US, global_density_dpi=480, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f17004d], initialStates=0, keyboardViewDefs=[ocy{direction=null, id=#0x7f0b0229, isScalable=false, layoutId=#0x7f0e0030, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0611, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=HEADER, helpersCreated={FLOATING_CANDIDATES=nnb@5c0c746}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.864  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={global_theme_key=theme,!gsf,!pgsans,!pgsf,!use_system_font,BORDER,FLAVOR_DPI=XXHDPI,IS_LIGHT,KEYBOARD_WIDTH_CATEGORY=NORMAL,KEY_BORDER_SHAPE=1,LIGHT_THEME=true,PHYSICAL_DIAGONAL=6.225089,POPUP,SCREEN_SHORTEST_WIDTH=427,SCREEN_SHORTEST_WIDTH_NO_SCALE=427,SW400DP,XXHDPI,bottom4dp,enable_popup_on_keypress=true,keyboard_redesign_google_sans=true,non_linear_scale,noshadow,overlay_builtin_dynamic_color_light_base.binarypb:gm3-light-fffaf8fe-ff4c5e8b-4fb1adea13304a190d4abf12326cf60c,silkpopup, global_locale=en_US, global_density_dpi=480, global_orientation=1}, className=.latin.keyboard.AccessoryKeyboard, resourceIds=[#0x7f17004d], initialStates=0, keyboardViewDefs=[ocy{direction=null, id=#0x7f0b0229, isScalable=false, layoutId=#0x7f0e0030, type=FLOATING_CANDIDATES, touchable=true, defaultShow=false}], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x7f0e0611, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={FLOATING_CANDIDATES=nnb@5c0c746}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.864  8468  8468 I ProactiveSuggestionsHolder: ProactiveSuggestionsHolder.maybeShowPendingSuggestions():352 has pending suggestions to show: [CLIPBOARD]
+05-09 20:39:50.864  8468  8468 I AndroidIME: InputBundleManager.startInput():372 startInput() with ocu[keyboardType=accessory, payload=null]
+05-09 20:39:50.864  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.864  8468  8468 I KeyboardViewController: KeyboardViewController.hide():988 Requesting to hide sub view with id 2131436909 #0x7f0b256d which doesn't exist in current keyboard view
+05-09 20:39:50.865  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.865  8468  8468 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard composing_text_consumer is not activated before!
+05-09 20:39:50.865  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.onDeactivate():154
+05-09 20:39:50.865  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():131 shutdown()
+05-09 20:39:50.865  8468  8468 I AutoPasteSuggestionHelper: AutoPasteSuggestionHelper.createProactiveSuggestions():523 Failed to create item chips.
+05-09 20:39:50.865  8468  8468 I PkModeUpdater: PkModeUpdater.onActivate():76 onActivate false true
+05-09 20:39:50.865  8468  8468 I AccessoryInputModeManager: AccessoryInputModeManager.onModeStarted():346 Accessory input mode started: STYLUS
+05-09 20:39:50.865  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.865  8468  8468 I WidgetViewShowingController: WidgetViewShowingController.showWidgetKeyboardInternal():532 Show companion widget
+05-09 20:39:50.865  8468  8468 W StatusViewController: StatusViewController.updateKeyboardView():46 Failed to inflate voice header view [UD]
+05-09 20:39:50.866  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:50.866  8468  8468 I WidgetViewShowingPositionHandler: WidgetViewShowingPositionHandler.updateAvailableArea():199 update available area Rect(24, 180 - 1256, 2778)
+05-09 20:39:50.866  8468  8468 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard composing_text_consumer is not activated before!
+05-09 20:39:50.866  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.onActivate():130
+05-09 20:39:50.866  8468  8468 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 321 height for app when ime window height:2628, header height:132 and isFullscreenMode:false, so the max keyboard body height is:2175
+05-09 20:39:50.866  8468  8468 I BaseKeyboardSizeHelper: BaseKeyboardSizeHelper.calculateMaxKeyboardBodyHeight():73 leave 321 height for app when ime window height:2628, header height:132 and isFullscreenMode:false, so the max keyboard body height is:2175
+05-09 20:39:50.866  8468  8468 W ExtensionWrapper: ExtensionWrapper.setExtensionViewVisibility():878 interface nqy is not activate
+05-09 20:39:50.867  8468  8468 I NewLanguagePromptExtension: NewLanguagePromptExtension.onActivate():189 Not activated NewLanguagePromptExtension: not a normal text input box.
+05-09 20:39:50.867  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():109 cancelShutdown()
+05-09 20:39:50.867  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():121 syncLanguagePacks()
+05-09 20:39:50.867  8468  8468 I VoiceInputManager: VoiceInputManager.onKeyboardActivated():1204 onKeyboardActivated() [UD]
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@8ab16a7, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@de9b754, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@5e79fe0, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@d958299, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.867  8468  8468 W AccessPointsManager: AccessPointsManager.addAccessPoint():1097 The holder controller #0x7f0b248b is not registered
+05-09 20:39:50.867  8468  8468 I ContactNoticeModule: ContactNoticeModule.shouldPostContactPermissionNotice():142 Not post contact permission notice: not a normal text input box.
+05-09 20:39:50.867  8468 10614 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():221 maybeScheduleAutoPackDownloadForFallback()
+05-09 20:39:50.867  8468 10614 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():213 maybeScheduleAutoPackDownload() for language tag en-US
+05-09 20:39:50.867  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@f28f487, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():259 Unregister key sequence pbd{labelResId=2132020490, callback=fdy@65b6fb4, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@6b2af55, lastModifier=2, keyCodes=[56], actions=[0]}
+05-09 20:39:50.867  8468  8468 I HardKeyTracker: HardKeyTracker.registerKeySequence():201 Register key sequence pbd{labelResId=2132020490, callback=fdy@c3ebd6a, lastModifier=0, keyCodes=[317], actions=[0]}
+05-09 20:39:50.867  8468  8468 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomaticallyInCurrentInputBox():384 No private IME option set to start voice input.
+05-09 20:39:50.871  8468   992 I SystemHapticSettings: SystemHapticSettings.updateSystemVibrationState():63 update vibration state: true
+05-09 20:39:50.892  8468  8468 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():344 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=HEADER keyboardView=null
+05-09 20:39:50.892  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.892  8468  8468 I GoogleInputMethodService: GoogleInputMethodService$1.onKeyboardViewShown():344 onKeyboardViewShown: keyboardType=accessory, keyboardViewType=BODY keyboardView=null
+05-09 20:39:50.892  8468  8468 W Keyboard: Keyboard.getKeyboardViewHelper():607 null helper is returned: keyboardDef=oci{processedConditions={}, globalConditions={}, className=com.google.android.libraries.inputmethod.keyboard.impl.Keyboard, resourceIds=[#0x7f17004e], initialStates=0, keyboardViewDefs=[], persistentStates=0, persistentStatesPrefKey=null, popupBubbleLayoutId=#0x0, recentKeyLayoutId=#0x0, recentKeyPopupLayoutId=#0x0, recentKeyType=null, rememberRecentKey=NONE, sessionStates=0}, type=BODY, helpersCreated={}, context.getResources().getConfiguration(): {1.0 310mcc260mnc [en_US] ldltr sw427dp w427dp h952dp 480dpi nrml long compactNeeded port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1280, 2856) mAppBounds=Rect(0, 0 - 1280, 2856) mMaxBounds=Rect(0, 0 - 1280, 2856) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.52 fontWeightAdjustment=0}
+05-09 20:39:50.908   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.909   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:50.943  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/musicians/100 (274ms, 3477-byte body)
+05-09 20:39:51.015   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.016   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.164   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.164   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.165  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():1661 onFinishInputView(false)
+05-09 20:39:51.165  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:51.165  8468  8468 I KeyboardViewController: KeyboardViewController.hide():988 Requesting to hide sub view with id 2131436909 #0x7f0b256d which doesn't exist in current keyboard view
+05-09 20:39:51.166  8468  8468 W ExtensionWrapper: ExtensionWrapper.setAllowUpdateNavigationBarStyle():887 class kwe is not activate
+05-09 20:39:51.166  8468  8468 W SupplementaryKeyboardsWrapper: SupplementaryKeyboardsWrapper.deactivateKeyboard():162 keyboard composing_text_consumer is not activated before!
+05-09 20:39:51.166  8468  8468 I GlobeKeyExtension: GlobeKeyExtension.onDeactivate():154
+05-09 20:39:51.166  8468  8468 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():153 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+05-09 20:39:51.166  8468  8468 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():131 shutdown()
+05-09 20:39:51.166  8468  8468 I UniversalDictationUiProvider: UniversalDictationUiProvider.onDeactivate():69 onDeactivate() [UD]
+05-09 20:39:51.166  8468  8468 I AndroidIME: AbstractIme.onDeactivate():213 PasswordIme.onDeactivate()
+05-09 20:39:51.167  8468  8468 I PrimesLoggerHolder: FrameMetricServiceImpl.stopAsFuture():213 Measurement not found: OnConfigurationChanged
+05-09 20:39:51.167  8468  8468 D ImeBackCallbackSender: Unregister OnBackInvokedCallback at app window (packageName=com.team4.vinilosapp)
+05-09 20:39:51.264   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.364   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.379   663  1012 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@594b861e does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:39:51.380  1076  1076 D RecentsView: onTaskDisplayChanged: 700, new displayId = 0
+05-09 20:39:51.381   499  1168 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc047c00) with descriptor: '(not cached)'
+05-09 20:39:51.381   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:39:51.382  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: PAUSED
+05-09 20:39:51.382  2573  2573 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.team4.vinilosapp.MainActivity@ebfe88d
+05-09 20:39:51.383  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:51.383   663  1012 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:51.383  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:51.384   547 27315 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:39:51.385  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+05-09 20:39:51.386  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+05-09 20:39:51.386  2605  2623 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+05-09 20:39:51.388  2605  2623 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-09 20:39:51.388  2605  2623 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-09 20:39:51.392   663  1548 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:51.395  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@c372e29
+05-09 20:39:51.404   934  1126 I Surface : Creating surface for consumer unnamed-934-621 with slotExpansion=1 for 64 slots
+05-09 20:39:51.404  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:39:51.406   934  1126 I Surface : Creating surface for consumer VRI[test]#621(BLAST Consumer)621 with slotExpansion=1 for 64 slots
+05-09 20:39:51.407  2605  2605 I Surface : Creating surface for consumer unnamed-2605-15 with slotExpansion=1 for 64 slots
+05-09 20:39:51.408  2605  2605 I Surface : Creating surface for consumer VRI[InstrumentationActivityInvoker$EmptyActivity]#15(BLAST Consumer)15 with slotExpansion=1 for 64 slots
+05-09 20:39:51.446  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:51.446  1076  1076 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:51.446  1076  1076 D BaseActivity: Launcher flags updated: [state_started] +[state_started]
+05-09 20:39:51.447  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+05-09 20:39:51.457  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[]
+05-09 20:39:51.457  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+05-09 20:39:51.457  1076  1076 D StatsLog: LAUNCHER_ONRESUME
+05-09 20:39:51.459  1076  1138 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-09 20:39:51.460  1736  1967 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-09 20:39:51.460  1736  1967 I AiAiEcho: EchoTargets:
+05-09 20:39:51.460  1736  1967 I AiAiEcho: Filtered by AiAi flag check:
+05-09 20:39:51.460  1736  1967 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-09 20:39:51.460  1736  1967 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-09 20:39:51.461  1736  1967 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-09 20:39:51.462  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+05-09 20:39:51.462  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 6, skipping event processing.
+05-09 20:39:51.463  1076  1076 I Surface : Creating surface for consumer unnamed-1076-405 with slotExpansion=1 for 64 slots
+05-09 20:39:51.463  1076  1076 I Surface : Creating surface for consumer VRI[NexusLauncherActivity]#339(BLAST Consumer)339 with slotExpansion=1 for 64 slots
+05-09 20:39:51.465  1076  1076 D BaseDepthController: setSurface:
+05-09 20:39:51.465  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:39:51.465  1076  1076 D BaseDepthController: 	mBaseSurface: Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08
+05-09 20:39:51.465  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.465  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... .......D 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.476   934  1546 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: StateManager.createAtomicAnimation: fromState: Normal, toState: Normal, partial trace:
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.quickstep.util.ScalingWorkspaceRevealAnim.<init>(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:60)
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:622)
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:135)
+05-09 20:39:51.492  1076  1076 D AllAppsTransitionController: shouldProtectHeader: false skipScrim: true state: Normal stateManager.getState(): Normal
+05-09 20:39:51.492  1076  1076 D KeyboardInsetsHandler: removePendingImeController: pendingImeController=null
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:59)
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:734)
+05-09 20:39:51.492  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:135)
+05-09 20:39:51.492  1076  1076 D b/311077782: LauncherAnimationRunner.setAnimation
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.492  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.492  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.495  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.495  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.496   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.502  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:51.502  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:51.502  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:51.502  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:51.502  1076  1076 I SsBaseTemplateCard: Secondary card pane is null
+05-09 20:39:51.511  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.511  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.512  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:51.533  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.533  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.543  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:51.543  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:51.543  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:51.546   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2300 CompositionType fallback from 2 to 1
+05-09 20:39:51.546   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2301 CompositionType fallback from 2 to 1
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.547  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=699 windowingMode=1 user=0 lastActiveTime=17636751] null, [id=700 windowingMode=1 user=0 lastActiveTime=17636764] null]
+05-09 20:39:51.589   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.597   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.598   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.598   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.598   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.598   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.598   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.603  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.604  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.652   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.696   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.702  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:51.702  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+05-09 20:39:51.704   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:51.710  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.710  1076  1076 D BaseDepthController: setEarlyWakeup: true
+05-09 20:39:51.710  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.734   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.734   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.735  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:51.735  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:51.735  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:51.736  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:51.736  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.736  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.736  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.771   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.795   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.851   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.851   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.869   547  2771 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:39:51.890  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.890  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.897  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:51.897  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:51.964   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:51.964   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.082  2573  2692 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+05-09 20:39:52.082  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.082  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.083   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.083   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.161  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.161  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.192  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.192  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.214   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.214   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.240  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.240  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.296  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.296  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.302   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.303   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.336  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.336  1076  1076 D BaseDepthController: setEarlyWakeup: false
+05-09 20:39:52.336  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ........ 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ........ 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.447   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.447   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:52.478  1076  1076 D ScalingWorkspaceRevealAnim: onAnimationEnd, workspace and hotseat are visible
+05-09 20:39:52.478  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13026)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:52.478  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... ......ID 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... ......ID 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:52.488  2573  2573 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:39:52.507  2573  2589 D HWUI    : endAllActiveAnimators on 0xb4007bca040790a0 (UnprojectedRipple) with handle 0xb4007bc93405b2e0
+05-09 20:39:52.507  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:52.534  2605  2605 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:52.535  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@edaa7f2
+05-09 20:39:52.547   663   905 I Surface : Creating surface for consumer unnamed-663-373 with slotExpansion=1 for 64 slots
+05-09 20:39:52.548   663   905 I Surface : Creating surface for consumer ImageReader-1024x2284f1m1-663-373 with slotExpansion=1 for 64 slots
+05-09 20:39:52.548   663   905 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+05-09 20:39:52.567  2573  2573 I AutofillManager: onInvisibleForAutofill(): expiringResponse
+05-09 20:39:52.567  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: STOPPED
+05-09 20:39:52.567  2573  2573 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.team4.vinilosapp.MainActivity@ebfe88d
+05-09 20:39:52.583   663   905 E ConsumerBase: [ImageReader-1024x2284f1m1-663-373] abandonLocked: ConsumerBase is abandoned!
+05-09 20:39:52.606  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:52.606  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@ebfe88d in: DESTROYED
+05-09 20:39:52.606  2573  2573 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+05-09 20:39:52.608  2573  2587 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@4cb0263]
+05-09 20:39:52.610  2573  2573 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:52.611  1076  1076 D RecentsView: onTaskRemoved: 700, not handling task stack changes
+05-09 20:39:52.611  1076  1076 D RecentsView: onTaskRemoved: 700, not handling task stack changes
+05-09 20:39:52.611  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:52.634  2573  2587 I TestRunner: finished: associatePrizeToArtist_andValidateItIsDisplayedInArtistDetail(com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest)

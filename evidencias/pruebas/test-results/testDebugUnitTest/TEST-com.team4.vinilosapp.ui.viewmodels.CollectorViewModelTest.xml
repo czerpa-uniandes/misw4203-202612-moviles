@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.736Z" hostname="Fabians-MacBook-Air-2.local" time="0.008">
+  <properties/>
+  <testcase name="fetchCollectors_setsEmptyListWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="fetchCollectorById_setsErrorWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="search_returnsEmptyWhenNoMatch" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="fetchCollectors_setsLoadingFalseAfterCompletion" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="fetchCollectors_updatesCollectorsOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="search_isNormalizedAndIgnoresAccents" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.0"/>
+  <testcase name="search_returnsAllCollectorsWhenQueryIsBlank" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="search_filtersCollectorsByName" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <testcase name="fetchCollectorById_setsSelectedCollectorOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.0"/>
+  <testcase name="search_isCaseInsensitive" classname="com.team4.vinilosapp.ui.viewmodels.CollectorViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
