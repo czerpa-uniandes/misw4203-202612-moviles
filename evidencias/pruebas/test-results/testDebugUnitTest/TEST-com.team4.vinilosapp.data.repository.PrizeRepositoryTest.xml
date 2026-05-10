@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.220Z" hostname="Fabians-MacBook-Air-2.local" time="0.003">
+  <properties/>
+  <testcase name="getPrizes_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.0"/>
+  <testcase name="getPrizes_returnsSuccessWithData" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.001"/>
+  <testcase name="createPrize_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.0"/>
+  <testcase name="createPrize_returnsSuccessAndSendsBody" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.0"/>
+  <testcase name="getPrizes_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.0"/>
+  <testcase name="associatePrizeArtist_returnsSuccessAndSendsBody" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.001"/>
+  <testcase name="associatePrizeArtist_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.PrizeRepositoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

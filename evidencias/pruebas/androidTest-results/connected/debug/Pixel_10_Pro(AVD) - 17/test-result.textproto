@@ -1,0 +1,1533 @@
+# proto-message: google.testing.platform.proto.api.core.TestSuiteResult
+# 2026-05-10T01:40:22.508264Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 27
+  device {
+    id: "emulator-5554"
+    friendly_name: "primary"
+  }
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.team4.vinilosapp"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1778377148
+      nanos: 80000000
+    }
+    end_time {
+      seconds: 1778377148
+      nanos: 99000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddAlbumToCollectorScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "addAlbumToCollectorScreen_allowsWritingPrice"
+    start_time {
+      seconds: 1778377148
+      nanos: 110000000
+    }
+    end_time {
+      seconds: 1778377150
+      nanos: 767000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest-addAlbumToCollectorScreen_allowsWritingPrice.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddAlbumToCollectorScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "addAlbumToCollectorScreen_showsStatusOptions"
+    start_time {
+      seconds: 1778377150
+      nanos: 775000000
+    }
+    end_time {
+      seconds: 1778377152
+      nanos: 841000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest-addAlbumToCollectorScreen_showsStatusOptions.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddAlbumToCollectorScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "addAlbumToCollectorScreen_showsFormFields"
+    start_time {
+      seconds: 1778377152
+      nanos: 842000000
+    }
+    end_time {
+      seconds: 1778377154
+      nanos: 154000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest-addAlbumToCollectorScreen_showsFormFields.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddAlbumToCollectorScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "addAlbumToCollectorScreen_showsErrorWhenPriceIsEmpty"
+    start_time {
+      seconds: 1778377154
+      nanos: 155000000
+    }
+    end_time {
+      seconds: 1778377155
+      nanos: 716000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest-addAlbumToCollectorScreen_showsErrorWhenPriceIsEmpty.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddPrizeScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToAddPrizeScreen_andValidateFormIsDisplayed"
+    start_time {
+      seconds: 1778377155
+      nanos: 717000000
+    }
+    end_time {
+      seconds: 1778377158
+      nanos: 881000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddPrizeScreenTest-navigateToAddPrizeScreen_andValidateFormIsDisplayed.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddPrizeScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "fillAddPrizeForm_andSubmit_returnsToPrizesSection"
+    start_time {
+      seconds: 1778377158
+      nanos: 891000000
+    }
+    end_time {
+      seconds: 1778377163
+      nanos: 627000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddPrizeScreenTest-fillAddPrizeForm_andSubmit_returnsToPrizesSection.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddTrackAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToAddTrackScreen_andValidateFormIsDisplayed"
+    start_time {
+      seconds: 1778377163
+      nanos: 656000000
+    }
+    end_time {
+      seconds: 1778377167
+      nanos: 892000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddTrackAlbumScreenTest-navigateToAddTrackScreen_andValidateFormIsDisplayed.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AddTrackAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "fillAddTrackForm_andSubmit"
+    start_time {
+      seconds: 1778377167
+      nanos: 922000000
+    }
+    end_time {
+      seconds: 1778377173
+      nanos: 398000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AddTrackAlbumScreenTest-fillAddTrackForm_andSubmit.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AlbumDetailScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToAlbumDetail_and_validateDetailScreenContent"
+    start_time {
+      seconds: 1778377173
+      nanos: 399000000
+    }
+    end_time {
+      seconds: 1778377175
+      nanos: 591000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AlbumDetailScreenTest-navigateToAlbumDetail_and_validateDetailScreenContent.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AlbumsScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "albumsScreen_showsAddAlbumButton"
+    start_time {
+      seconds: 1778377175
+      nanos: 592000000
+    }
+    end_time {
+      seconds: 1778377177
+      nanos: 743000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AlbumsScreenTest-albumsScreen_showsAddAlbumButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AlbumsScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "albumsScreen_opensFilterBottomSheet_whenFilterButtonIsClicked"
+    start_time {
+      seconds: 1778377177
+      nanos: 744000000
+    }
+    end_time {
+      seconds: 1778377180
+      nanos: 186000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AlbumsScreenTest-albumsScreen_opensFilterBottomSheet_whenFilterButtonIsClicked.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AlbumsScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "albumsScreen_appliesFilter_andClosesBottomSheet"
+    start_time {
+      seconds: 1778377180
+      nanos: 188000000
+    }
+    end_time {
+      seconds: 1778377183
+      nanos: 268000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AlbumsScreenTest-albumsScreen_appliesFilter_andClosesBottomSheet.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AlbumsScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "albumsScreen_showsAlbumsList"
+    start_time {
+      seconds: 1778377183
+      nanos: 270000000
+    }
+    end_time {
+      seconds: 1778377185
+      nanos: 54000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AlbumsScreenTest-albumsScreen_showsAlbumsList.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "ArtistDetailScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToArtistDetail_and_validateDetailScreenContent"
+    start_time {
+      seconds: 1778377185
+      nanos: 54000000
+    }
+    end_time {
+      seconds: 1778377187
+      nanos: 773000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.ArtistDetailScreenTest-navigateToArtistDetail_and_validateDetailScreenContent.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AssociatePrizeArtistScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToAssociatePrizeArtistScreen_andValidateFormIsDisplayed"
+    start_time {
+      seconds: 1778377187
+      nanos: 780000000
+    }
+    end_time {
+      seconds: 1778377190
+      nanos: 248000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest-navigateToAssociatePrizeArtistScreen_andValidateFormIsDisplayed.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "AssociatePrizeArtistScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "associatePrizeToArtist_andValidateItIsDisplayedInArtistDetail"
+    start_time {
+      seconds: 1778377190
+      nanos: 364000000
+    }
+    end_time {
+      seconds: 1778377195
+      nanos: 506000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest-associatePrizeToArtist_andValidateItIsDisplayedInArtistDetail.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CollectorDetailScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "navigateToCollectorDetail_andValidateContent"
+    start_time {
+      seconds: 1778377195
+      nanos: 516000000
+    }
+    end_time {
+      seconds: 1778377198
+      nanos: 777000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CollectorDetailScreenTest-navigateToCollectorDetail_andValidateContent.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CommentAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "commentAlbumScreen_showsErrorWhenRatingIsInvalid"
+    start_time {
+      seconds: 1778377198
+      nanos: 780000000
+    }
+    end_time {
+      seconds: 1778377203
+      nanos: 530000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CommentAlbumScreenTest-commentAlbumScreen_showsErrorWhenRatingIsInvalid.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CommentAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "commentAlbumScreen_allowsUserToWriteCommentAndRating"
+    start_time {
+      seconds: 1778377203
+      nanos: 562000000
+    }
+    end_time {
+      seconds: 1778377206
+      nanos: 172000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CommentAlbumScreenTest-commentAlbumScreen_allowsUserToWriteCommentAndRating.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CommentAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "commentAlbumScreen_showsFormFields"
+    start_time {
+      seconds: 1778377206
+      nanos: 173000000
+    }
+    end_time {
+      seconds: 1778377208
+      nanos: 119000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CommentAlbumScreenTest-commentAlbumScreen_showsFormFields.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CommentAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "commentAlbumScreen_showsErrorWhenCommentIsEmpty"
+    start_time {
+      seconds: 1778377208
+      nanos: 122000000
+    }
+    end_time {
+      seconds: 1778377210
+      nanos: 602000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CommentAlbumScreenTest-commentAlbumScreen_showsErrorWhenCommentIsEmpty.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CreateAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "createAlbumScreen_displaysMainFields"
+    start_time {
+      seconds: 1778377210
+      nanos: 634000000
+    }
+    end_time {
+      seconds: 1778377212
+      nanos: 543000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CreateAlbumScreenTest-createAlbumScreen_displaysMainFields.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CreateAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "createAlbumScreen_displaysGenreAndLabelOptions"
+    start_time {
+      seconds: 1778377212
+      nanos: 574000000
+    }
+    end_time {
+      seconds: 1778377214
+      nanos: 892000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CreateAlbumScreenTest-createAlbumScreen_displaysGenreAndLabelOptions.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CreateAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "createAlbumScreen_allowsTypingInTextFields"
+    start_time {
+      seconds: 1778377214
+      nanos: 894000000
+    }
+    end_time {
+      seconds: 1778377217
+      nanos: 766000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CreateAlbumScreenTest-createAlbumScreen_allowsTypingInTextFields.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CreateAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "createAlbumScreen_allowsSelectingGenreAndRecordLabel"
+    start_time {
+      seconds: 1778377217
+      nanos: 774000000
+    }
+    end_time {
+      seconds: 1778377220
+      nanos: 32000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CreateAlbumScreenTest-createAlbumScreen_allowsSelectingGenreAndRecordLabel.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "CreateAlbumScreenTest"
+    test_package: "com.team4.vinilosapp.ui"
+    test_method: "createAlbumScreen_showsCreateButton"
+    start_time {
+      seconds: 1778377220
+      nanos: 39000000
+    }
+    end_time {
+      seconds: 1778377221
+      nanos: 253000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/logcat-com.team4.vinilosapp.ui.CreateAlbumScreenTest-createAlbumScreen_showsCreateButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/fabian/Projects/misw4203-202612-moviles/app/build/outputs/androidTest-results/connected/debug/Pixel_10_Pro(AVD) - 17/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

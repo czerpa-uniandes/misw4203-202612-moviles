@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.226Z" hostname="Fabians-MacBook-Air-2.local" time="0.488">
+  <properties/>
+  <testcase name="loadAlbum_setsSuccessOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.483"/>
+  <testcase name="fetchAlbums_updatesAlbumsOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.001"/>
+  <testcase name="fetchAlbums_returnsEmptyListOnFailure" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.001"/>
+  <testcase name="loadAlbum_setsErrorOnFailure" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.0"/>
+  <testcase name="addTrack_setsSuccessWhenAdapterSucceeds" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.0"/>
+  <testcase name="addTrack_doesNotSetSuccessWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.AlbumViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/fabian/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

@@ -1,0 +1,2 @@
+05-09 20:39:05.189  2573  2587 I TestRunner: started: useAppContext(com.team4.vinilosapp.ExampleInstrumentedTest)
+05-09 20:39:05.190  2573  2587 I TestRunner: finished: useAppContext(com.team4.vinilosapp.ExampleInstrumentedTest)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.209Z" hostname="Fabians-MacBook-Air-2.local" time="0.002">
+  <properties/>
+  <testcase name="addTrack_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.001"/>
+  <testcase name="getAlbums_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.0"/>
+  <testcase name="getAlbumDetail_returnsSuccessWhenAdapterSucceeds" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.0"/>
+  <testcase name="getAlbumDetail_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.001"/>
+  <testcase name="addTrack_returnsSuccessWhenAdapterSucceeds" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.0"/>
+  <testcase name="getAlbums_returnsSuccessWhenAdapterSucceeds" classname="com.team4.vinilosapp.data.repository.AlbumRepositoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

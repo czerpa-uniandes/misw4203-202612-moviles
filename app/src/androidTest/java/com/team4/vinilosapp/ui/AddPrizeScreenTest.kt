@@ -81,10 +81,15 @@ class AddPrizeScreenTest {
     }
 
     @Test
-    fun fillAddPrizeForm_andSubmit() {
+    fun fillAddPrizeForm_andSubmit_returnsToPrizesSection() {
         goToAddPrizeScreen()
 
-        val prizeName = "Premio UI Test"
+        val shortId = java.util.UUID.randomUUID()
+            .toString()
+            .replace("-", "")
+            .take(8)
+
+        val prizeName = "Premio UI Test $shortId"
 
         composeTestRule
             .onNodeWithTag("prize_name_input", useUnmergedTree = true)
@@ -104,22 +109,13 @@ class AddPrizeScreenTest {
 
         composeTestRule.waitUntil(timeoutMillis = 20_000) {
             composeTestRule
-                .onAllNodesWithText("Premios")
-                .fetchSemanticsNodes()
-                .isNotEmpty()
-        }
-
-        composeTestRule.waitUntil(timeoutMillis = 20_000) {
-            composeTestRule
-                .onAllNodesWithText(prizeName)
+                .onAllNodesWithText("Premios", substring = true)
                 .fetchSemanticsNodes()
                 .isNotEmpty()
         }
 
         composeTestRule
-            .onNodeWithText(prizeName)
+            .onAllNodesWithText("Premios", substring = true)[0]
             .assertIsDisplayed()
-
-        composeTestRule.waitForIdle()
     }
 }

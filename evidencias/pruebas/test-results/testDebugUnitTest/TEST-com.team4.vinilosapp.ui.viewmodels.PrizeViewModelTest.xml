@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.744Z" hostname="Fabians-MacBook-Air-2.local" time="0.007">
+  <properties/>
+  <testcase name="resetCreateState_clearsCreateSuccessAndError" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.001"/>
+  <testcase name="associatePrizeArtist_setsErrorOnFailure" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.001"/>
+  <testcase name="createPrize_setsSuccessOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.0"/>
+  <testcase name="fetchPrizes_setsErrorOnFailure" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.001"/>
+  <testcase name="fetchPrizes_updatesPrizesOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.0"/>
+  <testcase name="resetAssociateState_clearsAssociateSuccessAndError" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.001"/>
+  <testcase name="createPrize_setsErrorOnFailure" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.001"/>
+  <testcase name="associatePrizeArtist_setsSuccessOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.PrizeViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

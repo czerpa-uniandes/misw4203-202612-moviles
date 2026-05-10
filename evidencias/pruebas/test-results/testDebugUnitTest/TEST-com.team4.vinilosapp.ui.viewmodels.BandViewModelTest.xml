@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.725Z" hostname="Fabians-MacBook-Air-2.local" time="0.011">
+  <properties/>
+  <testcase name="fetchBands_setsLoadingFalseAfterCompletion" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="search_filtersBandsByName" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="search_returnsEmptyWhenNoMatch" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="search_returnsAllBandsWhenQueryIsBlank" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.0"/>
+  <testcase name="fetchAllMusicians_keepsListEmptyWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="fetchBands_updatesListOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="addMusicianToBand_callsOnSuccessAndRefreshesDetail" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="fetchBandDetail_setsDetailErrorWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.0"/>
+  <testcase name="search_isNormalizedAndIgnoresAccents" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="addMusicianToBand_setsErrorWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="fetchBands_setsErrorMessageWhenAdapterFails" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="search_isCaseInsensitive" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.0"/>
+  <testcase name="fetchBandDetail_setsSelectedBandOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <testcase name="fetchAllMusicians_updatesListOnSuccess" classname="com.team4.vinilosapp.ui.viewmodels.BandViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
