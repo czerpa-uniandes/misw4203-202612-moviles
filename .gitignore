@@ -1,6 +1,6 @@
 # Gradle
 .gradle/
-*/build/
+build/
 
 # Local SDK config (machine-specific)
 local.properties
