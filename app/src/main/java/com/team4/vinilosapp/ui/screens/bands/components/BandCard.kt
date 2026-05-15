@@ -14,6 +14,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -22,6 +23,7 @@ import coil.compose.SubcomposeAsyncImage
 import coil.request.CachePolicy
 import coil.request.ImageRequest
 import com.team4.vinilosapp.data.models.Performer
+import androidx.compose.ui.semantics.contentDescription
 
 @Composable
 fun BandCard(band: Performer, onClick: () -> Unit = {}) {
@@ -32,6 +34,9 @@ fun BandCard(band: Performer, onClick: () -> Unit = {}) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 6.dp)
+            .semantics {
+                contentDescription = "Banda ${band.name}"
+            }
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -45,7 +50,7 @@ fun BandCard(band: Performer, onClick: () -> Unit = {}) {
                     .memoryCachePolicy(CachePolicy.ENABLED)
                     .diskCachePolicy(CachePolicy.ENABLED)
                     .build(),
-                contentDescription = band.name,
+                contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .size(64.dp)
@@ -93,7 +98,7 @@ fun BandCard(band: Performer, onClick: () -> Unit = {}) {
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
                         text = band.description,
-                        color = Color.Gray,
+                        color = Color(0xFF4A4A4A),
                         fontSize = 13.sp,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis

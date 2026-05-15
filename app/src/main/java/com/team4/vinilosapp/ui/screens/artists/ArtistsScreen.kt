@@ -19,6 +19,9 @@ import com.team4.vinilosapp.ui.screens.artists.components.ArtistsList
 import com.team4.vinilosapp.ui.screens.bands.components.BandsList
 import com.team4.vinilosapp.ui.viewmodels.ArtistViewModel
 import com.team4.vinilosapp.ui.viewmodels.BandViewModel
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
 
 @Composable
 fun ArtistsScreen(navController: NavController) {
@@ -52,7 +55,11 @@ fun ArtistsScreen(navController: NavController) {
                     text = tabs[selectedTab],
                     fontWeight = FontWeight.Bold,
                     fontSize = 30.sp,
-                    color = Color(0xFFB4532A)
+                    color = Color(0xFFB4532A),
+                    modifier = Modifier.semantics {
+                        heading()
+                        contentDescription = "Título de sección ${tabs[selectedTab]}"
+                    }
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 TabRow(
@@ -64,6 +71,9 @@ fun ArtistsScreen(navController: NavController) {
                         Tab(
                             selected = selectedTab == index,
                             onClick = { selectedTab = index },
+                            modifier = Modifier.semantics {
+                                contentDescription = "Pestaña $title"
+                            },
                             text = {
                                 Text(
                                     text = title,

@@ -58,7 +58,7 @@ fun BandsList(onBandClick: (Int) -> Unit = {}, modifier: Modifier = Modifier) {
                     contentAlignment = Alignment.Center
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(text = error!!, color = Color.Gray, textAlign = TextAlign.Center)
+                        Text(text = error!!, color = Color(0xFF4A4A4A), textAlign = TextAlign.Center)
                         Spacer(modifier = Modifier.height(12.dp))
                         Button(
                             onClick = { viewModel.fetchBands() },
@@ -76,7 +76,7 @@ fun BandsList(onBandClick: (Int) -> Unit = {}, modifier: Modifier = Modifier) {
                         .padding(24.dp),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "No hay bandas disponibles", color = Color.Gray)
+                    Text(text = "No hay bandas disponibles", color = Color(0xFF4A4A4A))
                 }
             }
             else -> {

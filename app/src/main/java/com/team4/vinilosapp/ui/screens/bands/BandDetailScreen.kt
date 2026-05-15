@@ -20,6 +20,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -32,8 +34,8 @@ import com.team4.vinilosapp.ui.viewmodels.BandViewModel
 
 private val VinilosPrimary  = Color(0xFFB4532A)
 private val ScreenBg        = Color(0xFFF7F4F2)
-private val CardBg          = Color(0xFFF8F8F8)
-private val SecondaryText   = Color(0xFF6D625C)
+private val CardBg          = Color(0xFFF1ECE8)
+private val SecondaryText   = Color(0xFF4A403A)
 private val PlaceholderBg   = Color(0xFFEEEEED)
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -65,7 +67,10 @@ fun BandDetailScreen(
                     )
                 },
                 navigationIcon = {
-                    IconButton(onClick = { navController.popBackStack() }) {
+                    IconButton(
+                        onClick = { navController.popBackStack() },
+                        modifier = Modifier.sizeIn(minWidth = 48.dp, minHeight = 48.dp)
+                    ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = "Volver",
@@ -179,7 +184,7 @@ private fun BandHeaderCard() {
                     .data(band!!.image)
                     .crossfade(true)
                     .build(),
-                contentDescription = band!!.name,
+                contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .size(110.dp)
@@ -217,7 +222,10 @@ private fun BandHeaderCard() {
                 text = band!!.name,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.ExtraBold,
-                color = Color(0xFF1C1C1C)
+                color = Color(0xFF1C1C1C),
+                modifier = Modifier.semantics {
+                    contentDescription = "Nombre de la banda: ${band!!.name}"
+                }
             )
 
             if (!band!!.creationDate.isNullOrBlank()) {
@@ -285,7 +293,7 @@ private fun MusicianRow(musician: Performer) {
                     .data(musician.image)
                     .crossfade(true)
                     .build(),
-                contentDescription = musician.name,
+                contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .size(56.dp)
@@ -326,12 +334,15 @@ private fun MusicianRow(musician: Performer) {
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
-                    color = Color(0xFF1C1C1C)
+                    color = Color(0xFF1C1C1C),
+                    modifier = Modifier.semantics {
+                        contentDescription = "Nombre del musico: ${musician.name}"
+                    }
                 )
                 if (!musician.birthDate.isNullOrBlank()) {
                     Spacer(modifier = Modifier.height(2.dp))
                     Text(
-                        text = "Nacimiento: ${musician.birthDate!!.take(10)}",
+                        text = "Nacimiento: ${musician.birthDate.take(10)}",
                         style = MaterialTheme.typography.bodySmall,
                         color = SecondaryText
                     )
@@ -360,12 +371,23 @@ private fun AddMusicianSheet(
     ModalBottomSheet(
         onDismissRequest = onDismiss,
         sheetState = sheetState,
-        containerColor = Color.White
+        containerColor = Color.White,
+        dragHandle = {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(48.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                BottomSheetDefaults.DragHandle()
+            }
+        }
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight(0.85f)
+                .fillMaxHeight(1f)
+                .padding(top = 12.dp)
                 .padding(horizontal = 20.dp)
                 .padding(bottom = 32.dp)
         ) {
@@ -375,6 +397,7 @@ private fun AddMusicianSheet(
                     thickness = 2.dp,
                     color = VinilosPrimary
                 )
+
                 Text(
                     text = "Asociar músico",
                     style = MaterialTheme.typography.headlineSmall,
@@ -405,14 +428,20 @@ private fun AddMusicianSheet(
             when {
                 musiciansLoading -> {
                     Box(
-                        modifier = Modifier.fillMaxWidth().height(200.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(200.dp),
                         contentAlignment = Alignment.Center
-                    ) { CircularProgressIndicator(color = VinilosPrimary) }
+                    ) {
+                        CircularProgressIndicator(color = VinilosPrimary)
+                    }
                 }
 
                 available.isEmpty() -> {
                     Box(
-                        modifier = Modifier.fillMaxWidth().padding(vertical = 32.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 32.dp),
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
@@ -431,10 +460,15 @@ private fun AddMusicianSheet(
                     ) {
                         items(available, key = { it.id }) { musician ->
                             MusicianPickerRow(
-                                musician  = musician,
+                                musician = musician,
                                 isLoading = addLoading,
-                                onClick   = {
-                                    viewModel.addMusicianToBand(bandId, musician.id) { onDismiss() }
+                                onClick = {
+                                    viewModel.addMusicianToBand(
+                                        bandId,
+                                        musician.id
+                                    ) {
+                                        onDismiss()
+                                    }
                                 }
                             )
                         }
@@ -462,7 +496,7 @@ private fun MusicianPickerRow(
                 .data(musician.image)
                 .crossfade(true)
                 .build(),
-            contentDescription = musician.name,
+            contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .size(48.dp)
@@ -521,7 +555,10 @@ private fun MusicianPickerRow(
             enabled = !isLoading,
             colors = ButtonDefaults.buttonColors(containerColor = VinilosPrimary),
             shape = RoundedCornerShape(12.dp),
-            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
+            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+            modifier = Modifier.semantics {
+                contentDescription = "Agregar músico ${musician.name}"
+            }
         ) {
             if (isLoading) {
                 CircularProgressIndicator(
