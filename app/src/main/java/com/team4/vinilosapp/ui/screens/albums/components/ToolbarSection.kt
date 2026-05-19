@@ -24,40 +24,18 @@ fun ToolbarSection(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .background(Color.White)
-            .padding(horizontal = 16.dp, vertical = 16.dp),
+            .padding(horizontal = 16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(
-                imageVector = Icons.Default.Search,
-                contentDescription = "Buscar",
-                tint = Color(0xFFB4532A),
-                modifier = Modifier.size(20.dp)
-            )
-
-            Spacer(modifier = Modifier.width(8.dp))
-
             Text(
                 text = "Vinilos",
-                color = Color(0xFFB4532A),
                 fontWeight = FontWeight.Bold,
-                fontSize = 20.sp
-            )
-        }
-
-        Box(
-            modifier = Modifier
-                .size(36.dp)
-                .clip(CircleShape)
-                .background(Color(0xFF111111)),
-            contentAlignment = Alignment.Center
-        ){
-            Text(
-                text = "👤",
-                color = Color.White
+                fontSize = 30.sp,
+                color = Color(0xFFB4532A)
             )
         }
     }

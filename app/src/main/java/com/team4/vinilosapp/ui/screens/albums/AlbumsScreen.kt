@@ -51,12 +51,11 @@ fun AlbumsScreen(navController: NavController) {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-
             LazyColumn(
                 modifier = Modifier.fillMaxSize()
                     .testTag("albums_lazy_column"),
                 contentPadding = PaddingValues(
-                    top = 100.dp,
+                    top = 50.dp,
                     bottom = 80.dp
                 )
             ) {

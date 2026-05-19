@@ -47,6 +47,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -150,7 +153,7 @@ private fun AlbumDetailContent(
         item {
             AsyncImage(
                 model = album.cover,
-                contentDescription = album.name,
+                contentDescription = "Imagen del album $album.name",
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(360.dp)
@@ -193,7 +196,7 @@ private fun AlbumDetailContent(
                         text = album.recordLabel.uppercase(),
                         modifier = Modifier.testTag("album_detail_label")
                     )
-                    BadgeChip("CURADOR PRO", VinilosTeal)
+                    BadgeChip("CURADOR PRO", Color(0xFF087C7C))
                 }
             }
         }
@@ -315,18 +318,6 @@ private fun AlbumTopBar(
 
         Spacer(modifier = Modifier.weight(1f))
 
-        Box(
-            modifier = Modifier
-                .size(38.dp)
-                .clip(CircleShape)
-                .background(Color(0xFF111111)),
-            contentAlignment = Alignment.Center
-        ) {
-            Text(
-                text = "👤",
-                color = Color.White
-            )
-        }
     }
 }
 
@@ -375,6 +366,8 @@ private fun SectionTitle(text: String) {
         )
         Text(
             text = text,
+            modifier = Modifier
+                .clearAndSetSemantics { },
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.ExtraBold,
             color = Color(0xFF1C1C1C)
@@ -393,7 +386,7 @@ private fun TrackRow(index: Int, track: Track) {
         Text(
             text = index.toString().padStart(2, '0'),
             modifier = Modifier.width(36.dp),
-            color = Color(0xFFD7B1A4),
+            color = Color(0xFF8A5A4A),
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.SemiBold
         )
@@ -403,19 +396,31 @@ private fun TrackRow(index: Int, track: Track) {
                 text = track.name,
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF222222)
+                color = Color(0xFF222222),
+                modifier = Modifier
+                        .semantics {
+                    this.contentDescription = "Cancion # $index titulada: $track.name"
+                }
             )
             Text(
                 text = "Lado ${if (index % 2 == 0) "B" else "A"}",
                 style = MaterialTheme.typography.bodyMedium,
-                color = Color(0xFFA99A93)
+                color = Color(0xFF6F625C),
+                modifier = Modifier
+                    .semantics {
+                        this.contentDescription = "Lado ${if (index % 2 == 0) "B" else "A"} de la cancion $index titulada: $track.name"
+                    }
             )
         }
 
         Text(
             text = track.duration,
             style = MaterialTheme.typography.titleMedium,
-            color = Color(0xFF5E524D)
+            color = Color(0xFF5E524D),
+            modifier = Modifier
+                    .semantics {
+                this.contentDescription = "Cancion # $index titulada: $track.name con duraciòn $track.duration"
+            }
         )
     }
 }
@@ -443,7 +448,11 @@ private fun CommentCard(comment: Comment, index: Int) {
                         .background(Color(0xFFD8ECEB)),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(avatars[index % avatars.size])
+                    Text(
+                        text = avatars[index % avatars.size],
+                        modifier = Modifier
+                            .clearAndSetSemantics { }
+                    )
                 }
 
                 Spacer(modifier = Modifier.width(12.dp))
@@ -451,6 +460,8 @@ private fun CommentCard(comment: Comment, index: Int) {
                 Column {
                     Text(
                         text = names[index % names.size],
+                        modifier = Modifier
+                            .clearAndSetSemantics { },
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold,
                         color = Color(0xFF2B2B2B)
