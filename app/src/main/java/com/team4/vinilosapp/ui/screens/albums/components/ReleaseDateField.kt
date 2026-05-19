@@ -14,6 +14,7 @@ import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerDefaults
 import androidx.compose.material3.DatePickerDialog
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
@@ -54,18 +55,22 @@ fun ReleaseDateField(
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .clickable { showDatePicker = true }
+//                .clickable { showDatePicker = true }
         ) {
             OutlinedTextField(
                 value = value,
                 onValueChange = {},
-                enabled = false,
+                readOnly = true,
                 placeholder = { Text("Ej: 1973-01-01") },
                 trailingIcon = {
-                    Icon(
-                        imageVector = Icons.Default.DateRange,
-                        contentDescription = "Seleccionar fecha"
-                    )
+                    IconButton(
+                        onClick = { showDatePicker = true }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.DateRange,
+                            contentDescription = "Seleccionar fecha"
+                        )
+                    }
                 },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(50),

@@ -3,16 +3,14 @@ package com.team4.vinilosapp.ui.screens.albums.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -33,9 +31,13 @@ fun ToolbarSection(modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = "Vinilos",
+                modifier = Modifier.semantics {
+                    heading()
+                    contentDescription = "Vinilos"
+                },
                 fontWeight = FontWeight.Bold,
                 fontSize = 30.sp,
-                color = Color(0xFFB4532A)
+                color = Color(0xFFA94C26)
             )
         }
     }

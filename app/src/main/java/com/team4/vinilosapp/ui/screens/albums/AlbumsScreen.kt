@@ -15,6 +15,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.semantics.hideFromAccessibility
+import androidx.compose.ui.semantics.invisibleToUser
+import androidx.compose.ui.semantics.semantics
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.team4.vinilosapp.ui.components.BottomNav
@@ -48,7 +51,12 @@ fun AlbumsScreen(navController: NavController) {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-            Column(modifier = Modifier.fillMaxSize()) {
+            Column(modifier = Modifier
+                .fillMaxSize()
+                .semantics {
+                    if (showFilter) hideFromAccessibility()
+                }
+            ) {
                 HeaderSection(
                     onFilterClick = {
                         showFilter = true
@@ -74,6 +82,9 @@ fun AlbumsScreen(navController: NavController) {
                 modifier = Modifier
                     .align(Alignment.TopCenter)
                     .fillMaxWidth()
+                    .semantics {
+                        if (showFilter) hideFromAccessibility()
+                    }
             )
         }
     }

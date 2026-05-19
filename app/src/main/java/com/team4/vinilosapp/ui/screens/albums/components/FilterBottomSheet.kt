@@ -35,11 +35,14 @@ fun FilterBottomSheet(
     var artist by remember { mutableStateOf("") }
 
     ModalBottomSheet(
+        scrimColor = Color.Black.copy(alpha = 0.20f),
         containerColor = Color.White,
-        onDismissRequest = onDismiss
+        onDismissRequest = onDismiss,
+        dragHandle = null
     ) {
         Column(
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier
+                .padding(16.dp)
         ) {
             Text("Filtros", fontWeight = FontWeight.Bold)
 
