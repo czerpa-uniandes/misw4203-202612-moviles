@@ -1,9 +1,15 @@
 package com.team4.vinilosapp.data.repository
 
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.CollectorIdRequest
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
+import kotlin.Result
 
 class AlbumRepository(
     private val serviceAdapter: VinilosServiceAdapter
@@ -53,6 +59,50 @@ class AlbumRepository(
 
             serviceAdapter.addTrack(albumId, body)
             Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun addComment(
+        albumId: String,
+        collectorId: Int,
+        description: String,
+        rating: Int
+    ): Result<AlbumCommentResponse> {
+        return try {
+            val request = AlbumCommentRequest(
+                description = description,
+                rating = rating,
+                collector = CollectorIdRequest(id = collectorId)
+            )
+            val response = serviceAdapter.addComment(albumId, request)
+
+            Result.success(response)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun addAlbumToCollector(
+        collectorId: String,
+        albumId: String,
+        price: Int,
+        status: String
+    ): Result<AddAlbumToCollectorResponse> {
+        return try {
+            val request = AddAlbumToCollectorRequest(
+                price = price,
+                status = status
+            )
+
+            val response = serviceAdapter.addAlbumToCollector(
+                albumId,
+                collectorId,
+                request
+            )
+
+            Result.success(response)
         } catch (e: Exception) {
             Result.failure(e)
         }

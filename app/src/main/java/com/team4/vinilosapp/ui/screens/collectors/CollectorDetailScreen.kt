@@ -199,7 +199,7 @@ private fun CollectorDetailContent(
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
-                    text = performer.description,
+                    text = performer.description ?: "",
                     color = SecondaryText,
                     fontSize = 13.sp
                 )

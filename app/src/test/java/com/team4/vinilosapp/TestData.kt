@@ -1,6 +1,7 @@
 package com.team4.vinilosapp
 
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Comment
@@ -64,6 +65,19 @@ object TestData {
                 rating = 5
             )
         )
+    )
+
+    fun bandDetail(
+        id: Int = 1,
+        name: String = "Banda de prueba",
+        musicians: List<Performer> = emptyList()
+    ) = BandDetail(
+        id = id,
+        name = name,
+        image = "https://example.com/band.jpg",
+        description = "Descripción de la banda",
+        creationDate = "1990-01-01T00:00:00Z",
+        musicians = musicians
     )
 
     fun collectorDetail(

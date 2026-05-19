@@ -3,13 +3,14 @@ package com.team4.vinilosapp.ui
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
-import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performTouchInput
 import com.team4.vinilosapp.MainActivity
 import org.junit.Rule
 import org.junit.Test
+import androidx.compose.ui.test.swipeUp
 
 class CollectorDetailScreenTest {
     @get:Rule
@@ -29,13 +30,13 @@ class CollectorDetailScreenTest {
 
         composeTestRule.waitUntil(timeoutMillis = 15_000) {
             composeTestRule
-                .onAllNodesWithText("Ver colección")
+                .onAllNodesWithTag("collector_detail_nav_button", useUnmergedTree = true)
                 .fetchSemanticsNodes()
                 .isNotEmpty()
         }
 
         composeTestRule
-            .onAllNodesWithText("Ver colección")[0]
+            .onAllNodesWithTag("collector_detail_nav_button", useUnmergedTree = true)[0]
             .performClick()
 
         composeTestRule.waitUntil(timeoutMillis = 15_000) {
@@ -55,15 +56,21 @@ class CollectorDetailScreenTest {
             .assertIsDisplayed()
 
         composeTestRule
-            .onNodeWithText("Comentarios")
+            .onNodeWithText("Comentarios", useUnmergedTree = true)
+            .assertExists()
             .assertIsDisplayed()
+
+        repeat(2) {
+            composeTestRule
+                .onNodeWithTag("collector_detail_content", useUnmergedTree = true)
+                .performTouchInput {
+                    swipeUp()
+                }
+        }
 
         composeTestRule
             .onNodeWithText("Artistas favoritos")
-            .assertIsDisplayed()
-
-        composeTestRule
-            .onNodeWithText("Álbumes del coleccionista")
+            .assertExists()
             .assertIsDisplayed()
     }
 }

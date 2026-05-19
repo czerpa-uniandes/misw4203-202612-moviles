@@ -1,0 +1,246 @@
+05-09 20:39:44.877  2573  2587 I TestRunner: started: navigateToAssociatePrizeArtistScreen_andValidateFormIsDisplayed(com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest)
+05-09 20:39:44.884  2573  2587 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@bae4c2e]
+05-09 20:39:44.885  2573  2587 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-09 20:39:44.888   663  2040 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@5796ad7f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:39:44.896   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:39:44.939   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.939   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.986   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:44.987  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:44.988  1076  1076 D RecentsView: onTaskRemoved: 695, not handling task stack changes
+05-09 20:39:44.988  1076  1076 D RecentsView: onTaskRemoved: 695, not handling task stack changes
+05-09 20:39:44.988  1076  1076 D RecentsView: onTaskDisplayChanged: 697, new displayId = 0
+05-09 20:39:44.988  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] -[]
+05-09 20:39:44.988   499  1049 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc02a1a0) with descriptor: '(not cached)'
+05-09 20:39:44.997  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused] -[state_user_active]
+05-09 20:39:44.997  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_window_focused] -[state_resumed|state_deferred_resumed]
+05-09 20:39:44.997  1076  1076 W SplitSelectStateCtor: Missing session instanceIds
+05-09 20:39:44.997  1076  1076 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+05-09 20:39:45.004  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:45.004  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:45.004  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: PRE_ON_CREATE
+05-09 20:39:45.005  2573  2573 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+05-09 20:39:45.014  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: CREATED
+05-09 20:39:45.014  2573  2573 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.team4.vinilosapp.MainActivity@5dc1cde
+05-09 20:39:45.014  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: STARTED
+05-09 20:39:45.014  2573  2573 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.team4.vinilosapp.MainActivity@5dc1cde
+05-09 20:39:45.015  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: RESUMED
+05-09 20:39:45.015  2573  2573 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.team4.vinilosapp.MainActivity@5dc1cde
+05-09 20:39:45.019   663  2031 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.019   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.030  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@8985dbc
+05-09 20:39:45.062  2573  2573 D VRI[MainActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:39:45.111  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=696 windowingMode=1 user=0 lastActiveTime=17629849] null, [id=697 windowingMode=1 user=0 lastActiveTime=17630369] null]
+05-09 20:39:45.120   663  2031 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:45.163   934  1126 I Surface : Creating surface for consumer unnamed-934-618 with slotExpansion=1 for 64 slots
+05-09 20:39:45.163  2573  2672 D NetworkPerf: [/musicians] --> INICIO
+05-09 20:39:45.176  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/musicians
+05-09 20:39:45.176   934  1126 I Surface : Creating surface for consumer VRI[vinilosapp]#618(BLAST Consumer)618 with slotExpansion=1 for 64 slots
+05-09 20:39:45.193  2573  2573 I Surface : Creating surface for consumer unnamed-2573-17 with slotExpansion=1 for 64 slots
+05-09 20:39:45.193  2573  2573 I Surface : Creating surface for consumer VRI[MainActivity]#17(BLAST Consumer)17 with slotExpansion=1 for 64 slots
+05-09 20:39:45.236  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:39:45.299  1076  1076 D WorkspaceRevealAnim: onAnimationEnd: workspace alpha = 1.0
+05-09 20:39:45.310  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/musicians (134ms, 12551-byte body)
+05-09 20:39:45.344   547 27315 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:39:45.471   663   684 I ActivityTaskManager: Displayed com.team4.vinilosapp/.MainActivity for user 0: +582ms
+05-09 20:39:45.533  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:45.533  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:45.533  1076  1076 D BaseActivity: Launcher flags updated: [state_started] -[state_window_focused]
+05-09 20:39:45.546   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:45.546  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:45.550  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:45.550  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:45.550  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:45.551  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:45.566   934  1546 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:39:45.595  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:45.603  2605  2605 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:45.618   663   905 I Surface : Creating surface for consumer unnamed-663-371 with slotExpansion=1 for 64 slots
+05-09 20:39:45.619   663   905 I Surface : Creating surface for consumer ImageReader-1024x2284f1m1-663-371 with slotExpansion=1 for 64 slots
+05-09 20:39:45.619   663   905 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+05-09 20:39:45.665   663   905 E ConsumerBase: [ImageReader-1024x2284f1m1-663-371] abandonLocked: ConsumerBase is abandoned!
+05-09 20:39:45.749   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.749   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.778  1076  1076 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:39:45.885  1076  1076 D BaseActivity: Launcher flags updated: [] -[state_started]
+05-09 20:39:45.885  1076  1076 D BaseDepthController: setSurface:
+05-09 20:39:45.885  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:39:45.885  1076  1076 D BaseDepthController: 	mBaseSurface: null
+05-09 20:39:45.885  1076  1076 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+05-09 20:39:45.886  1076  1076 D LauncherStateManager: StateManager.goToState: fromState: Normal, toState: Normal, partial trace:
+05-09 20:39:45.886  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:26)
+05-09 20:39:45.886  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:35)
+05-09 20:39:45.886  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:31)
+05-09 20:39:45.886  1076  1076 D LauncherStateManager: StateManager.onRepeatStateSetAborted: state: Normal
+05-09 20:39:45.886  1076  1076 D KeyboardStateManager: hideKeyboard
+05-09 20:39:45.886  1076  1076 D KeyboardStateManager: isImeShown: false
+05-09 20:39:45.887  1076  1076 D StatsLog: LAUNCHER_ONSTOP
+05-09 20:39:45.888  1076  1076 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+05-09 20:39:45.888  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-09 20:39:45.888  1076  1076 D RecentsView: onTaskRemoved: 696, not handling task stack changes
+05-09 20:39:45.888  1076  1076 D RecentsView: onTaskRemoved: 696, not handling task stack changes
+05-09 20:39:45.888  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:45.888  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-09 20:39:45.908  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+05-09 20:39:45.909  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+05-09 20:39:45.959   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:45.959   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.034   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.034   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.135   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.135   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.237   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.263  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@9e837b0
+05-09 20:39:46.278  2573  2672 D NetworkPerf: [/musicians/100] --> INICIO
+05-09 20:39:46.278  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/musicians/100
+05-09 20:39:46.337   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.396  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/musicians/100 (118ms, 3423-byte body)
+05-09 20:39:46.438   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.538   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.598   913   913 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS
+05-09 20:39:46.640   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.704  2573  2672 D NetworkPerf: [/prizes] --> INICIO
+05-09 20:39:46.704  2573  2672 I okhttp.OkHttpClient: --> GET https://backvynils-543995823892.us-central1.run.app/prizes
+05-09 20:39:46.742   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.830  2573  2672 I okhttp.OkHttpClient: <-- 200 https://backvynils-543995823892.us-central1.run.app/prizes (125ms, 3268-byte body)
+05-09 20:39:46.841   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:46.912   663   919 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@594b861e does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:39:46.914  1076  1076 D RecentsView: onTaskDisplayChanged: 698, new displayId = 0
+05-09 20:39:46.915   499   637 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc044a80) with descriptor: '(not cached)'
+05-09 20:39:46.916  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:46.916   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:39:46.916  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:46.917   547 27315 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:39:46.918   663  2031 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:46.918  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: PAUSED
+05-09 20:39:46.918  2573  2573 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.team4.vinilosapp.MainActivity@5dc1cde
+05-09 20:39:46.920  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+05-09 20:39:46.920  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+05-09 20:39:46.920  2605  2623 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+05-09 20:39:46.923  2605  2623 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-09 20:39:46.923  2605  2623 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-09 20:39:46.947   934  1126 I Surface : Creating surface for consumer unnamed-934-619 with slotExpansion=1 for 64 slots
+05-09 20:39:46.951   934  1126 I Surface : Creating surface for consumer VRI[test]#619(BLAST Consumer)619 with slotExpansion=1 for 64 slots
+05-09 20:39:46.961   663  2040 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:47.000   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.007   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:39:47.008  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.008   499   600 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc029540) with descriptor: '(not cached)'
+05-09 20:39:47.009  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@564eb5a
+05-09 20:39:47.009  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:39:47.011  2605  2605 I Surface : Creating surface for consumer unnamed-2605-14 with slotExpansion=1 for 64 slots
+05-09 20:39:47.011   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2291 CompositionType fallback from 3 to 1
+05-09 20:39:47.011   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.011  2605  2605 I Surface : Creating surface for consumer VRI[InstrumentationActivityInvoker$EmptyActivity]#14(BLAST Consumer)14 with slotExpansion=1 for 64 slots
+05-09 20:39:47.011   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.011   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.011   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.011   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.020  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.023  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=697 windowingMode=1 user=0 lastActiveTime=17632285] null, [id=698 windowingMode=1 user=0 lastActiveTime=17632378] null]
+05-09 20:39:47.026  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:47.026  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:47.026  1076  1087 W System  : A resource failed to call release.
+05-09 20:39:47.029   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.029   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.029   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.029   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.029   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.041  1076  1076 D BaseActivity: Launcher flags updated: [state_started] +[state_started]
+05-09 20:39:47.045  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+05-09 20:39:47.045  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[]
+05-09 20:39:47.046  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+05-09 20:39:47.046  1076  1076 D StatsLog: LAUNCHER_ONRESUME
+05-09 20:39:47.048  1076  1138 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-09 20:39:47.049  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+05-09 20:39:47.051   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.051   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.052   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.052   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.052   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.052  1076  1076 I Surface : Creating surface for consumer unnamed-1076-404 with slotExpansion=1 for 64 slots
+05-09 20:39:47.052  1076  1076 I Surface : Creating surface for consumer VRI[NexusLauncherActivity]#338(BLAST Consumer)338 with slotExpansion=1 for 64 slots
+05-09 20:39:47.053  1076  1076 D BaseDepthController: setSurface:
+05-09 20:39:47.053  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:39:47.053  1076  1076 D BaseDepthController: 	mBaseSurface: Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#12983)/@0x1dd2a08
+05-09 20:39:47.053  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#12983)/@0x1dd2a08 applyImmediately: false
+05-09 20:39:47.053  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... .......D 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:39:47.058  1736  1967 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-09 20:39:47.059  1736  1967 I AiAiEcho: EchoTargets:
+05-09 20:39:47.059  1736  1967 I AiAiEcho: Filtered by AiAi flag check:
+05-09 20:39:47.059  1736  1967 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-09 20:39:47.059  1736  1967 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-09 20:39:47.060  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 6, skipping event processing.
+05-09 20:39:47.060  1736  1967 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-09 20:39:47.063   934  1546 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.070   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.085   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.085   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.086   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.086   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.086   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.086   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.086   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.090  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.095  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:47.095  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:47.095  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:47.095  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:39:47.095  1076  1076 I SsBaseTemplateCard: Secondary card pane is null
+05-09 20:39:47.109   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.109   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.164  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@8985dbc
+05-09 20:39:47.167  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:39:47.168  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=697 windowingMode=1 user=0 lastActiveTime=17632285] null, [id=698 windowingMode=1 user=0 lastActiveTime=17632378] null]
+05-09 20:39:47.174  1076  1076 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+05-09 20:39:47.174  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:59)
+05-09 20:39:47.174  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:734)
+05-09 20:39:47.174  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:135)
+05-09 20:39:47.175  1076  1076 D LauncherStateManager: StateManager.createAtomicAnimation: fromState: Normal, toState: Normal, partial trace:
+05-09 20:39:47.175  1076  1076 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.prepareToAnimate(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:19)
+05-09 20:39:47.175  1076  1076 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.<init>(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:10)
+05-09 20:39:47.175  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:775)
+05-09 20:39:47.175  1076  1076 D AllAppsTransitionController: shouldProtectHeader: false skipScrim: true state: Normal stateManager.getState(): Normal
+05-09 20:39:47.175  1076  1076 D KeyboardInsetsHandler: removePendingImeController: pendingImeController=null
+05-09 20:39:47.175  1076  1076 D b/311077782: LauncherAnimationRunner.setAnimation
+05-09 20:39:47.191  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+05-09 20:39:47.196   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:39:47.200  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:39:47.201  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:39:47.205  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:39:47.206  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:39:47.209  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:39:47.212   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.212   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:39:47.231  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: STOPPED
+05-09 20:39:47.231  2573  2573 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.team4.vinilosapp.MainActivity@5dc1cde
+05-09 20:39:47.236  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:39:47.237  2573  2573 D LifecycleMonitor: Lifecycle status change: com.team4.vinilosapp.MainActivity@5dc1cde in: DESTROYED
+05-09 20:39:47.237  2573  2573 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+05-09 20:39:47.238  2573  2589 D HWUI    : endAllActiveAnimators on 0xb4007bca0409ad60 (UnprojectedRipple) with handle 0xb4007bc934051140
+05-09 20:39:47.259   663   826 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-09 20:39:47.265  2573  2587 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@bae4c2e]
+05-09 20:39:47.272  1283  3459 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+05-09 20:39:47.272  1283  3459 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+05-09 20:39:47.304  2573  2573 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:39:47.375  2573  2587 I TestRunner: finished: navigateToAssociatePrizeArtistScreen_andValidateFormIsDisplayed(com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest)

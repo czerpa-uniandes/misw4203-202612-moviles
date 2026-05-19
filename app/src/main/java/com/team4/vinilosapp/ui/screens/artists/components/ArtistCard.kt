@@ -1,6 +1,7 @@
 package com.team4.vinilosapp.ui.screens.artists.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -13,23 +14,27 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import com.team4.vinilosapp.data.models.Performer
 
 @Composable
-fun ArtistCard(artist: Performer) {
+fun ArtistCard(artist: Performer, onClick: (Int) -> Unit) {
     Card(
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = Color(0xFFF8F8F8)),
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 6.dp)
+            .clickable { onClick(artist.id) }
+            .testTag("artist_card_${artist.id}")
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -39,6 +44,9 @@ fun ArtistCard(artist: Performer) {
                 model = ImageRequest.Builder(LocalContext.current)
                     .data(artist.image)
                     .crossfade(true)
+                    .size(128, 128)
+                    .memoryCachePolicy(CachePolicy.ENABLED)
+                    .diskCachePolicy(CachePolicy.ENABLED)
                     .build(),
                 contentDescription = artist.name,
                 contentScale = ContentScale.Crop,

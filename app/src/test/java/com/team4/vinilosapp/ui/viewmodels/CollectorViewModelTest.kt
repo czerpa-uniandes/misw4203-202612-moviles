@@ -3,7 +3,12 @@ package com.team4.vinilosapp.ui.viewmodels
 import android.app.Application
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -24,6 +29,10 @@ import org.mockito.Mockito
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.Prize
+import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 
 private class CollectorFakeAdapter : VinilosServiceAdapter {
     var collectorsResponse: List<Collector> = emptyList()
@@ -46,6 +55,16 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
         if (failCollectorDetail) throw Exception("detail error")
         return collectorDetailResponse ?: throw Exception("not found")
     }
+
+    override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
+    override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
+    override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
+    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = Unit
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -73,7 +92,7 @@ class CollectorViewModelTest {
                 TestData.collector(id = 2, name = "Carlos Mario")
             )
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchCollectors()
         advanceUntilIdle()
@@ -85,7 +104,7 @@ class CollectorViewModelTest {
     @Test
     fun fetchCollectors_setsEmptyListWhenAdapterFails() = runTest {
         val fakeAdapter = CollectorFakeAdapter().apply { failCollectors = true }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchCollectors()
         advanceUntilIdle()
@@ -99,7 +118,7 @@ class CollectorViewModelTest {
         val fakeAdapter = CollectorFakeAdapter().apply {
             collectorsResponse = listOf(TestData.collector())
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchCollectors()
         advanceUntilIdle()
@@ -115,11 +134,12 @@ class CollectorViewModelTest {
                 TestData.collector(id = 2, name = "Carlos Mario")
             )
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
         viewModel.fetchCollectors()
         advanceUntilIdle()
 
         viewModel.search("carlos")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.collectors.value.size)
         assertEquals("Carlos Mario", viewModel.collectors.value.first().name)
@@ -133,14 +153,18 @@ class CollectorViewModelTest {
                 TestData.collector(id = 2, name = "Coleccionista 2")
             )
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
         viewModel.fetchCollectors()
         advanceUntilIdle()
 
         viewModel.search("coleccionista 1")
+        advanceUntilIdle()
+
         assertEquals(1, viewModel.collectors.value.size)
 
         viewModel.search("")
+        advanceUntilIdle()
+
         assertEquals(2, viewModel.collectors.value.size)
     }
 
@@ -149,7 +173,7 @@ class CollectorViewModelTest {
         val fakeAdapter = CollectorFakeAdapter().apply {
             collectorsResponse = listOf(TestData.collector(id = 1, name = "Sofía Gómez"))
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
         viewModel.fetchCollectors()
         advanceUntilIdle()
 
@@ -164,7 +188,7 @@ class CollectorViewModelTest {
         val fakeAdapter = CollectorFakeAdapter().apply {
             collectorsResponse = listOf(TestData.collector(id = 1, name = "Andrés Pardo"))
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
         viewModel.fetchCollectors()
         advanceUntilIdle()
 
@@ -178,11 +202,12 @@ class CollectorViewModelTest {
         val fakeAdapter = CollectorFakeAdapter().apply {
             collectorsResponse = listOf(TestData.collector(id = 1, name = "Julián Velez"))
         }
-        val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter))
+         val viewModel = CollectorViewModel(application, CollectorRepository(fakeAdapter), dispatcher)
         viewModel.fetchCollectors()
         advanceUntilIdle()
 
         viewModel.search("xyz")
+        advanceUntilIdle()
 
         assertTrue(viewModel.collectors.value.isEmpty())
     }

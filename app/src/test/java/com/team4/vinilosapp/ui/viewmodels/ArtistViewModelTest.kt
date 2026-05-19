@@ -3,11 +3,20 @@ package com.team4.vinilosapp.ui.viewmodels
 import android.app.Application
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
+import com.team4.vinilosapp.data.models.Prize
 import com.team4.vinilosapp.data.repository.ArtistRepository
+import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 import com.team4.vinilosapp.ui.models.AddTrack
 import com.team4.vinilosapp.ui.models.NewAlbum
 import kotlinx.coroutines.Dispatchers
@@ -47,6 +56,23 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
     override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
     override suspend fun getCollectors(): List<Collector> = emptyList()
     override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail = throw NotImplementedError()
+    override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
+    override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
+    override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
+    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit = throw NotImplementedError()
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
+
+    var failAddAlbum = false
+    var receivedMusicianId: Int? = null
+    var receivedAlbumId: Int? = null
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) {
+        if (failAddAlbum) throw Exception("add album error")
+        receivedMusicianId = musicianId
+        receivedAlbumId = albumId
+    }
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -74,7 +100,7 @@ class ArtistViewModelTest {
                 TestData.performer(id = 2, name = "Músico B")
             )
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchArtists()
         advanceUntilIdle()
@@ -86,7 +112,7 @@ class ArtistViewModelTest {
     @Test
     fun fetchArtists_setsEmptyListWhenAdapterFails() = runTest {
         val fakeAdapter = ArtistFakeAdapter().apply { failMusicians = true }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchArtists()
         advanceUntilIdle()
@@ -100,7 +126,7 @@ class ArtistViewModelTest {
         val fakeAdapter = ArtistFakeAdapter().apply {
             musiciansResponse = listOf(TestData.performer())
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
 
         viewModel.fetchArtists()
         advanceUntilIdle()
@@ -116,11 +142,12 @@ class ArtistViewModelTest {
                 TestData.performer(id = 2, name = "Carlos Vives")
             )
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
         viewModel.fetchArtists()
         advanceUntilIdle()
 
         viewModel.search("carlos")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.artists.value.size)
         assertEquals("Carlos Vives", viewModel.artists.value.first().name)
@@ -134,14 +161,16 @@ class ArtistViewModelTest {
                 TestData.performer(id = 2, name = "Artista 2")
             )
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
         viewModel.fetchArtists()
         advanceUntilIdle()
 
         viewModel.search("artista 1")
+        advanceUntilIdle()
         assertEquals(1, viewModel.artists.value.size)
 
         viewModel.search("")
+        advanceUntilIdle()
         assertEquals(2, viewModel.artists.value.size)
     }
 
@@ -150,11 +179,12 @@ class ArtistViewModelTest {
         val fakeAdapter = ArtistFakeAdapter().apply {
             musiciansResponse = listOf(TestData.performer(id = 1, name = "Charly García"))
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
         viewModel.fetchArtists()
         advanceUntilIdle()
 
         viewModel.search("garcia")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.artists.value.size)
         assertEquals("Charly García", viewModel.artists.value.first().name)
@@ -165,11 +195,12 @@ class ArtistViewModelTest {
         val fakeAdapter = ArtistFakeAdapter().apply {
             musiciansResponse = listOf(TestData.performer(id = 1, name = "Miles Davis"))
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
         viewModel.fetchArtists()
         advanceUntilIdle()
 
         viewModel.search("MILES")
+        advanceUntilIdle()
 
         assertEquals(1, viewModel.artists.value.size)
     }
@@ -179,12 +210,49 @@ class ArtistViewModelTest {
         val fakeAdapter = ArtistFakeAdapter().apply {
             musiciansResponse = listOf(TestData.performer(id = 1, name = "Nina Simone"))
         }
-        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter))
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
         viewModel.fetchArtists()
         advanceUntilIdle()
 
         viewModel.search("beethoven")
+        advanceUntilIdle()
 
         assertTrue(viewModel.artists.value.isEmpty())
+    }
+
+    @Test
+    fun addAlbumToArtist_invokesOnSuccessAndForwardsIds() = runTest {
+        val fakeAdapter = ArtistFakeAdapter()
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
+        var successCalled = false
+
+        viewModel.addAlbumToArtist(
+            artistId = 5,
+            albumId = 12,
+            onSuccess = { successCalled = true },
+            onError = { }
+        )
+        advanceUntilIdle()
+
+        assertTrue(successCalled)
+        assertEquals(5, fakeAdapter.receivedMusicianId)
+        assertEquals(12, fakeAdapter.receivedAlbumId)
+    }
+
+    @Test
+    fun addAlbumToArtist_invokesOnErrorWhenAdapterFails() = runTest {
+        val fakeAdapter = ArtistFakeAdapter().apply { failAddAlbum = true }
+        val viewModel = ArtistViewModel(application, ArtistRepository(fakeAdapter), dispatcher)
+        var errorCalled = false
+
+        viewModel.addAlbumToArtist(
+            artistId = 5,
+            albumId = 12,
+            onSuccess = { },
+            onError = { errorCalled = true }
+        )
+        advanceUntilIdle()
+
+        assertTrue(errorCalled)
     }
 }

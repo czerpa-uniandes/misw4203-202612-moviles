@@ -43,9 +43,17 @@ google-services.json
 *.apk
 *.aab
 
+# Exception: APKs in releases/ folder are tracked intentionally
+!releases/*.apk
+
 # IntelliJ workspace files
 workspace.xml
 tasks.xml
 
 # Gradle wrapper cache (keep wrapper jar!)
 !gradle/wrapper/gradle-wrapper.jar
+
+# Evidencias académicas de ejecución de pruebas
+!evidencias/
+!evidencias/pruebas/
+!evidencias/pruebas/**

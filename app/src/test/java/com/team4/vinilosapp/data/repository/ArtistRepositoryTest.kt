@@ -2,7 +2,12 @@ package com.team4.vinilosapp.data.repository
 
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -12,6 +17,10 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.Prize
+import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 
 private class ArtistFakeAdapter : VinilosServiceAdapter {
     var musiciansResponse: List<Performer> = emptyList()
@@ -35,6 +44,23 @@ private class ArtistFakeAdapter : VinilosServiceAdapter {
     override suspend fun addTrack(albumId: Int, track: AddTrack) = Unit
     override suspend fun getCollectors(): List<Collector> = emptyList()
     override suspend fun getCollectorDetail(collectorId: Int): CollectorDetail = throw NotImplementedError()
+    override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
+    override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
+    override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
+    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
+
+    var failAddAlbum = false
+    var receivedMusicianId: Int? = null
+    var receivedAlbumId: Int? = null
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) {
+        if (failAddAlbum) throw Exception("add album fail")
+        receivedMusicianId = musicianId
+        receivedAlbumId = albumId
+    }
 }
 
 class ArtistRepositoryTest {
@@ -92,6 +118,29 @@ class ArtistRepositoryTest {
 
         assertTrue(result.isFailure)
         assertEquals("musicians fail", result.exceptionOrNull()?.message)
+    }
+
+    @Test
+    fun addAlbumToArtist_returnsSuccessAndForwardsIds() = runBlocking {
+        val adapter = ArtistFakeAdapter()
+        val repository = ArtistRepository(adapter)
+
+        val result = repository.addAlbumToArtist(artistId = 5, albumId = 12)
+
+        assertTrue(result.isSuccess)
+        assertEquals(5, adapter.receivedMusicianId)
+        assertEquals(12, adapter.receivedAlbumId)
+    }
+
+    @Test
+    fun addAlbumToArtist_returnsFailureWhenAdapterFails() = runBlocking {
+        val adapter = ArtistFakeAdapter().apply { failAddAlbum = true }
+        val repository = ArtistRepository(adapter)
+
+        val result = repository.addAlbumToArtist(artistId = 5, albumId = 12)
+
+        assertTrue(result.isFailure)
+        assertEquals("add album fail", result.exceptionOrNull()?.message)
     }
 
 }

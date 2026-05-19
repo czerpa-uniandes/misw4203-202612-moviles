@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:38.794Z" hostname="Fabians-MacBook-Air-2.local" time="0.414">
+  <properties/>
+  <testcase name="getBandDetail_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.299"/>
+  <testcase name="getMusicians_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="getCollectors_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.009"/>
+  <testcase name="getCollectors_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="addAlbumToMusician_sendsRequestCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="getCollectors_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="getPrizes_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.009"/>
+  <testcase name="getAlbumDetail_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.012"/>
+  <testcase name="addMusicianToBand_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.011"/>
+  <testcase name="getPrizes_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="associatePrizeArtist_sendsRequestCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.007"/>
+  <testcase name="getBands_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="associatePrizeArtist_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.005"/>
+  <testcase name="addAlbumToMusician_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="getAlbumDetail_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.005"/>
+  <testcase name="getBandDetail_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="addTrack_sendsRequestCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="getBands_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="getAlbums_parsesResponseCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.004"/>
+  <testcase name="getPrizes_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="addPrize_sendsRequestCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.005"/>
+  <testcase name="addPrize_throwsOnHttpError" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.003"/>
+  <testcase name="addMusicianToBand_sendsRequestCorrectly" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.002"/>
+  <testcase name="getMusicians_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.adapters.VinilosServiceAdapterImplTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

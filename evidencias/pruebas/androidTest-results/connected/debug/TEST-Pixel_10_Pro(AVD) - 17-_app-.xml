@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="27" failures="0" errors="0" skipped="0" time="74.403" timestamp="2026-05-10T01:40:22" hostname="localhost">
+  <testsuite name="com.team4.vinilosapp.ExampleInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.011" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="useAppContext" classname="com.team4.vinilosapp.ExampleInstrumentedTest" time="0.011" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest" tests="4" failures="0" errors="0" skipped="0" time="7.543" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="addAlbumToCollectorScreen_allowsWritingPrice" classname="com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest" time="2.664" />
+    <testcase name="addAlbumToCollectorScreen_showsStatusOptions" classname="com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest" time="2.005" />
+    <testcase name="addAlbumToCollectorScreen_showsFormFields" classname="com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest" time="1.312" />
+    <testcase name="addAlbumToCollectorScreen_showsErrorWhenPriceIsEmpty" classname="com.team4.vinilosapp.ui.AddAlbumToCollectorScreenTest" time="1.562" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AddPrizeScreenTest" tests="2" failures="0" errors="0" skipped="0" time="7.91" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToAddPrizeScreen_andValidateFormIsDisplayed" classname="com.team4.vinilosapp.ui.AddPrizeScreenTest" time="3.173" />
+    <testcase name="fillAddPrizeForm_andSubmit_returnsToPrizesSection" classname="com.team4.vinilosapp.ui.AddPrizeScreenTest" time="4.737" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AddTrackAlbumScreenTest" tests="2" failures="0" errors="0" skipped="0" time="9.713" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToAddTrackScreen_andValidateFormIsDisplayed" classname="com.team4.vinilosapp.ui.AddTrackAlbumScreenTest" time="4.237" />
+    <testcase name="fillAddTrackForm_andSubmit" classname="com.team4.vinilosapp.ui.AddTrackAlbumScreenTest" time="5.476" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AlbumDetailScreenTest" tests="1" failures="0" errors="0" skipped="0" time="2.193" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToAlbumDetail_and_validateDetailScreenContent" classname="com.team4.vinilosapp.ui.AlbumDetailScreenTest" time="2.193" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AlbumsScreenTest" tests="4" failures="0" errors="0" skipped="0" time="9.46" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="albumsScreen_showsAddAlbumButton" classname="com.team4.vinilosapp.ui.AlbumsScreenTest" time="2.151" />
+    <testcase name="albumsScreen_opensFilterBottomSheet_whenFilterButtonIsClicked" classname="com.team4.vinilosapp.ui.AlbumsScreenTest" time="2.444" />
+    <testcase name="albumsScreen_appliesFilter_andClosesBottomSheet" classname="com.team4.vinilosapp.ui.AlbumsScreenTest" time="3.082" />
+    <testcase name="albumsScreen_showsAlbumsList" classname="com.team4.vinilosapp.ui.AlbumsScreenTest" time="1.783" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.ArtistDetailScreenTest" tests="1" failures="0" errors="0" skipped="0" time="2.721" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToArtistDetail_and_validateDetailScreenContent" classname="com.team4.vinilosapp.ui.ArtistDetailScreenTest" time="2.721" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest" tests="2" failures="0" errors="0" skipped="0" time="7.619" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToAssociatePrizeArtistScreen_andValidateFormIsDisplayed" classname="com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest" time="2.468" />
+    <testcase name="associatePrizeToArtist_andValidateItIsDisplayedInArtistDetail" classname="com.team4.vinilosapp.ui.AssociatePrizeArtistScreenTest" time="5.151" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.CollectorDetailScreenTest" tests="1" failures="0" errors="0" skipped="0" time="3.262" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="navigateToCollectorDetail_andValidateContent" classname="com.team4.vinilosapp.ui.CollectorDetailScreenTest" time="3.262" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.CommentAlbumScreenTest" tests="4" failures="0" errors="0" skipped="0" time="11.791" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="commentAlbumScreen_showsErrorWhenRatingIsInvalid" classname="com.team4.vinilosapp.ui.CommentAlbumScreenTest" time="4.752" />
+    <testcase name="commentAlbumScreen_allowsUserToWriteCommentAndRating" classname="com.team4.vinilosapp.ui.CommentAlbumScreenTest" time="2.609" />
+    <testcase name="commentAlbumScreen_showsFormFields" classname="com.team4.vinilosapp.ui.CommentAlbumScreenTest" time="1.949" />
+    <testcase name="commentAlbumScreen_showsErrorWhenCommentIsEmpty" classname="com.team4.vinilosapp.ui.CommentAlbumScreenTest" time="2.481" />
+  </testsuite>
+  <testsuite name="com.team4.vinilosapp.ui.CreateAlbumScreenTest" tests="5" failures="0" errors="0" skipped="0" time="10.583" timestamp="2026-05-10T01:40:22" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_10_Pro(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="createAlbumScreen_displaysMainFields" classname="com.team4.vinilosapp.ui.CreateAlbumScreenTest" time="1.909" />
+    <testcase name="createAlbumScreen_displaysGenreAndLabelOptions" classname="com.team4.vinilosapp.ui.CreateAlbumScreenTest" time="2.318" />
+    <testcase name="createAlbumScreen_allowsTypingInTextFields" classname="com.team4.vinilosapp.ui.CreateAlbumScreenTest" time="2.879" />
+    <testcase name="createAlbumScreen_allowsSelectingGenreAndRecordLabel" classname="com.team4.vinilosapp.ui.CreateAlbumScreenTest" time="2.263" />
+    <testcase name="createAlbumScreen_showsCreateButton" classname="com.team4.vinilosapp.ui.CreateAlbumScreenTest" time="1.214" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,476 @@
+05-09 20:40:17.108  2573  2587 I TestRunner: started: createAlbumScreen_showsCreateButton(com.team4.vinilosapp.ui.CreateAlbumScreenTest)
+05-09 20:40:17.112  2573  2587 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@6b5c525]
+05-09 20:40:17.114  2573  2587 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.117   663  2030 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@5796ad7f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:40:17.130   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:40:17.140  1076  1076 D RecentsView: onTaskRemoved: 717, not handling task stack changes
+05-09 20:40:17.140  1076  1076 D RecentsView: onTaskRemoved: 717, not handling task stack changes
+05-09 20:40:17.140  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.140  1076  1076 D RecentsView: onTaskDisplayChanged: 719, new displayId = 0
+05-09 20:40:17.140  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] -[]
+05-09 20:40:17.140  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed] -[state_user_active]
+05-09 20:40:17.140  1076  1076 D BaseActivity: Launcher flags updated: [state_started] -[state_resumed|state_deferred_resumed]
+05-09 20:40:17.140  1076  1076 W SplitSelectStateCtor: Missing session instanceIds
+05-09 20:40:17.140  1076  1076 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+05-09 20:40:17.147  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_window_focused] +[state_window_focused]
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.148   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.153  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.153  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.159  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: PRE_ON_CREATE
+05-09 20:40:17.159  2573  2573 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+05-09 20:40:17.160  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: CREATED
+05-09 20:40:17.160  2573  2573 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@5cd70d9
+05-09 20:40:17.161  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: STARTED
+05-09 20:40:17.161  2573  2573 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@5cd70d9
+05-09 20:40:17.161  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: RESUMED
+05-09 20:40:17.162  2573  2573 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@5cd70d9
+05-09 20:40:17.177   663   811 W InputChannel-JNI: Channel already disposed.
+05-09 20:40:17.192  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@d26d050
+05-09 20:40:17.192  2573  2573 D VRI[ComponentActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:40:17.194  2573  2573 I Surface : Creating surface for consumer unnamed-2573-29 with slotExpansion=1 for 64 slots
+05-09 20:40:17.194  2573  2573 I Surface : Creating surface for consumer VRI[ComponentActivity]#29(BLAST Consumer)29 with slotExpansion=1 for 64 slots
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.202   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.261  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=718 windowingMode=1 user=0 lastActiveTime=17662093] null, [id=719 windowingMode=1 user=0 lastActiveTime=17662514] null]
+05-09 20:40:17.285   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.285   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.346   663   826 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+05-09 20:40:17.366   663   684 I ActivityTaskManager: Displayed com.team4.vinilosapp/androidx.activity.ComponentActivity for user 0: +239ms
+05-09 20:40:17.382  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.382  1076  1076 D BaseActivity: Launcher flags updated: [state_started] -[state_window_focused]
+05-09 20:40:17.382  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.389  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:40:17.396  1076  1076 D WorkspaceRevealAnim: onAnimationEnd: workspace alpha = 1.0
+05-09 20:40:17.503   663   787 W InputChannel-JNI: Channel already disposed.
+05-09 20:40:17.504  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259
+05-09 20:40:17.508  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 0, locked = false
+05-09 20:40:17.508  8468  8468 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.team4.vinilosapp, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+05-09 20:40:17.508  8468  8468 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():322 Update input view padding, isNavbarOverInputWindow=true, bottom inset=72
+05-09 20:40:17.508  8468  8468 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():103 repeatCheckTimes = 1, locked = false
+05-09 20:40:17.542  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:40:17.543  2605  2605 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:40:17.555   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.555   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.697   934  1546 D WallpaperService: onVisibilityChanged(false): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:40:17.705   663   905 I Surface : Creating surface for consumer unnamed-663-382 with slotExpansion=1 for 64 slots
+05-09 20:40:17.705   663   905 I Surface : Creating surface for consumer ImageReader-1024x2284f1m1-663-382 with slotExpansion=1 for 64 slots
+05-09 20:40:17.708   663   905 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+05-09 20:40:17.736   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.737   934  1126 I Choreographer: Skipped 33 frames!  The application may be doing too much work on its main thread.
+05-09 20:40:17.749   663   905 E ConsumerBase: [ImageReader-1024x2284f1m1-663-382] abandonLocked: ConsumerBase is abandoned!
+05-09 20:40:17.771  1076  1076 D RecentsView: onTaskRemoved: 718, not handling task stack changes
+05-09 20:40:17.771  1076  1076 D RecentsView: onTaskRemoved: 718, not handling task stack changes
+05-09 20:40:17.772   499  1168 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc046290) with descriptor: '(not cached)'
+05-09 20:40:17.774  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:17.774  1076  1076 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:40:17.786   547  2771 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:40:17.834   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.840  1076  1076 D BaseActivity: Launcher flags updated: [] -[state_started]
+05-09 20:40:17.840  1076  1076 D BaseDepthController: setSurface:
+05-09 20:40:17.840  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:40:17.840  1076  1076 D BaseDepthController: 	mBaseSurface: null
+05-09 20:40:17.840  1076  1076 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+05-09 20:40:17.840  1076  1076 D LauncherStateManager: StateManager.goToState: fromState: Normal, toState: Normal, partial trace:
+05-09 20:40:17.840  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:26)
+05-09 20:40:17.840  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:35)
+05-09 20:40:17.840  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:31)
+05-09 20:40:17.840  1076  1076 D LauncherStateManager: StateManager.onRepeatStateSetAborted: state: Normal
+05-09 20:40:17.840  1076  1076 D KeyboardStateManager: hideKeyboard
+05-09 20:40:17.840  1076  1076 D KeyboardStateManager: isImeShown: false
+05-09 20:40:17.840  1076  1076 D StatsLog: LAUNCHER_ONSTOP
+05-09 20:40:17.841  1076  1076 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+05-09 20:40:17.841  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-09 20:40:17.842  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+05-09 20:40:17.843  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+05-09 20:40:17.843  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 7, skipping event processing.
+05-09 20:40:17.911   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.911   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.911   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.911   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.912   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.912   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.912   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.912   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.913   934   946 W System  : A resource failed to call release.
+05-09 20:40:17.940   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST: printToLog:
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST: Printing with useUnmergedTree = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST: Node #6370 at (l=0.0, t=0.0, r=1280.0, b=2856.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:  |-Node #6371 at (l=0.0, t=0.0, r=1280.0, b=2856.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:    IsContainer = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:    Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |-Node #6401 at (l=48.0, t=348.0, r=1232.0, b=2460.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | CollectionInfo = 'CollectionInfo(rowCount=7, columnCount=1)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | IsTraversalGroup = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@3f3c8a3'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=100.0, reverseScrolling=false)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6404 at (l=48.0, t=372.0, r=372.0, b=414.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[TÍTULO DEL ÁLBUM]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6406 at (l=48.0, t=432.0, r=1232.0, b=600.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | EditableText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | FillableData = 'androidx.compose.ui.autofill.AndroidFillableData@eb864ba'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | ImeAction = 'Default'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | InputText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | IsEditable = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | TextSelectionRange = 'TextRange(0, 0)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [GetTextLayoutResult, InsertTextAtCursor, OnClick, OnFillData, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6410 at (l=48.0, t=432.0, r=1232.0, b=600.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6414 at (l=96.0, t=492.0, r=1184.0, b=541.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  | Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6411 at (l=96.0, t=480.0, r=316.0, b=552.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6412 at (l=96.0, t=480.0, r=316.0, b=552.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       Text = '[Ej: Artaud]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6418 at (l=48.0, t=648.0, r=358.0, b=690.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[URL DE CARATULA]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6420 at (l=48.0, t=708.0, r=1232.0, b=876.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | EditableText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | FillableData = 'androidx.compose.ui.autofill.AndroidFillableData@50fbf6b'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | ImeAction = 'Default'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | InputText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | IsEditable = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | TextSelectionRange = 'TextRange(0, 0)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [GetTextLayoutResult, InsertTextAtCursor, OnClick, OnFillData, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6424 at (l=48.0, t=708.0, r=1232.0, b=876.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6428 at (l=96.0, t=768.0, r=1184.0, b=817.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  | Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6425 at (l=96.0, t=756.0, r=545.0, b=828.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6426 at (l=96.0, t=756.0, r=545.0, b=828.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       Text = '[Ej: https://image.url]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6432 at (l=48.0, t=924.0, r=471.0, b=966.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[FECHA DE LANZAMIENTO]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6434 at (l=48.0, t=984.0, r=1232.0, b=1152.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6435 at (l=48.0, t=984.0, r=1232.0, b=1152.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    EditableText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    FillableData = 'androidx.compose.ui.autofill.AndroidFillableData@bc94ac8'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    ImeAction = 'Default'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    InputText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    IsEditable = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    TextSelectionRange = 'TextRange(0, 0)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    [Disabled]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [GetTextLayoutResult, OnClick, OnFillData, OnLongClick, PerformImeAction, SetSelection]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6439 at (l=48.0, t=984.0, r=1232.0, b=1152.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6445 at (l=96.0, t=1044.0, r=1076.0, b=1093.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     | Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6442 at (l=96.0, t=1032.0, r=421.0, b=1104.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |  |-Node #6443 at (l=96.0, t=1032.0, r=421.0, b=1104.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |    Text = '[Ej: 1973-01-01]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |     |-Node #6441 at (l=1124.0, t=1032.0, r=1196.0, b=1104.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       ContentDescription = '[Seleccionar fecha]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |       Role = 'Image'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6449 at (l=48.0, t=1212.0, r=418.0, b=1254.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[SELLO DISCOGRÁFICO]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6453 at (l=48.0, t=1302.0, r=366.0, b=1398.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6456 at (l=96.0, t=1320.0, r=318.0, b=1380.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Sony Music]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6457 at (l=390.0, t=1302.0, r=561.0, b=1398.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6460 at (l=438.0, t=1320.0, r=513.0, b=1380.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[EMI]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6461 at (l=585.0, t=1302.0, r=975.0, b=1398.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6464 at (l=633.0, t=1320.0, r=927.0, b=1380.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Discos Fuentes]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6465 at (l=999.0, t=1302.0, r=1230.0, b=1398.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6468 at (l=1047.0, t=1320.0, r=1182.0, b=1380.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Elektra]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6469 at (l=48.0, t=1446.0, r=417.0, b=1542.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6472 at (l=96.0, t=1464.0, r=369.0, b=1524.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Fania Records]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6475 at (l=48.0, t=1638.0, r=186.0, b=1680.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[GENERO]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6479 at (l=48.0, t=1728.0, r=320.0, b=1824.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6482 at (l=96.0, t=1746.0, r=272.0, b=1806.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Classical]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6483 at (l=344.0, t=1728.0, r=547.0, b=1824.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6486 at (l=392.0, t=1746.0, r=499.0, b=1806.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Salsa]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6487 at (l=571.0, t=1728.0, r=763.0, b=1824.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6490 at (l=619.0, t=1746.0, r=715.0, b=1806.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Rock]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6491 at (l=787.0, t=1728.0, r=965.0, b=1824.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Role = 'Checkbox'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Selected = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 8.0.dp), topEnd = CornerSize(size = 8.0.dp), bottomEnd = CornerSize(size = 8.0.dp), bottomStart = CornerSize(size = 8.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |  |-Node #6494 at (l=835.0, t=1746.0, r=917.0, b=1806.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Text = '[Folk]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6497 at (l=48.0, t=1920.0, r=481.0, b=1962.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Text = '[DESCRIPCIÒN DEL ALBUM]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  | Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6499 at (l=48.0, t=1986.0, r=1232.0, b=2346.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    ContentDataType = 'AndroidContentDataType(androidAutofillType=1)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    EditableText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    FillableData = 'androidx.compose.ui.autofill.AndroidFillableData@82df761'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    ImeAction = 'Default'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    InputText = ''
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    IsEditable = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    TextSelectionRange = 'TextRange(0, 0)'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    Actions = [GetTextLayoutResult, InsertTextAtCursor, OnClick, OnFillData, OnLongClick, PasteText, PerformImeAction, RequestFocus, SetSelection, SetText]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6503 at (l=48.0, t=1986.0, r=1232.0, b=2346.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 4.0.dp), topEnd = CornerSize(size = 4.0.dp), bottomEnd = CornerSize(size = 4.0.dp), bottomStart = CornerSize(size = 4.0.dp))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6507 at (l=96.0, t=2046.0, r=1184.0, b=2095.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6504 at (l=96.0, t=2034.0, r=983.0, b=2106.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |        |-Node #6505 at (l=96.0, t=2034.0, r=983.0, b=2106.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |          Text = '[Cuéntanos un poco sobre este album...]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |          Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |-Node #6375 at (l=0.0, t=0.0, r=1280.0, b=348.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     | IsTraversalGroup = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |  |-Node #6376 at (l=0.0, t=156.0, r=1280.0, b=348.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |    Shape = 'RectangleShape'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6378 at (l=24.0, t=192.0, r=144.0, b=312.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Role = 'Button'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     | MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |  |-Node #6379 at (l=48.0, t=216.0, r=120.0, b=288.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |    ContentDescription = '[Cerrar]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |    Role = 'Image'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6380 at (l=168.0, t=210.0, r=566.0, b=294.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |  |-Node #6381 at (l=168.0, t=210.0, r=566.0, b=294.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |    Text = '[Nuevo Álbum]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |    Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |     |-Node #6384 at (l=1025.0, t=192.0, r=1268.0, b=312.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |       Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |       Role = 'Button'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |       Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |       Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |       MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |        |-Node #6386 at (l=1061.0, t=222.0, r=1232.0, b=282.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |          Text = '[Cancelar]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |          Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:     |-Node #6394 at (l=96.0, t=2544.0, r=1184.0, b=2700.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:       Focused = 'false'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:       Role = 'Button'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:       Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:       Actions = [OnClick, RequestFocus]
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:       MergeDescendants = 'true'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:        |-Node #6398 at (l=568.0, t=2592.0, r=808.0, b=2652.0)px
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:          Text = '[Crear Album]'
+05-09 20:40:17.972  2573  2587 D CREATE_ALBUM_TEST:          Actions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]
+05-09 20:40:18.001   663  1548 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@594b861e does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+05-09 20:40:18.004  1076  1076 D RecentsView: onTaskDisplayChanged: 720, new displayId = 0
+05-09 20:40:18.006   499   599 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc046290) with descriptor: '(not cached)'
+05-09 20:40:18.008  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: PAUSED
+05-09 20:40:18.008  2573  2573 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@5cd70d9
+05-09 20:40:18.009   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:40:18.011  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+05-09 20:40:18.011  2605  2623 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+05-09 20:40:18.014  2605  2623 W libc    : Access denied finding property "vendor.mesa.virtgpu.kumquat"
+05-09 20:40:18.014   547  2771 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+05-09 20:40:18.015   663  1014 W InputChannel-JNI: Channel already disposed.
+05-09 20:40:18.016  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.017  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.018  2605  2623 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-09 20:40:18.018  2605  2623 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-09 20:40:18.029   934  1126 I Surface : Creating surface for consumer unnamed-934-638 with slotExpansion=1 for 64 slots
+05-09 20:40:18.029   934  1126 I Surface : Creating surface for consumer VRI[test]#638(BLAST Consumer)638 with slotExpansion=1 for 64 slots
+05-09 20:40:18.082   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.090   663  1014 W InputChannel-JNI: Channel already disposed.
+05-09 20:40:18.091  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.093   499  1168 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007670bc046b80) with descriptor: '(not cached)'
+05-09 20:40:18.093   934  1009 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+05-09 20:40:18.096  2605  2605 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@69d7572
+05-09 20:40:18.096  2605  2605 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1280x2856 statusBars:[0,156,0,0] navigationBars:[0,0,0,72] mandatorySystemGestures:[0,192,0,96]
+05-09 20:40:18.105  2605  2605 I Surface : Creating surface for consumer unnamed-2605-25 with slotExpansion=1 for 64 slots
+05-09 20:40:18.105  2605  2605 I Surface : Creating surface for consumer VRI[InstrumentationActivityInvoker$EmptyActivity]#25(BLAST Consumer)25 with slotExpansion=1 for 64 slots
+05-09 20:40:18.110  1076  1087 W System  : A resource failed to call release.
+05-09 20:40:18.110  1076  1087 W System  : A resource failed to call release.
+05-09 20:40:18.110  1076  1087 W System  : A resource failed to call release.
+05-09 20:40:18.111   463   612 I RanchuHwc: logCompositionFallbackIfChanged: layer 2368 CompositionType fallback from 3 to 1
+05-09 20:40:18.112   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.112   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.112   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.112   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.112   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.114  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.115  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=719 windowingMode=1 user=0 lastActiveTime=17663374] null, [id=720 windowingMode=1 user=0 lastActiveTime=17663463] null]
+05-09 20:40:18.137  1076  1076 D BaseActivity: Launcher flags updated: [state_started] +[state_started]
+05-09 20:40:18.137  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[state_resumed|state_user_active]
+05-09 20:40:18.137  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_user_active] +[]
+05-09 20:40:18.137  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_user_active] +[state_deferred_resumed]
+05-09 20:40:18.137  1076  1076 D StatsLog: LAUNCHER_ONRESUME
+05-09 20:40:18.139  1736  1967 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+05-09 20:40:18.139  1736  1967 I AiAiEcho: EchoTargets:
+05-09 20:40:18.139  1736  1967 I AiAiEcho: Filtered by AiAi flag check:
+05-09 20:40:18.139  1736  1967 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+05-09 20:40:18.139  1736  1967 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+05-09 20:40:18.139  1076  1138 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+05-09 20:40:18.140  1736  1967 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+05-09 20:40:18.145  1076  1076 D SmartspaceInteractor: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+05-09 20:40:18.145   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.145   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.145   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.145   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.145   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.146  1736  1967 I AiAiEcho: AmbientDataPredictorImpl No tracked ambient data found for ID: null; for event type: 6, skipping event processing.
+05-09 20:40:18.147  1076  1076 I Surface : Creating surface for consumer unnamed-1076-415 with slotExpansion=1 for 64 slots
+05-09 20:40:18.147  1076  1076 I Surface : Creating surface for consumer VRI[NexusLauncherActivity]#349(BLAST Consumer)349 with slotExpansion=1 for 64 slots
+05-09 20:40:18.152  1076  1076 D BaseDepthController: setSurface:
+05-09 20:40:18.152  1076  1076 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+05-09 20:40:18.152  1076  1076 D BaseDepthController: 	mBaseSurface: Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13397)/@0x1dd2a08
+05-09 20:40:18.152  1076  1076 V BaseDepthController: Applying blur: 0 to Surface(name=VRI-com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity#13397)/@0x1dd2a08 applyImmediately: false
+05-09 20:40:18.152  1076  1076 D BaseDepthController: shouldBlurWorkspace: false targetState: Normal currentStableState: Normal mCurrentBlur: 0 mLauncher.getDepthBlurTargets(): [com.android.launcher3.Workspace{c8eda3 V.ED..... .......D 0,0-1280,2856 #7f0a0486 app:id/workspace}, com.android.launcher3.Hotseat{d0708a0 V.ED..... .......D 0,2289-1280,2856 #7f0a01f6 app:id/hotseat}]
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.162   934  1546 D WallpaperService: onVisibilityChanged(true): com.android.systemui.wallpapers.ImageWallpaper$CanvasEngine@c19c617
+05-09 20:40:18.164  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.178  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:40:18.178  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:40:18.178  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:40:18.178  1076  1076 D SsBaseTemplateCard: Passed-in item info is null
+05-09 20:40:18.178  1076  1076 I SsBaseTemplateCard: Secondary card pane is null
+05-09 20:40:18.190   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.190   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.281   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.281   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.287  2573  2573 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+05-09 20:40:18.291  1076  1135 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=32 windowingMode=0 user=0 lastActiveTime=16921] null, [id=719 windowingMode=1 user=0 lastActiveTime=17663374] null, [id=720 windowingMode=1 user=0 lastActiveTime=17663463] null]
+05-09 20:40:18.352  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: STOPPED
+05-09 20:40:18.353  2573  2573 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@5cd70d9
+05-09 20:40:18.354  1076  1076 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+05-09 20:40:18.355   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.355   499   602 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+05-09 20:40:18.355  1076  1076 D LauncherStateManager: StateManager.cancelAnimation: animation ongoing: false, partial trace:
+05-09 20:40:18.355  1076  1076 D LauncherStateManager: 	at com.android.launcher3.statemanager.StateManager.setCurrentAnimation(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:59)
+05-09 20:40:18.355  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:734)
+05-09 20:40:18.355  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager$WallpaperOpenLauncherAnimationRunner.onAnimationStart(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:135)
+05-09 20:40:18.356  1076  1076 D LauncherStateManager: StateManager.createAtomicAnimation: fromState: Normal, toState: Normal, partial trace:
+05-09 20:40:18.356  1076  1076 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.prepareToAnimate(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:19)
+05-09 20:40:18.356  1076  1076 D LauncherStateManager: 	at com.android.quickstep.util.WorkspaceRevealAnim.<init>(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:10)
+05-09 20:40:18.356  1076  1076 D LauncherStateManager: 	at com.android.launcher3.QuickstepTransitionManager.createWallpaperOpenAnimations(go/retraceme 4b96215a9d9b4c1494121442fbf9d6e89857c91e1d76ddcc689701971259418a:775)
+05-09 20:40:18.356  1076  1076 D AllAppsTransitionController: shouldProtectHeader: false skipScrim: true state: Normal stateManager.getState(): Normal
+05-09 20:40:18.356  1076  1076 D KeyboardInsetsHandler: removePendingImeController: pendingImeController=null
+05-09 20:40:18.356  1076  1076 D b/311077782: LauncherAnimationRunner.setAnimation
+05-09 20:40:18.372  2573  2573 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+05-09 20:40:18.372  2573  2573 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@5cd70d9 in: DESTROYED
+05-09 20:40:18.372  2573  2573 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+05-09 20:40:18.373  2573  2587 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@6b5c525]
+05-09 20:40:18.381  2573  2573 D ViewRootImpl: Skipping stats log for color mode
+05-09 20:40:18.384  1076  1076 D BaseActivity: Launcher flags updated: [state_started|state_resumed|state_deferred_resumed|state_window_focused|state_user_active] +[state_window_focused]
+05-09 20:40:18.387  2573  2587 I TestRunner: finished: createAlbumScreen_showsCreateButton(com.team4.vinilosapp.ui.CreateAlbumScreenTest)

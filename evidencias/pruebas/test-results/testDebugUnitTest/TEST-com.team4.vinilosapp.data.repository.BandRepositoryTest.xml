@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.team4.vinilosapp.data.repository.BandRepositoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-05-10T01:40:39.214Z" hostname="Fabians-MacBook-Air-2.local" time="0.003">
+  <properties/>
+  <testcase name="getBands_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.001"/>
+  <testcase name="addMusicianToBand_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <testcase name="getBandDetail_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.001"/>
+  <testcase name="getBandDetail_returnsSuccessWithData" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <testcase name="getMusicians_returnsSuccessWithData" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <testcase name="getBands_returnsEmptyListWhenResponseIsEmpty" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.001"/>
+  <testcase name="getBands_returnsSuccessWithData" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <testcase name="addMusicianToBand_returnsSuccessAndForwardsIds" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <testcase name="getMusicians_returnsFailureWhenAdapterFails" classname="com.team4.vinilosapp.data.repository.BandRepositoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

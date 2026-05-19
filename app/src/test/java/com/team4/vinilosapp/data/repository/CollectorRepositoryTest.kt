@@ -2,7 +2,12 @@ package com.team4.vinilosapp.data.repository
 
 import com.team4.vinilosapp.TestData
 import com.team4.vinilosapp.data.adapters.VinilosServiceAdapter
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorRequest
+import com.team4.vinilosapp.data.models.AddAlbumToCollectorResponse
 import com.team4.vinilosapp.data.models.Album
+import com.team4.vinilosapp.data.models.AlbumCommentRequest
+import com.team4.vinilosapp.data.models.AlbumCommentResponse
+import com.team4.vinilosapp.data.models.BandDetail
 import com.team4.vinilosapp.data.models.Collector
 import com.team4.vinilosapp.data.models.CollectorDetail
 import com.team4.vinilosapp.data.models.Performer
@@ -12,6 +17,10 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import com.team4.vinilosapp.data.models.ArtistDetail
+import com.team4.vinilosapp.data.models.Prize
+import com.team4.vinilosapp.ui.models.AddPrize
+import com.team4.vinilosapp.ui.models.AddPrizeArtist
 
 private class CollectorFakeAdapter : VinilosServiceAdapter {
     var collectorsResponse: List<Collector> = emptyList()
@@ -34,6 +43,16 @@ private class CollectorFakeAdapter : VinilosServiceAdapter {
         if (failCollectorDetail) throw Exception("detail error")
         return collectorDetailResponse ?: throw Exception("not found")
     }
+
+    override suspend fun getBandDetail(bandId: Int): BandDetail = throw NotImplementedError()
+    override suspend fun addMusicianToBand(bandId: Int, musicianId: Int) = Unit
+    override suspend fun addComment(albumId: String, comment: AlbumCommentRequest): AlbumCommentResponse = throw NotImplementedError()
+    override suspend fun addAlbumToCollector(albumId: String, collectorId: String, albumToCollector: AddAlbumToCollectorRequest): AddAlbumToCollectorResponse = throw NotImplementedError()
+    override suspend fun getArtistDetail(artistId: Int): ArtistDetail = throw NotImplementedError()
+    override suspend fun addPrize(prize: AddPrize): Unit  = throw NotImplementedError()
+    override suspend fun addAlbumToMusician(musicianId: Int, albumId: Int) = Unit
+    override suspend fun getPrizes(): List<Prize> = emptyList()
+    override suspend fun associatePrizeArtist(prizeId: Int, artistId: Int, premiationDate: AddPrizeArtist) = throw NotImplementedError()
 }
 
 class CollectorRepositoryTest {
