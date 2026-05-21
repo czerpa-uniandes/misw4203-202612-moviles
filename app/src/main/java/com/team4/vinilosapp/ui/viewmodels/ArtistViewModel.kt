@@ -55,6 +55,7 @@ class ArtistViewModel(application: Application) : AndroidViewModel(application) 
     fun fetchArtists() {
         viewModelScope.launch {
             _isLoading.value = true
+            _error.value = null
 
             repository.getArtists()
                 .onSuccess { list ->

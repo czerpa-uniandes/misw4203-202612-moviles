@@ -11,6 +11,8 @@ import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 
 
 @Composable
@@ -22,7 +24,8 @@ fun BottomNav(navController: NavController) {
             selected = false,
             onClick = { navController.navigate("artists") },
             label = { Text("Artistas") },
-            icon = { Icon(Icons.Default.MusicNote, contentDescription = null) }
+            icon = { Icon(Icons.Default.MusicNote, contentDescription = null) },
+            modifier = Modifier.semantics { contentDescription = "Ir a Artistas" }
         )
 
         NavigationBarItem(
