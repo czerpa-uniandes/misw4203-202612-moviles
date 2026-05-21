@@ -1,5 +1,6 @@
 package com.team4.vinilosapp.ui.screens.albums.components
 
+import android.R.attr.contentDescription
 import androidx.compose.foundation.background
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -11,6 +12,10 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -37,6 +42,7 @@ fun AlbumCard(
             shape = RoundedCornerShape(24.dp),
             colors = CardDefaults.cardColors(containerColor = Color.Transparent),
             modifier = Modifier
+                .clearAndSetSemantics { }
                 .fillMaxWidth()
         ) {
             Column {
@@ -48,7 +54,7 @@ fun AlbumCard(
                         .memoryCachePolicy(CachePolicy.ENABLED)
                         .diskCachePolicy(CachePolicy.ENABLED)
                         .build(),
-                    contentDescription = null,
+                    contentDescription = "Imagen del album $title",
                     contentScale = ContentScale.Fit,
                     alignment = Alignment.Center,
                     modifier = Modifier
@@ -59,7 +65,11 @@ fun AlbumCard(
                 )
 
                 Column(
-                    modifier = Modifier.padding(12.dp)
+                    modifier = Modifier
+                        .padding(12.dp)
+                        .semantics {
+                            this.contentDescription = "Ver más sobre el álbum $title de $artist"
+                        }
                 ) {
                     Text(
                         text = title,
@@ -69,7 +79,7 @@ fun AlbumCard(
 
                     Text(
                         text = artist,
-                        color = Color.Gray,
+                        color = Color(0xFF767676),
                         fontSize = 13.sp
                     )
                 }
@@ -87,10 +97,13 @@ fun AlbumCard(
             },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFFF2F2F2),
-                contentColor = Color(0xFFB4532A)
+                contentColor = Color(0xFFA94C26)
             ),
             shape = RoundedCornerShape(50),
             modifier = Modifier
+                .semantics {
+                    this.contentDescription = "Ver más sobre el álbum $title"
+                }
                 .align(Alignment.BottomEnd)
                 .padding(16.dp)
                 .offset(y = 8.dp)

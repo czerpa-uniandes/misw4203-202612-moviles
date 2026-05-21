@@ -38,6 +38,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -225,6 +226,7 @@ fun AddTrackHeader(album: Album) {
             contentDescription = album.name,
             modifier = Modifier
                 .size(200.dp)
+                .clearAndSetSemantics { }
                 .clip(RoundedCornerShape(24.dp))
                 .align(Alignment.CenterHorizontally),
             contentScale = ContentScale.Crop
@@ -247,7 +249,7 @@ fun AddTrackHeader(album: Album) {
 
             Text(
                 text = artistName,
-                color = Color.Gray
+                color = Color(0xFF6B6B6B)
             )
         }
     }
