@@ -34,7 +34,7 @@ fun AddPrizeTopBar(navController: NavController) {
             TextButton(onClick = { navController.popBackStack() }) {
                 Text(
                     text = "Cancelar",
-                    color = Color(0xFF8F8F8F)
+                    color = Color(0xFF5F5E5C)
                 )
             }
         },

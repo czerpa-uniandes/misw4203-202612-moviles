@@ -11,6 +11,8 @@ import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 
 
 @Composable
@@ -30,7 +32,11 @@ fun BottomNav(navController: NavController) {
             onClick = { navController.navigate("collectors") },
             label = { Text("Coleccionistas") },
             icon = { Icon(Icons.Default.Person, contentDescription = null) },
-            modifier = Modifier.testTag("bottom_nav_collectors")
+            modifier = Modifier
+                .testTag("bottom_nav_collectors")
+                .semantics {
+                    contentDescription = "Ir a la pantalla de coleccionistas"
+                }
         )
 
         NavigationBarItem(
@@ -49,7 +55,11 @@ fun BottomNav(navController: NavController) {
             label = { Text("Premios") },
             icon = { Icon(imageVector = Icons.Filled.EmojiEvents, contentDescription = null, tint = Color.Black)
             },
-            modifier = Modifier.testTag("bottom_nav_awards")
+            modifier = Modifier
+                .testTag("bottom_nav_awards")
+                .semantics {
+                contentDescription = "Ir a la pantalla de premios"
+            }
         )
     }
 }
