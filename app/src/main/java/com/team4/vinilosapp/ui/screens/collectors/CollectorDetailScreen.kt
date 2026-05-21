@@ -23,6 +23,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -174,12 +177,18 @@ private fun CollectorDetailContent(
                     Column {
                         Text(
                             text = comment.description,
-                            fontWeight = FontWeight.SemiBold
+                            fontWeight = FontWeight.SemiBold,
+                            modifier = Modifier.semantics {
+                                stateDescription = "Descripción del comentario ${comment.description}"
+                            }
                         )
                         Text(
                             text = "Rating: ${comment.rating}/5",
                             color = SecondaryText,
-                            fontSize = 13.sp
+                            fontSize = 13.sp,
+                            modifier = Modifier.semantics {
+                                stateDescription = "Calificación ${comment.rating} de 5 para el comentario ${comment.description}"
+                            }
                         )
                     }
                 }

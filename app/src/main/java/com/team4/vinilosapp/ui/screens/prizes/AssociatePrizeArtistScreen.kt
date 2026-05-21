@@ -151,7 +151,11 @@ fun AssociatePrizeArtistScreen(
                             isDateValid &&
                             !associateLoading,
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color(0xFFB4532A)
+                        containerColor = Color(0xFFB4532A),
+                        contentColor = Color.White,
+
+                        disabledContainerColor = Color(0xFFE0E0E0),
+                        disabledContentColor = Color(0xFF5F5E5C)
                     ),
                     modifier = Modifier.fillMaxWidth()
                         .testTag("prize_associate_button")
@@ -163,7 +167,7 @@ fun AssociatePrizeArtistScreen(
                             modifier = Modifier.padding(4.dp)
                         )
                     } else {
-                        Text("Guardar", color = Color.White)
+                        Text("Guardar")
                     }
                 }
 

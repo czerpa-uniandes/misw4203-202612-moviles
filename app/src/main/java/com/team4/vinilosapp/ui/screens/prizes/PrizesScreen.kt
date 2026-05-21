@@ -14,6 +14,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -24,6 +26,7 @@ import com.team4.vinilosapp.ui.viewmodels.PrizeViewModel
 
 
 private val Primary = Color(0xFF9D3E1D)
+private val SecondaryText = Color(0xFF5F5E5C)
 @Composable
 fun PrizesScreen(
     navController: NavController,
@@ -105,7 +108,7 @@ fun PrizesContent(prizes: List<Prize>) {
             item {
                 Text(
                     text = "No hay premios disponibles.",
-                    color = Color.Gray
+                    color = SecondaryText
                 )
             }
         } else {
@@ -130,7 +133,10 @@ fun PrizeItem(prize: Prize) {
             Text(
                 text = prize.name,
                 style = MaterialTheme.typography.titleMedium,
-                color = Color.Black
+                color = Color.Black,
+                modifier = Modifier.semantics {
+                    stateDescription = "Premio ${prize.name}"
+                }
             )
 
             Spacer(modifier = Modifier.height(4.dp))
@@ -138,7 +144,10 @@ fun PrizeItem(prize: Prize) {
             Text(
                 text = prize.organization,
                 style = MaterialTheme.typography.bodyMedium,
-                color = Color(0xFFB4532A)
+                color = Color(0xFFB4532A),
+                modifier = Modifier.semantics {
+                    stateDescription = "Organización del premio ${prize.name}"
+                }
             )
 
             Spacer(modifier = Modifier.height(8.dp))
@@ -146,7 +155,10 @@ fun PrizeItem(prize: Prize) {
             Text(
                 text = prize.description,
                 style = MaterialTheme.typography.bodySmall,
-                color = Color.DarkGray
+                color = Color.DarkGray,
+                modifier = Modifier.semantics {
+                    stateDescription = "Descripción del premio ${prize.name}"
+                }
             )
 
             Spacer(modifier = Modifier.height(8.dp))
@@ -154,7 +166,11 @@ fun PrizeItem(prize: Prize) {
             Text(
                 text = "Premiaciones: ${prize.performerPrizes.size}",
                 style = MaterialTheme.typography.labelMedium,
-                color = Color.Gray
+                color = SecondaryText,
+                modifier = Modifier.semantics {
+                    stateDescription = "Premiaciones del premio ${prize.name}"
+                }
+
             )
         }
     }

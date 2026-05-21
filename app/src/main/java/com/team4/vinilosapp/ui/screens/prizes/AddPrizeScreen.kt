@@ -38,6 +38,7 @@ import com.team4.vinilosapp.ui.screens.prizes.components.AddPrizeTopBar
 import com.team4.vinilosapp.ui.viewmodels.PrizeViewModel
 
 private val VinilosPrimary = Color(0xFFB44A1F)
+private val SecondaryText = Color(0xFF5F5E5C)
 
 @Composable
 fun AddPrizeScreen(navController: NavController) {
@@ -140,7 +141,7 @@ fun AddPrizeScreen(navController: NavController) {
                     if (name.isNotBlank() && description.isNotBlank() && organization.isNotBlank())
                         VinilosPrimary
                     else
-                        Color.Gray
+                        SecondaryText
                 )
             ) {
                 if (loading) {
@@ -182,7 +183,7 @@ fun PrizeTextField(
             placeholder = {
                 Text(
                     text = placeholder,
-                    color = Color.Gray
+                    color = SecondaryText
                 )
             },
             modifier = modifier,
@@ -197,10 +198,10 @@ fun PrizeTextField(
                 disabledTextColor = Color.Black,
 
                 focusedBorderColor = VinilosPrimary,
-                unfocusedBorderColor = Color.Gray,
+                unfocusedBorderColor = SecondaryText,
 
-                focusedPlaceholderColor = Color.Gray,
-                unfocusedPlaceholderColor = Color.Gray,
+                focusedPlaceholderColor = SecondaryText,
+                unfocusedPlaceholderColor = SecondaryText,
 
                 cursorColor = VinilosPrimary,
                 focusedContainerColor = Color.White,

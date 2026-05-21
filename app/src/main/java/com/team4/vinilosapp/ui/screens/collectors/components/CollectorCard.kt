@@ -138,7 +138,7 @@ fun CollectorCard(collector: Collector, navController: NavController) {
                 )
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowForward,
-                    contentDescription = "Ver colección",
+                    contentDescription = "Ver colección de ${collector.name}",
                     tint = Primary,
                     modifier = Modifier.size(20.dp)
                 )
