@@ -14,6 +14,8 @@ import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import com.team4.vinilosapp.navigation.Screen
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -37,7 +39,7 @@ import com.team4.vinilosapp.data.models.PerformerPrize
 import com.team4.vinilosapp.ui.components.BottomNav
 import com.team4.vinilosapp.ui.viewmodels.ArtistViewModel
 
-private val VinilosPrimary = Color(0xFFB4532A)
+private val VinilosPrimary = Color(0xFFA84C26)
 private val ScreenBg = Color(0xFFF7F4F2)
 private val SecondaryText = Color(0xFF5F4D46)
 private val CardBg = Color(0xFFF1F0EF)
@@ -295,10 +297,16 @@ private fun SectionHeader(title: String, subtitle: String? = null, modifier: Mod
 
 @Composable
 private fun AlbumMiniCard(album: AlbumReference, modifier: Modifier = Modifier) {
-    Column(modifier = modifier.testTag("artist_detail_album_item")) {
+    Column(
+        modifier = modifier
+            .testTag("artist_detail_album_item")
+            .clearAndSetSemantics {
+                contentDescription = "${album.name}, sello ${album.recordLabel}"
+            }
+    ) {
         SubcomposeAsyncImage(
             model = ImageRequest.Builder(LocalContext.current).data(album.cover).crossfade(true).build(),
-            contentDescription = album.name,
+            contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxWidth().height(150.dp).clip(RoundedCornerShape(24.dp)),
             loading = { Box(Modifier.fillMaxSize().background(CardBg)) },

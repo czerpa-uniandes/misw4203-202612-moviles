@@ -96,7 +96,7 @@ fun ArtistCard(artist: Performer, onClick: (Int) -> Unit) {
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
                         text = artist.description,
-                        color = Color.Gray,
+                        color = Color(0xFF666666),
                         fontSize = 13.sp,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis

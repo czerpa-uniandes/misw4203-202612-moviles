@@ -19,9 +19,12 @@ import com.team4.vinilosapp.ui.screens.artists.components.ArtistsList
 import com.team4.vinilosapp.ui.screens.bands.components.BandsList
 import com.team4.vinilosapp.ui.viewmodels.ArtistViewModel
 import com.team4.vinilosapp.ui.viewmodels.BandViewModel
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.stateDescription
 
 @Composable
 fun ArtistsScreen(navController: NavController) {
@@ -71,8 +74,10 @@ fun ArtistsScreen(navController: NavController) {
                         Tab(
                             selected = selectedTab == index,
                             onClick = { selectedTab = index },
-                            modifier = Modifier.semantics {
+                            modifier = Modifier.clearAndSetSemantics {
                                 contentDescription = "Pestaña $title"
+                                selected = selectedTab == index
+                                stateDescription = if (selectedTab == index) "seleccionada" else ""
                             },
                             text = {
                                 Text(
